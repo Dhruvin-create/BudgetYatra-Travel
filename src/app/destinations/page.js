@@ -1,18 +1,19 @@
-import DestinationCard from '@/components/cards/DestinationCard';
-import { getAllDestinations } from '@/lib/data/destinations';
-
-export const metadata = {
-  title: 'Destinations - BudgetYatra',
-  description: 'Explore budget-friendly travel destinations across India',
-};
+import { Suspense } from 'react';
+import DestinationsContent from './DestinationsContent';
 
 export default function DestinationsPage() {
-  const destinations = getAllDestinations();
+  return (
+    <Suspense fallback={<DestinationsLoading />}>
+      <DestinationsContent />
+    </Suspense>
+  );
+}
+
+function DestinationsLoading() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Explore Destinations
@@ -21,12 +22,17 @@ export default function DestinationsPage() {
             Discover amazing budget-friendly destinations across India
           </p>
         </div>
-
-        {/* Destinations Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {destinations.map((destination) => (
-            <DestinationCard key={destination.slug} destination={destination} />
-          ))}
+        <div className="animate-pulse space-y-8">
+          <div className="flex flex-wrap justify-center gap-4">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="h-12 w-32 bg-gray-200 rounded-full"></div>
+            ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="h-96 bg-gray-200 rounded-xl"></div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

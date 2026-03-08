@@ -27,6 +27,7 @@ export const NAVIGATION_LINKS = [
   { name: 'Blogs', href: '/blogs' },
   { name: 'Destinations', href: '/destinations' },
   { name: 'Guide', href: '/guide' },
+  { name: 'Calculator', href: '/calculator' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' }
 ];

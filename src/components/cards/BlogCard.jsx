@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function BlogCard({ blog }) {
+export default function BlogCard({ blog, showBudget = false }) {
   return (
     <Link href={`/blogs/${blog.slug}`} className="group">
       <article className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full flex flex-col">
@@ -38,11 +38,13 @@ export default function BlogCard({ blog }) {
               </svg>
               <span>{blog.readingTime} min read</span>
             </div>
-            <div className="flex items-center space-x-1">
-              <span className="text-accent-600 font-semibold">
-                ₹{blog.budgetRange.min.toLocaleString()} - ₹{blog.budgetRange.max.toLocaleString()}
-              </span>
-            </div>
+            {showBudget && (
+              <div className="flex items-center space-x-1">
+                <span className="text-accent-600 font-semibold">
+                  ₹{blog.budgetRange.min.toLocaleString()} - ₹{blog.budgetRange.max.toLocaleString()}
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </article>

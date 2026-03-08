@@ -14,13 +14,15 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const destination = getDestinationBySlug(params.slug);
+  const { slug } = await params;
+  const destination = getDestinationBySlug(slug);
   if (!destination) return {};
   return generateDestinationMetadata(destination);
 }
 
-export default function DestinationPage({ params }) {
-  const destination = getDestinationBySlug(params.slug);
+export default async function DestinationPage({ params }) {
+  const { slug } = await params;
+  const destination = getDestinationBySlug(slug);
 
   if (!destination) {
     notFound();

@@ -2,10 +2,21 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import SearchBar from '@/components/search/SearchBar';
 import { NAVIGATION_LINKS } from '@/lib/constants/config';
+
+const CATEGORIES = [
+  { name: 'Beach', icon: '🏖️', href: '/blogs?category=Beach' },
+  { name: 'Mountains', icon: '⛰️', href: '/blogs?category=Mountains' },
+  { name: 'Heritage', icon: '🏛️', href: '/blogs?category=Heritage' },
+  { name: 'Adventure', icon: '🎒', href: '/blogs?category=Adventure' },
+  { name: 'Nature', icon: '🌿', href: '/blogs?category=Nature' },
+];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [categoriesOpen, setCategoriesOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -29,6 +40,50 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            
+            {/* Categories Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setCategoriesOpen(!categoriesOpen)}
+                onMouseEnter={() => setCategoriesOpen(true)}
+                className="flex items-center text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200"
+              >
+                Categories
+                <svg className={`w-4 h-4 ml-1 transition-transform ${categoriesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {categoriesOpen && (
+                <div 
+                  className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2"
+                  onMouseLeave={() => setCategoriesOpen(false)}
+                >
+                  {CATEGORIES.map((category) => (
+                    <Link
+                      key={category.name}
+                      href={category.href}
+                      className="flex items-center gap-3 px-4 py-3 hover:bg-primary-50 transition-colors"
+                      onClick={() => setCategoriesOpen(false)}
+                    >
+                      <span className="text-2xl">{category.icon}</span>
+                      <span className="text-gray-700 font-medium">{category.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Search Icon */}
+            <button
+              onClick={() => setSearchOpen(!searchOpen)}
+              className="p-2 text-gray-700 hover:text-primary-600 transition-colors"
+              aria-label="Search"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -54,12 +109,26 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
+
+        {/* Desktop Search Bar (Expandable) */}
+        {searchOpen && (
+          <div className="hidden md:block pb-4">
+            <div className="max-w-2xl mx-auto">
+              <SearchBar variant="navbar" />
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-3 space-y-3">
+            {/* Mobile Search */}
+            <div className="pb-3">
+              <SearchBar variant="navbar" />
+            </div>
+
             {NAVIGATION_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -70,6 +139,22 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            
+            {/* Mobile Categories */}
+            <div className="pt-3 border-t border-gray-200">
+              <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Categories</div>
+              {CATEGORIES.map((category) => (
+                <Link
+                  key={category.name}
+                  href={category.href}
+                  className="flex items-center gap-3 py-2 text-gray-700 hover:text-primary-600 transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span className="text-xl">{category.icon}</span>
+                  <span className="font-medium">{category.name}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       )}

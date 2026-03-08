@@ -8,6 +8,7 @@ const destinations = [
     longDescription: "Goa is India's smallest state but one of its most popular tourist destinations.",
     state: "Goa",
     region: "West",
+    category: "Beach",
     images: [
       { url: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&h=800&fit=crop", alt: "Goa beach", caption: "Beautiful beach" }
     ],
@@ -43,6 +44,7 @@ const destinations = [
     longDescription: "Rishikesh is known as the Yoga Capital of the World.",
     state: "Uttarakhand",
     region: "North",
+    category: "Adventure",
     images: [
       { url: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&h=800&fit=crop", alt: "Rishikesh", caption: "Adventure hub" }
     ],
@@ -78,6 +80,7 @@ const destinations = [
     longDescription: "Jaipur is known as the Pink City.",
     state: "Rajasthan",
     region: "North",
+    category: "Heritage",
     images: [
       { url: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop", alt: "Jaipur", caption: "Pink City" }
     ],
@@ -113,6 +116,7 @@ const destinations = [
     longDescription: "Manali is a high-altitude Himalayan resort town.",
     state: "Himachal Pradesh",
     region: "North",
+    category: "Mountains",
     images: [
       { url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop", alt: "Manali", caption: "Snow mountains" }
     ],
@@ -148,6 +152,7 @@ const destinations = [
     longDescription: "Kerala's backwaters are a unique ecosystem.",
     state: "Kerala",
     region: "South",
+    category: "Nature",
     images: [
       { url: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&h=800&fit=crop", alt: "Kerala", caption: "Backwaters" }
     ],
@@ -183,6 +188,7 @@ const destinations = [
     longDescription: "Udaipur is known as the Venice of the East.",
     state: "Rajasthan",
     region: "West",
+    category: "Heritage",
     images: [
       { url: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&h=800&fit=crop", alt: "Udaipur", caption: "Lake Palace" }
     ],
