@@ -109,8 +109,8 @@ export default async function BlogPage({ params }) {
             </div>
 
             {/* Article Content */}
-            <div className="prose prose-lg max-w-none mb-12">
-              <div dangerouslySetInnerHTML={{ __html: blog.content.replace(/\n/g, '<br/>') }} />
+            <div className="blog-content prose prose-lg max-w-none mb-12">
+              <div dangerouslySetInnerHTML={{ __html: blog.content }} />
             </div>
 
             {/* Tags */}

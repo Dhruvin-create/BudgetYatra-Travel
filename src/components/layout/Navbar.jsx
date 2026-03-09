@@ -30,7 +30,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {NAVIGATION_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -75,17 +75,17 @@ export default function Navbar() {
             </div>
 
             {/* Search - Expandable from right */}
-            <div className="flex items-center">
-              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? 'w-80 mr-2' : 'w-0'}`}>
+            <div className="flex items-center gap-2">
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? 'w-64' : 'w-0'}`}>
                 {searchOpen && (
-                  <div className="w-80">
+                  <div className="w-64">
                     <SearchBar variant="navbar" />
                   </div>
                 )}
               </div>
               <button
                 onClick={() => setSearchOpen(!searchOpen)}
-                className="p-2 text-gray-700 hover:text-primary-600 transition-colors"
+                className="p-2 text-gray-700 hover:text-primary-600 transition-colors flex-shrink-0"
                 aria-label="Search"
               >
                 {searchOpen ? (

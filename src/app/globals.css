@@ -277,3 +277,60 @@ a:hover {
 html {
   scroll-behavior: smooth;
 }
+
+/* Blog Content Styles */
+.blog-content h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #0ea5e9;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  color: #374151;
+  font-size: 1.125rem;
+}
+
+.blog-content strong {
+  color: #0ea5e9;
+  font-weight: 600;
+}
+
+.blog-content ul {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.blog-content li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  color: #4b5563;
+  font-size: 1.0625rem;
+}
+
+.blog-content ul li::marker {
+  color: #0ea5e9;
+}
+
+.blog-content a {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
+.blog-content a:hover {
+  color: #0284c7;
+}
