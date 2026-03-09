@@ -40,7 +40,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/destinations"
-              className="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-full transition-colors shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-8 py-4 bg-blue-600 !text-white hover:!text-white font-semibold rounded-full shadow-lg"
             >
               View All Destinations
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

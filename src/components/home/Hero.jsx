@@ -177,7 +177,7 @@ export default function Hero() {
               onKeyDown={handleKeyDown}
               onFocus={() => searchQuery.length >= 2 && suggestions.length > 0 && setShowSuggestions(true)}
               placeholder="Search destinations, beaches, mountains, heritage sites..."
-              className="w-full px-6 py-5 pr-32 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 shadow-2xl"
+              className="w-full px-6 py-5 pr-32 rounded-full bg-white/10 backdrop-blur-md border-2 border-white text-white placeholder-white/70 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 focus:bg-white/20 shadow-2xl"
             />
             <button
               type="submit"

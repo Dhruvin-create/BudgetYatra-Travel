@@ -74,16 +74,31 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* Search Icon */}
-            <button
-              onClick={() => setSearchOpen(!searchOpen)}
-              className="p-2 text-gray-700 hover:text-primary-600 transition-colors"
-              aria-label="Search"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
+            {/* Search - Expandable from right */}
+            <div className="flex items-center">
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? 'w-80 mr-2' : 'w-0'}`}>
+                {searchOpen && (
+                  <div className="w-80">
+                    <SearchBar variant="navbar" />
+                  </div>
+                )}
+              </div>
+              <button
+                onClick={() => setSearchOpen(!searchOpen)}
+                className="p-2 text-gray-700 hover:text-primary-600 transition-colors"
+                aria-label="Search"
+              >
+                {searchOpen ? (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                )}
+              </button>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -109,15 +124,6 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-
-        {/* Desktop Search Bar (Expandable) */}
-        {searchOpen && (
-          <div className="hidden md:block pb-4">
-            <div className="max-w-2xl mx-auto">
-              <SearchBar variant="navbar" />
-            </div>
-          </div>
-        )}
       </div>
 
       {/* Mobile Navigation */}
