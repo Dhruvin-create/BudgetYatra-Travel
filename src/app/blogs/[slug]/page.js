@@ -3,6 +3,10 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getBlogBySlug, getAllBlogs, getRelatedBlogs } from '@/lib/data/blogs';
 import { generateBlogMetadata } from '@/lib/utils/seo';
+import RelatedPosts from '@/components/cards/RelatedPosts';
+import Breadcrumbs from '@/components/links/Breadcrumbs';
+import InternalLinksSection from '@/components/links/InternalLinksSection';
+import { getBlogInternalLinks, getBreadcrumbs } from '@/lib/utils/internalLinks';
 
 // Table of Contents Component
 function TableOfContents({ toc }) {
@@ -205,6 +209,9 @@ export default async function BlogPage({ params }) {
 
         {/* Content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* Breadcrumbs */}
+          <Breadcrumbs items={getBreadcrumbs('blog', blog.slug, blog.title)} />
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main Content */}
             <div className="lg:col-span-2">
@@ -407,60 +414,23 @@ export default async function BlogPage({ params }) {
           </div>
         </div>
 
-        {/* Related Articles */}
-        {relatedBlogs.length > 0 && (
-          <section className="bg-gray-50 py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex items-center justify-between mb-8">
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Related Travel Guides</h2>
-                  <p className="text-gray-600">Discover more destinations and travel tips</p>
-                </div>
-                <Link
-                  href="/blogs"
-                  className="hidden md:inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold"
-                >
-                  View All
-                  <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {relatedBlogs.map((relatedBlog) => (
-                  <Link key={relatedBlog.slug} href={`/blogs/${relatedBlog.slug}`} className="group">
-                    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full">
-                      <div className="relative h-48">
-                        <Image
-                          src={relatedBlog.featuredImage.url}
-                          alt={relatedBlog.featuredImage.alt}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute top-3 left-3">
-                          <span className="px-3 py-1 bg-primary-600 text-white text-xs font-semibold rounded-full">
-                            {relatedBlog.category}
-                          </span>
-                        </div>
-                      </div>
-                      <div className="p-4">
-                        <h3 className="font-bold text-gray-900 group-hover:text-primary-600 transition-colors line-clamp-2 mb-2">
-                          {relatedBlog.title}
-                        </h3>
-                        <div className="flex items-center text-xs text-gray-500">
-                          <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                          {relatedBlog.readingTime} min read
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
+        {/* Internal Links Section */}
+        {(() => {
+          const internalLinks = getBlogInternalLinks(blog.slug);
+          return internalLinks.guideLinks && internalLinks.guideLinks.length > 0 ? (
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+              <InternalLinksSection
+                title="Explore More Destinations"
+                subtitle="Find similar destinations and travel guides"
+                links={internalLinks.guideLinks}
+                columns={3}
+              />
             </div>
-          </section>
-        )}
+          ) : null;
+        })()}
+
+        {/* Related Articles */}
+        <RelatedPosts blogs={relatedBlogs} />
       </article>
     </>
   );

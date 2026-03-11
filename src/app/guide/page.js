@@ -1,11 +1,22 @@
 import { Suspense } from 'react';
 import GuideContent from './GuideContent';
+import Breadcrumbs from '@/components/links/Breadcrumbs';
 
 export default function GuidePage() {
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Travel Guide', href: '/guide' }
+  ];
+
   return (
-    <Suspense fallback={<GuideLoading />}>
-      <GuideContent />
-    </Suspense>
+    <>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <Breadcrumbs items={breadcrumbs} />
+      </div>
+      <Suspense fallback={<GuideLoading />}>
+        <GuideContent />
+      </Suspense>
+    </>
   );
 }
 

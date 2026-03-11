@@ -1,11 +1,22 @@
 import { Suspense } from 'react';
 import DestinationsContent from './DestinationsContent';
+import Breadcrumbs from '@/components/links/Breadcrumbs';
 
 export default function DestinationsPage() {
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Destinations', href: '/destinations' }
+  ];
+
   return (
-    <Suspense fallback={<DestinationsLoading />}>
-      <DestinationsContent />
-    </Suspense>
+    <>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <Breadcrumbs items={breadcrumbs} />
+      </div>
+      <Suspense fallback={<DestinationsLoading />}>
+        <DestinationsContent />
+      </Suspense>
+    </>
   );
 }
 

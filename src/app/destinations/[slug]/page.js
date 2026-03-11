@@ -5,6 +5,9 @@ import { getDestinationBySlug, getAllDestinations } from '@/lib/data/destination
 import { getBlogsByDestination } from '@/lib/data/blogs';
 import { generateDestinationMetadata } from '@/lib/utils/seo';
 import BlogCard from '@/components/cards/BlogCard';
+import Breadcrumbs from '@/components/links/Breadcrumbs';
+import InternalLinksSection from '@/components/links/InternalLinksSection';
+import { getDestinationInternalLinks, getBreadcrumbs } from '@/lib/utils/internalLinks';
 
 export async function generateStaticParams() {
   const destinations = getAllDestinations();
@@ -54,6 +57,9 @@ export default async function DestinationPage({ params }) {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Breadcrumbs */}
+        <Breadcrumbs items={getBreadcrumbs('destination', destination.slug, destination.name)} />
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2">
@@ -180,6 +186,21 @@ export default async function DestinationPage({ params }) {
             </div>
           </div>
         </div>
+
+        {/* Internal Links Section */}
+        {(() => {
+          const internalLinks = getDestinationInternalLinks(destination.slug);
+          return internalLinks.guideLinks && internalLinks.guideLinks.length > 0 ? (
+            <div className="mt-16 pt-16 border-t border-gray-200">
+              <InternalLinksSection
+                title="Explore Similar Destinations"
+                subtitle="Find destinations with similar characteristics"
+                links={internalLinks.guideLinks}
+                columns={3}
+              />
+            </div>
+          ) : null;
+        })()}
 
         {/* Related Blogs */}
         {relatedBlogs.length > 0 && (
