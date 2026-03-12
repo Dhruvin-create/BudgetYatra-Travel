@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import SearchBar from '@/components/search/SearchBar';
 import { NAVIGATION_LINKS } from '@/lib/constants/config';
@@ -17,6 +17,11 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -54,7 +59,7 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              {categoriesOpen && (
+              {mounted && categoriesOpen && (
                 <div 
                   className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2"
                   onMouseLeave={() => setCategoriesOpen(false)}
@@ -77,7 +82,7 @@ export default function Navbar() {
             {/* Search - Expandable from right */}
             <div className="flex items-center gap-2">
               <div className={`overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? 'w-64' : 'w-0'}`}>
-                {searchOpen && (
+                {mounted && searchOpen && (
                   <div className="w-64">
                     <SearchBar variant="navbar" />
                   </div>
@@ -127,7 +132,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Navigation */}
-      {mobileMenuOpen && (
+      {mounted && mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-3 space-y-3">
             {/* Mobile Search */}
