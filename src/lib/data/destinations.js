@@ -74,64 +74,6 @@ const destinations = [
     featured: true,
     published: true
   },
-
-  {
-    slug: "jaipur",
-    name: "Jaipur",
-    description: "The Pink City â€” magnificent forts, royal palaces, vibrant bazaars, and rich Rajput heritage",
-    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Jaipur Budget Travel</h2><p class="text-blue-900">A budget trip to Jaipur costs <strong>â‚¹1,500â€“â‚¹2,500 per person per day</strong>, covering a heritage guesthouse (â‚¹500â€“â‚¹1,000), local meals (â‚¹200â€“â‚¹400), auto-rickshaws (â‚¹200â€“â‚¹400), and monument entries. A 3-day Jaipur trip costs approximately <strong>â‚¹5,000â€“â‚¹10,000 total</strong>. Best time to visit is <strong>October to March</strong> for pleasant weather.</p></div><h2 id="introduction">Why Jaipur is India's Most Spectacular Heritage City</h2><p>Jaipur, the capital of Rajasthan, earns its nickname "The Pink City" from the terracotta-pink buildings that line its old city streets â€” painted that colour in 1876 to welcome the Prince of Wales. Today, Jaipur is one of India's most visited cities, and for good reason: it packs an extraordinary density of forts, palaces, temples, and bazaars into a compact, navigable area. It's also the anchor of India's famous Golden Triangle (Delhiâ€“Agraâ€“Jaipur), making it a natural stop on any North India itinerary.</p><h2 id="budget-breakdown">Budget Breakdown: Jaipur Trip Cost</h2><h3>Budget Traveller (â‚¹1,500â€“â‚¹2,500/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹500â€“â‚¹1,000 (heritage guesthouse or hostel)</li><li><strong>Food:</strong> â‚¹200â€“â‚¹400 (thali restaurants, street food)</li><li><strong>Transport:</strong> â‚¹200â€“â‚¹400 (auto-rickshaws, local buses)</li><li><strong>Monument entries:</strong> â‚¹200â€“â‚¹500/day (composite ticket available)</li></ul><h3>Mid-Range Traveller (â‚¹3,500â€“â‚¹7,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹2,000â€“â‚¹4,000 (boutique heritage hotel)</li><li><strong>Food:</strong> â‚¹600â€“â‚¹1,200 (rooftop restaurants with fort views)</li><li><strong>Transport:</strong> â‚¹800â€“â‚¹2,000 (private cab for day trips)</li></ul><h2 id="transport">Getting to Jaipur and Getting Around</h2><ul><li><strong>By Train (Best Option):</strong> Jaipur Junction is well-connected. From Delhi: Shatabdi Express (4.5 hrs, â‚¹700â€“â‚¹1,200), sleeper trains (â‚¹200â€“â‚¹400). From Mumbai: 18â€“20 hrs (â‚¹400â€“â‚¹1,000).</li><li><strong>By Bus:</strong> RSRTC Volvo buses from Delhi (â‚¹400â€“â‚¹600, 5 hrs). Frequent and comfortable.</li><li><strong>By Flight:</strong> Jaipur International Airport â€” flights from Delhi from â‚¹1,500, Mumbai from â‚¹2,000.</li><li><strong>Getting Around:</strong> Auto-rickshaws for short trips (â‚¹50â€“â‚¹200). Negotiate firmly. Cycle rickshaws in old city â‚¹30â€“â‚¹80. App-based autos (Rapido, Ola) are cheaper and metered.</li></ul><h2 id="hotels">Where to Stay in Jaipur on a Budget</h2><ul><li><strong>Old City / Pink City Area:</strong> Best location. Heritage guesthouses like Arya Niwas (â‚¹700â€“â‚¹1,200), Hotel Pearl Palace (â‚¹800â€“â‚¹1,500). Walking distance to Hawa Mahal and bazaars.</li><li><strong>Bani Park Area:</strong> Quieter, residential. Budget guesthouses â‚¹600â€“â‚¹1,000. Good for longer stays.</li><li><strong>Hostels:</strong> Zostel Jaipur (â‚¹400â€“â‚¹600 dorm), Moustache Hostel (â‚¹450â€“â‚¹700 dorm). Great for solo travellers.</li></ul><h2 id="food">Where to Eat in Jaipur: Budget Food Guide</h2><ul><li><strong>Dal Baati Churma:</strong> â‚¹100â€“â‚¹200 â€” Rajasthan's iconic dish. Baked wheat balls with lentil curry and sweet churma.</li><li><strong>Laal Maas:</strong> â‚¹200â€“â‚¹400 â€” fiery red mutton curry, a Rajasthani classic.</li><li><strong>Pyaaz Kachori:</strong> â‚¹20â€“â‚¹40 â€” flaky pastry stuffed with spiced onions. Best at Rawat Mishthan Bhandar.</li><li><strong>Ghewar:</strong> â‚¹50â€“â‚¹150 â€” disc-shaped sweet soaked in sugar syrup, a Jaipur speciality.</li><li><strong>LMB (Laxmi Mishthan Bhandar):</strong> Iconic Jaipur restaurant. Thali â‚¹200â€“â‚¹350.</li><li><strong>Chokhi Dhani:</strong> Rajasthani village experience. Buffet â‚¹700â€“â‚¹900 (worth it for the experience).</li></ul><h2 id="itinerary">3-Day Jaipur Budget Itinerary</h2><h3>Day 1: Amber Fort + City Palace</h3><p>Start early at Amber Fort (â‚¹100 Indian nationals, elephant ride â‚¹900 optional). Jaigarh Fort (â‚¹35, included with Amber ticket). Afternoon: City Palace (â‚¹200) and Jantar Mantar observatory (â‚¹50). Evening: Hawa Mahal exterior (free from street). Dinner: dal baati churma at LMB (â‚¹250).</p><h3>Day 2: Old City Bazaars + Nahargarh Fort</h3><p>Morning: Johari Bazaar for jewellery, Bapu Bazaar for textiles, Nehru Bazaar for juttis (Rajasthani shoes). Afternoon: Nahargarh Fort (â‚¹50) for panoramic city views. Sunset from fort walls. Evening: Chowki Dhani or local thali restaurant.</p><h3>Day 3: Day Trip to Abhaneri + Departure</h3><p>Optional day trip to Chand Baori stepwell at Abhaneri (95 km, â‚¹200 entry). Or visit Albert Hall Museum (â‚¹40) and Sisodia Rani Garden (â‚¹50). Head to station/airport.</p><h2 id="tips">Top Money-Saving Tips for Jaipur</h2><ul><li>Buy the composite ticket (â‚¹300) covering Amber Fort, Nahargarh, Jaigarh, Albert Hall, and more â€” saves â‚¹200+ vs individual tickets.</li><li>Bargain hard in bazaars â€” initial prices are 2â€“3x the fair price for tourists.</li><li>Start sightseeing at 8 AM to beat crowds and heat.</li><li>Use Rapido or Ola autos instead of negotiating with auto-rickshaw drivers.</li><li>Eat at Rawat Mishthan Bhandar for the best kachori breakfast under â‚¹50.</li><li>Visit in Novemberâ€“February for the best weather; avoid Aprilâ€“June (extreme heat).</li></ul><h2 id="faqs">Frequently Asked Questions About Jaipur</h2><h3>How much does a 3-day Jaipur trip cost?</h3><p>A 3-day budget Jaipur trip costs approximately <strong>â‚¹5,000â€“â‚¹10,000</strong> per person, including accommodation (â‚¹1,500â€“â‚¹3,000), food (â‚¹1,500â€“â‚¹2,500), transport (â‚¹1,000â€“â‚¹2,000), and monument entries (â‚¹500â€“â‚¹1,000).</p><h3>What is the composite ticket for Jaipur monuments?</h3><p>The Jaipur composite ticket costs â‚¹300 for Indian nationals and covers Amber Fort, Nahargarh Fort, Jaigarh Fort, Albert Hall Museum, Sisodia Rani Garden, and Vidyadhar Garden. Valid for 2 days â€” excellent value.</p><h3>Is Jaipur safe for solo female travellers?</h3><p>Jaipur is generally safe for solo female travellers, especially in tourist areas. Stick to well-lit areas at night, use app-based cabs, and dress modestly when visiting temples and old city areas.</p><h3>What is the best time to visit Jaipur?</h3><p>October to March is ideal â€” temperatures range from 10â€“25Â°C. The Jaipur Literature Festival (January) and Holi (March) are great times to visit. Avoid Mayâ€“June when temperatures exceed 45Â°C.</p><h3>How far is Jaipur from Delhi?</h3><p>Jaipur is 280 km from Delhi â€” about 4.5 hours by Shatabdi Express train (â‚¹700â€“â‚¹1,200) or 5 hours by Volvo bus (â‚¹400â€“â‚¹600). It's the most popular weekend trip from Delhi.</p><h3>What are the must-buy items in Jaipur?</h3><p>Blue pottery (â‚¹200â€“â‚¹2,000), block-printed textiles (â‚¹300â€“â‚¹2,000), Kundan jewellery (â‚¹500â€“â‚¹5,000), Rajasthani juttis/shoes (â‚¹300â€“â‚¹800), and miniature paintings (â‚¹500â€“â‚¹5,000). Always bargain.</p><h3>Can I see Jaipur in one day?</h3><p>You can cover the highlights in one long day â€” Amber Fort, Hawa Mahal, City Palace, and Jantar Mantar â€” but 2â€“3 days allows a more relaxed experience including bazaars and day trips.</p>`,
-    state: "Rajasthan",
-    region: "North",
-    category: "Heritage",
-    images: [
-      { url: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop", alt: "Jaipur Hawa Mahal Palace of Winds", caption: "The iconic Hawa Mahal â€” Palace of Winds" }
-    ],
-    budgetRange: { min: 1500, max: 2500 },
-    budgetBreakdown: {
-      accommodation: { min: 500, max: 1000 },
-      food: { min: 200, max: 400 },
-      transport: { min: 200, max: 400 },
-      activities: { min: 200, max: 500 }
-    },
-    bestSeasons: ["Winter", "Autumn", "Spring"],
-    attractions: ["Amber Fort", "City Palace", "Hawa Mahal", "Jantar Mantar", "Nahargarh Fort", "Jaigarh Fort", "Albert Hall Museum", "Johari Bazaar"],
-    travelTips: ["Buy composite ticket for monuments", "Bargain hard in bazaars", "Start sightseeing at 8 AM", "Use Rapido/Ola autos"],
-    howToReach: {
-      byAir: "Jaipur International Airport â€” flights from Delhi from â‚¹1,500, Mumbai from â‚¹2,000",
-      byTrain: "Jaipur Junction â€” Shatabdi from Delhi (4.5 hrs, â‚¹700â€“â‚¹1,200), sleeper trains â‚¹200â€“â‚¹400",
-      byRoad: "RSRTC Volvo buses from Delhi (â‚¹400â€“â‚¹600, 5 hrs). 280 km from Delhi via NH48"
-    },
-    relatedBlogs: ["rajasthan-heritage-budget-tour"],
-    seo: {
-      metaTitle: "Jaipur Travel Guide 2024: Budget Trip, Forts & Complete Itinerary",
-      metaDescription: "Complete Jaipur travel guide with budget breakdown, Amber Fort tips, best food, and a 3-day itinerary. Plan your Pink City trip for â‚¹1,500â€“â‚¹2,500/day.",
-      keywords: ["jaipur travel guide", "jaipur budget trip", "amber fort jaipur", "jaipur itinerary", "pink city jaipur", "jaipur monuments"],
-      ogImage: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop"
-    },
-    featured: true,
-    published: true
-  },
-
-  {
-    bestSeasons: ["Winter", "Autumn", "Spring"],
-    attractions: ["Amber Fort", "City Palace", "Hawa Mahal", "Jantar Mantar", "Nahargarh Fort", "Jaigarh Fort", "Albert Hall Museum", "Johari Bazaar"],
-    travelTips: ["Buy composite ticket for monuments", "Bargain hard in bazaars", "Start sightseeing at 8 AM", "Use Rapido/Ola autos"],
-    howToReach: {
-      byAir: "Jaipur International Airport â€” flights from Delhi from â‚¹1,500, Mumbai from â‚¹2,000",
-      byTrain: "Jaipur Junction â€” Shatabdi from Delhi (4.5 hrs, â‚¹700â€“â‚¹1,200), sleeper trains â‚¹200â€“â‚¹400",
-      byRoad: "RSRTC Volvo buses from Delhi (â‚¹400â€“â‚¹600, 5 hrs). 280 km from Delhi via NH48"
-    },
-    relatedBlogs: ["rajasthan-heritage-budget-tour"],
-    seo: {
-      metaTitle: "Jaipur Travel Guide 2024: Budget Trip, Forts & Complete Itinerary",
-      metaDescription: "Complete Jaipur travel guide with budget breakdown, Amber Fort tips, best food, and a 3-day itinerary. Plan your Pink City trip for â‚¹1,500â€“â‚¹2,500/day.",
-      keywords: ["jaipur travel guide", "jaipur budget trip", "amber fort jaipur", "jaipur itinerary", "pink city jaipur", "jaipur monuments"],
-      ogImage: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop"
-    },
-    featured: true,
-    published: true
-  },
-
   {
     slug: "manali",
     name: "Manali",
