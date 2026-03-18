@@ -1,220 +1,356 @@
-// Destination data access layer
+﻿// Destination data â€” AEO + Featured Snippet optimized for BudgetYatra
 
 const destinations = [
   {
     slug: "goa",
     name: "Goa",
-    description: "India's beach paradise with vibrant nightlife and Portuguese heritage",
-    longDescription: "Goa is India's smallest state but one of its most popular tourist destinations.",
+    description: "India's beach paradise with vibrant nightlife, Portuguese heritage, and 100 km of stunning coastline",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Goa Budget Travel</h2><p class="text-blue-900">A budget trip to Goa costs <strong>â‚¹1,500â€“â‚¹3,000 per person per day</strong>, covering a hostel dorm (â‚¹400â€“â‚¹700), local meals (â‚¹150â€“â‚¹300), scooter rental (â‚¹300â€“â‚¹400/day), and beach activities. A 5-day Goa trip can be done comfortably for <strong>â‚¹8,000â€“â‚¹15,000 total</strong>. Best time to visit is November to February.</p></div><h2 id="introduction">Why Goa is India's Best Budget Beach Destination</h2><p>Goa is the crown jewel of Indian beach travel â€” and you don't need a fat wallet to enjoy it. With 100 km of coastline, Portuguese-era architecture, vibrant nightlife, and some of the freshest seafood in the country, Goa delivers extraordinary value for budget travellers.</p><h2 id="budget-breakdown">Budget Breakdown: How Much Does Goa Cost?</h2><h3>Budget Traveller (â‚¹1,500â€“â‚¹2,500/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹400â€“â‚¹700 (hostel dorm or basic guesthouse)</li><li><strong>Food:</strong> â‚¹300â€“â‚¹500 (local shacks, thali joints)</li><li><strong>Transport:</strong> â‚¹300â€“â‚¹400 (rented scooter)</li><li><strong>Activities:</strong> â‚¹200â€“â‚¹500 (beach, free forts)</li></ul><h3>Mid-Range Traveller (â‚¹3,000â€“â‚¹6,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹1,500â€“â‚¹3,000 (AC guesthouse or budget hotel)</li><li><strong>Food:</strong> â‚¹600â€“â‚¹1,200 (beach shacks + restaurant)</li><li><strong>Transport:</strong> â‚¹400â€“â‚¹600 (scooter or occasional cab)</li></ul><h2 id="transport">Getting to Goa and Getting Around</h2><ul><li><strong>By Train:</strong> From Mumbai (8â€“10 hrs, â‚¹300â€“â‚¹800 sleeper), Delhi (24â€“28 hrs, â‚¹600â€“â‚¹1,500). Madgaon and Thivim are main stations.</li><li><strong>By Bus:</strong> Overnight Volvo from Mumbai (â‚¹800â€“â‚¹1,500), Pune (â‚¹600â€“â‚¹1,000), Bangalore (â‚¹900â€“â‚¹1,400).</li><li><strong>By Flight:</strong> Dabolim Airport (GOI) or Mopa Airport. Flights from Mumbai from â‚¹1,500, Delhi from â‚¹2,500.</li><li><strong>Scooter Rental:</strong> â‚¹300â€“â‚¹400/day â€” the best way to explore Goa.</li><li><strong>Local Buses (KTC):</strong> â‚¹10â€“â‚¹30 per trip â€” cheap but slow.</li></ul><h2 id="hotels">Where to Stay in Goa on a Budget</h2><ul><li><strong>Anjuna and Vagator (North Goa):</strong> Best for backpackers. Zostel Goa dorm â‚¹500â€“â‚¹700. Guesthouses from â‚¹800â€“â‚¹1,500.</li><li><strong>Arambol (North Goa):</strong> Hippie vibe, cheapest area. Rooms from â‚¹600â€“â‚¹1,200.</li><li><strong>Palolem (South Goa):</strong> Beautiful crescent beach. Bamboo huts from â‚¹800â€“â‚¹2,000.</li><li><strong>Agonda (South Goa):</strong> Ultra-peaceful. Guesthouses from â‚¹700â€“â‚¹1,500.</li></ul><h2 id="food">Where to Eat in Goa: Budget Food Guide</h2><ul><li><strong>Fish Thali:</strong> â‚¹120â€“â‚¹200 â€” rice, curry, fried fish, papad. Best value meal in Goa.</li><li><strong>Prawn BalchÃ£o:</strong> â‚¹180â€“â‚¹350 â€” spicy pickled prawn curry.</li><li><strong>Pork Vindaloo:</strong> â‚¹200â€“â‚¹400 â€” fiery, tangy, unmissable.</li><li><strong>Bebinca:</strong> â‚¹60â€“â‚¹100 â€” traditional Goan layered dessert.</li><li><strong>Ritz Classic, Panaji:</strong> Fish thali â‚¹150, local favourite.</li><li><strong>Brittos, Baga:</strong> Beach shack meals â‚¹250â€“â‚¹500.</li></ul><h2 id="itinerary">5-Day Goa Budget Itinerary</h2><h3>Day 1: Arrive + North Goa Beaches</h3><p>Check into hostel in Anjuna. Rent a scooter (â‚¹350). Visit Vagator Beach and Chapora Fort (free) for sunset. Dinner: fish thali â‚¹150.</p><h3>Day 2: Beach Hopping â€” Anjuna to Arambol</h3><p>Morning at Anjuna flea market (Wednesday). Ride north to Morjim and Arambol. Watch the sunset drum circle (free). Total: â‚¹600â€“â‚¹800.</p><h3>Day 3: Old Goa + Panaji Heritage Walk</h3><p>Basilica of Bom Jesus and Se Cathedral (free entry). Fontainhas Latin Quarter walk. Lunch at Ritz Classic (â‚¹150). Total: â‚¹400â€“â‚¹600.</p><h3>Day 4: South Goa â€” Palolem and Agonda</h3><p>Ride south to Palolem Beach. Kayak rental â‚¹300/hr. Sunset at Agonda. Overnight in Palolem hut (â‚¹1,000â€“â‚¹1,500).</p><h3>Day 5: Water Sports + Departure</h3><p>Budget water sports at Baga: parasailing â‚¹500, banana boat â‚¹300. Last seafood meal. Head to airport/station.</p><h2 id="tips">Top Money-Saving Tips for Goa</h2><ul><li>Travel in shoulder season (Oct or Mar) â€” prices drop 30â€“50%.</li><li>Rent a scooter, not a cab â€” save â‚¹500â€“â‚¹1,000/day.</li><li>Eat at local Goan thali joints â€” full meals under â‚¹150.</li><li>Book trains 60 days ahead â€” sleeper from Mumbai â‚¹300 vs â‚¹3,000 for flights.</li><li>Stay in Arambol or Agonda â€” 40% cheaper than Baga or Calangute.</li><li>Buy alcohol from government liquor shops â€” beer â‚¹60 vs â‚¹150 at shacks.</li></ul><h2 id="faqs">Frequently Asked Questions About Goa</h2><h3>How much does a 5-day Goa trip cost for one person?</h3><p>A 5-day budget Goa trip costs approximately <strong>â‚¹8,000â€“â‚¹15,000</strong> per person, including accommodation (â‚¹2,500â€“â‚¹4,000), food (â‚¹2,000â€“â‚¹3,500), transport (â‚¹2,000â€“â‚¹3,000), and activities (â‚¹1,500â€“â‚¹3,000).</p><h3>What is the cheapest time to visit Goa?</h3><p>Octoberâ€“November (shoulder season) and Marchâ€“May (off-season) offer the cheapest rates, with hotel prices 40â€“60% lower than peak Decemberâ€“January.</p><h3>Is Goa safe for solo female travellers?</h3><p>Yes, Goa is generally safe, especially in well-touristed areas. South Goa beaches like Palolem and Agonda are particularly calm and safe.</p><h3>Can I visit Goa without a scooter?</h3><p>Yes, using KTC buses (â‚¹10â€“â‚¹30) and autos, but a scooter at â‚¹300â€“â‚¹400/day is the most cost-effective and flexible option.</p><h3>What are the best free things to do in Goa?</h3><p>All beaches, Chapora Fort, Aguada Fort, Basilica of Bom Jesus, Fontainhas heritage walk, and the Arambol sunset drum circle are all free.</p><h3>Which is better for budget travel â€” North or South Goa?</h3><p>North Goa has more hostels and budget food. South Goa is quieter, cleaner, and slightly cheaper for accommodation.</p><h3>Do I need to book accommodation in advance?</h3><p>During peak season (Dec 20â€“Jan 10), book 3â€“4 weeks ahead. In shoulder season, 1â€“2 weeks is sufficient.</p>`,
     state: "Goa",
     region: "West",
     category: "Beach",
     images: [
-      { url: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&h=800&fit=crop", alt: "Goa beach", caption: "Beautiful beach" }
+      { url: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&h=800&fit=crop", alt: "Goa beach with palm trees and golden sand", caption: "Goa's stunning coastline" }
     ],
-    budgetRange: { min: 2000, max: 3000 },
+    budgetRange: { min: 1500, max: 3000 },
     budgetBreakdown: {
-      accommodation: { min: 500, max: 1000 },
-      food: { min: 300, max: 500 },
+      accommodation: { min: 400, max: 1000 },
+      food: { min: 150, max: 500 },
       transport: { min: 300, max: 500 },
-      activities: { min: 500, max: 1000 }
+      activities: { min: 200, max: 500 }
     },
-    bestSeasons: ["Winter", "Monsoon"],
-    attractions: ["Baga Beach", "Calangute Beach", "Fort Aguada"],
-    travelTips: ["Rent a scooter", "Visit during off-season"],
+    bestSeasons: ["Winter", "Autumn"],
+    attractions: ["Baga Beach", "Calangute Beach", "Fort Aguada", "Chapora Fort", "Basilica of Bom Jesus", "Palolem Beach", "Anjuna Flea Market"],
+    travelTips: ["Rent a scooter for freedom", "Visit during shoulder season Octâ€“Nov", "Eat at local thali joints", "Buy alcohol from government shops"],
     howToReach: {
-      byAir: "Goa International Airport is well connected",
-      byTrain: "Madgaon railway station",
-      byRoad: "Well-connected by NH66"
+      byAir: "Dabolim Airport (GOI) or new Mopa Airport â€” flights from Mumbai from â‚¹1,500, Delhi from â‚¹2,500",
+      byTrain: "Madgaon (Margao) or Thivim railway stations â€” trains from Mumbai â‚¹300â€“â‚¹800 sleeper",
+      byRoad: "Overnight Volvo buses from Mumbai (â‚¹800â€“â‚¹1,500), Pune (â‚¹600â€“â‚¹1,000), Bangalore (â‚¹900â€“â‚¹1,400)"
     },
     relatedBlogs: ["goa-budget-travel-guide"],
     seo: {
-      metaTitle: "Goa Travel Guide",
-      metaDescription: "Complete guide to visiting Goa",
-      keywords: ["goa travel"],
+      metaTitle: "Goa Travel Guide 2024: Budget Trip, Beaches & Complete Itinerary",
+      metaDescription: "Complete Goa travel guide with budget breakdown, best beaches, cheap hotels, local food, and a 5-day itinerary. Plan your Goa trip for â‚¹1,500â€“â‚¹3,000/day.",
+      keywords: ["goa travel guide", "goa budget trip", "goa beaches", "goa itinerary", "cheap goa hotels", "goa backpacking"],
       ogImage: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1200&h=800&fit=crop"
     },
     featured: true,
     published: true
   },
+
   {
     slug: "rishikesh",
     name: "Rishikesh",
-    description: "Yoga capital and adventure hub in the Himalayan foothills",
-    longDescription: "Rishikesh is known as the Yoga Capital of the World.",
+    description: "Yoga capital of the world and adventure hub nestled in the Himalayan foothills on the banks of the Ganges",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Rishikesh Budget Travel</h2><p class="text-blue-900">A budget trip to Rishikesh costs <strong>â‚¹1,200â€“â‚¹2,500 per person per day</strong>, covering a guesthouse or ashram stay (â‚¹400â€“â‚¹800), local meals (â‚¹200â€“â‚¹400), and activities. A 4-day Rishikesh trip costs approximately <strong>â‚¹6,000â€“â‚¹12,000 total</strong>. Best time to visit is <strong>September to November</strong> and <strong>February to May</strong> for ideal weather and river conditions.</p></div><h2 id="introduction">Why Rishikesh is India's Ultimate Budget Adventure Destination</h2><p>Rishikesh sits at the confluence of the Ganges and Chandrabhaga rivers, cradled by the Shivalik range of the Himalayas. Known as the Yoga Capital of the World, it draws spiritual seekers, adventure junkies, and budget backpackers in equal measure. The town offers world-class white-water rafting, bungee jumping, yoga retreats, and meditation centres â€” all at prices that won't break the bank. The Beatles famously came here in 1968, and the town has never looked back.</p><h2 id="budget-breakdown">Budget Breakdown: Rishikesh Trip Cost</h2><h3>Budget Traveller (â‚¹1,200â€“â‚¹2,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹400â€“â‚¹800 (ashram, hostel dorm, or basic guesthouse)</li><li><strong>Food:</strong> â‚¹200â€“â‚¹400 (thali restaurants, cafes near Laxman Jhula)</li><li><strong>Transport:</strong> â‚¹100â€“â‚¹300 (local autos, walking)</li><li><strong>Activities:</strong> â‚¹500â€“â‚¹1,500 (rafting, yoga class)</li></ul><h3>Mid-Range Traveller (â‚¹3,000â€“â‚¹6,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹1,500â€“â‚¹3,000 (riverside hotel or boutique guesthouse)</li><li><strong>Food:</strong> â‚¹600â€“â‚¹1,000 (rooftop cafes, organic restaurants)</li><li><strong>Activities:</strong> â‚¹2,000â€“â‚¹4,000 (multi-activity packages)</li></ul><h2 id="transport">Getting to Rishikesh and Getting Around</h2><ul><li><strong>By Train:</strong> Haridwar Junction (25 km away) is the nearest major station. Trains from Delhi (4â€“5 hrs, â‚¹200â€“â‚¹600). Then bus or shared auto to Rishikesh (â‚¹50â€“â‚¹100).</li><li><strong>By Bus:</strong> Direct buses from Delhi ISBT Kashmere Gate (â‚¹300â€“â‚¹500, 6â€“7 hrs). Uttarakhand Roadways and private operators.</li><li><strong>By Flight:</strong> Jolly Grant Airport, Dehradun (35 km). Flights from Delhi from â‚¹2,000. Taxi to Rishikesh â‚¹600â€“â‚¹800.</li><li><strong>Getting Around:</strong> Most of Rishikesh is walkable. Autos â‚¹50â€“â‚¹150 for short trips. Shared autos between Ram Jhula and Laxman Jhula â‚¹20â€“â‚¹30.</li></ul><h2 id="hotels">Where to Stay in Rishikesh on a Budget</h2><ul><li><strong>Ashram Stays:</strong> Parmarth Niketan, Sivananda Ashram â€” â‚¹300â€“â‚¹600/night including meals. Spiritual, peaceful, and incredibly cheap.</li><li><strong>Laxman Jhula Area:</strong> Most backpacker guesthouses. Zostel Rishikesh dorm â‚¹400â€“â‚¹600. Private rooms â‚¹700â€“â‚¹1,500.</li><li><strong>Ram Jhula Area:</strong> Quieter than Laxman Jhula. Guesthouses â‚¹600â€“â‚¹1,200. Good cafes nearby.</li><li><strong>Tapovan Area:</strong> Upscale, riverside camps and hotels. Budget options â‚¹1,000â€“â‚¹2,000.</li></ul><h2 id="food">Where to Eat in Rishikesh: Budget Food Guide</h2><ul><li><strong>Thali at local dhabas:</strong> â‚¹80â€“â‚¹150 â€” full vegetarian meal. Rishikesh is entirely vegetarian (no meat or alcohol).</li><li><strong>Chotiwala Restaurant:</strong> Iconic Rishikesh institution. Thali â‚¹120â€“â‚¹200.</li><li><strong>Little Buddha Cafe:</strong> Rooftop views, Israeli and Indian food. Meals â‚¹200â€“â‚¹400.</li><li><strong>Madras Cafe:</strong> South Indian breakfast â€” idli, dosa â‚¹60â€“â‚¹120.</li><li><strong>German Bakery:</strong> Healthy bowls, smoothies, baked goods â‚¹150â€“â‚¹300.</li></ul><h2 id="itinerary">4-Day Rishikesh Budget Itinerary</h2><h3>Day 1: Arrive + Explore Laxman Jhula</h3><p>Check into guesthouse near Laxman Jhula. Walk across the iconic suspension bridge. Visit Laxman Jhula Temple. Evening Ganga Aarti at Triveni Ghat (free, 6 PM). Dinner at Chotiwala (â‚¹150).</p><h3>Day 2: White-Water Rafting</h3><p>Book rafting from Shivpuri to Rishikesh (16 km, â‚¹600â€“â‚¹800/person). Grade 3â€“4 rapids. Afternoon: Beatles Ashram (Chaurasi Kutia) â€” â‚¹150 entry. Sunset yoga class â‚¹200â€“â‚¹400.</p><h3>Day 3: Yoga + Meditation + Waterfalls</h3><p>Morning yoga at a local ashram (â‚¹200â€“â‚¹400 for drop-in class). Afternoon: Neer Garh Waterfall trek (2 km, free). Evening: Ram Jhula walk and cafe hopping. Total: â‚¹800â€“â‚¹1,200.</p><h3>Day 4: Bungee or Trekking + Departure</h3><p>Bungee jumping at Jumpin Heights (â‚¹3,550) or budget trek to Kunjapuri Temple (free, 5 km). Head to Haridwar for train/bus back.</p><h2 id="tips">Top Money-Saving Tips for Rishikesh</h2><ul><li>Stay at an ashram â€” cheapest accommodation with meals included.</li><li>Book rafting directly with operators at Shivpuri, not through hotels (save â‚¹200â€“â‚¹400).</li><li>Rishikesh is fully vegetarian â€” no meat or alcohol, which keeps food costs low.</li><li>Walk between Ram Jhula and Laxman Jhula (20 min) instead of taking autos.</li><li>Attend free Ganga Aarti at Triveni Ghat every evening at 6 PM.</li><li>Visit in Septemberâ€“October for best rafting conditions and fewer crowds than peak winter.</li></ul><h2 id="faqs">Frequently Asked Questions About Rishikesh</h2><h3>How much does a 4-day Rishikesh trip cost?</h3><p>A 4-day budget Rishikesh trip costs approximately <strong>â‚¹6,000â€“â‚¹12,000</strong> per person, including accommodation (â‚¹2,000â€“â‚¹3,500), food (â‚¹1,500â€“â‚¹2,500), transport (â‚¹1,000â€“â‚¹2,000), and activities like rafting and yoga (â‚¹1,500â€“â‚¹3,000).</p><h3>Is white-water rafting safe in Rishikesh?</h3><p>Yes, rafting in Rishikesh is generally safe with licensed operators. The Shivpuri to Rishikesh stretch (16 km) is ideal for beginners. Always check that operators provide life jackets and helmets and have certified guides.</p><h3>Can beginners do yoga in Rishikesh?</h3><p>Absolutely. Rishikesh has hundreds of yoga schools catering to all levels. Drop-in classes cost â‚¹200â€“â‚¹500. Popular schools include Parmarth Niketan, Sivananda Ashram, and Rishikesh Yog Peeth.</p><h3>Is alcohol available in Rishikesh?</h3><p>No. Rishikesh is a dry city â€” alcohol is completely banned. The town is also entirely vegetarian. This is part of its spiritual character.</p><h3>What is the best time to visit Rishikesh?</h3><p>September to November (post-monsoon, best for rafting) and February to May (pleasant weather, good for yoga and trekking). Avoid Julyâ€“August (heavy monsoon, rafting suspended).</p><h3>How far is Rishikesh from Delhi?</h3><p>Rishikesh is approximately 240 km from Delhi â€” about 5â€“6 hours by bus or 4â€“5 hours by train to Haridwar then 30 minutes onward. It's a very popular weekend getaway from Delhi.</p><h3>What adventure activities are available in Rishikesh?</h3><p>White-water rafting (â‚¹600â€“â‚¹1,500), bungee jumping (â‚¹3,550), giant swing (â‚¹2,550), zip-lining (â‚¹1,500), camping (â‚¹800â€“â‚¹1,500/night), trekking to Kunjapuri and Neer Garh, and kayaking.</p>`,
     state: "Uttarakhand",
     region: "North",
     category: "Adventure",
     images: [
-      { url: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&h=800&fit=crop", alt: "Rishikesh", caption: "Adventure hub" }
+      { url: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&h=800&fit=crop", alt: "Rishikesh Laxman Jhula bridge over Ganges", caption: "The iconic Laxman Jhula suspension bridge" }
     ],
-    budgetRange: { min: 1500, max: 4000 },
+    budgetRange: { min: 1200, max: 2500 },
     budgetBreakdown: {
-      accommodation: { min: 400, max: 1200 },
-      food: { min: 300, max: 600 },
-      transport: { min: 200, max: 400 },
-      activities: { min: 600, max: 1800 }
+      accommodation: { min: 400, max: 800 },
+      food: { min: 200, max: 400 },
+      transport: { min: 100, max: 300 },
+      activities: { min: 500, max: 1500 }
     },
-    bestSeasons: ["Spring", "Winter"],
-    attractions: ["Laxman Jhula", "Ram Jhula", "Beatles Ashram"],
-    travelTips: ["Book rafting in advance", "Stay near Laxman Jhula"],
+    bestSeasons: ["Spring", "Autumn", "Winter"],
+    attractions: ["Laxman Jhula", "Ram Jhula", "Beatles Ashram", "Triveni Ghat", "Neer Garh Waterfall", "Kunjapuri Temple", "Parmarth Niketan"],
+    travelTips: ["Stay at an ashram for cheapest accommodation", "Book rafting directly at Shivpuri", "Attend free Ganga Aarti at 6 PM", "Rishikesh is fully vegetarian â€” no alcohol"],
     howToReach: {
-      byAir: "Jolly Grant Airport in Dehradun",
-      byTrain: "Rishikesh Railway Station",
-      byRoad: "Well-connected from Delhi"
+      byAir: "Jolly Grant Airport, Dehradun (35 km) â€” flights from Delhi from â‚¹2,000. Taxi to Rishikesh â‚¹600â€“â‚¹800",
+      byTrain: "Haridwar Junction (25 km) â€” trains from Delhi â‚¹200â€“â‚¹600. Then shared auto to Rishikesh â‚¹50â€“â‚¹100",
+      byRoad: "Direct buses from Delhi ISBT Kashmere Gate (â‚¹300â€“â‚¹500, 6â€“7 hrs)"
     },
-    relatedBlogs: ["rishikesh-adventure-guide"],
+    relatedBlogs: ["rishikesh-yoga-budget-guide"],
     seo: {
-      metaTitle: "Rishikesh Travel Guide",
-      metaDescription: "Explore Rishikesh",
-      keywords: ["rishikesh travel"],
+      metaTitle: "Rishikesh Travel Guide 2024: Budget Trip, Rafting & Yoga Complete Guide",
+      metaDescription: "Complete Rishikesh travel guide with budget breakdown, rafting costs, yoga ashrams, and a 4-day itinerary. Plan your Rishikesh trip for â‚¹1,200â€“â‚¹2,500/day.",
+      keywords: ["rishikesh travel guide", "rishikesh budget trip", "rishikesh rafting cost", "rishikesh yoga", "rishikesh itinerary"],
       ogImage: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&h=800&fit=crop"
     },
     featured: true,
     published: true
   },
+
   {
     slug: "jaipur",
     name: "Jaipur",
-    description: "The Pink City with magnificent forts and palaces",
-    longDescription: "Jaipur is known as the Pink City.",
+    description: "The Pink City â€” magnificent forts, royal palaces, vibrant bazaars, and rich Rajput heritage",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Jaipur Budget Travel</h2><p class="text-blue-900">A budget trip to Jaipur costs <strong>â‚¹1,500â€“â‚¹2,500 per person per day</strong>, covering a heritage guesthouse (â‚¹500â€“â‚¹1,000), local meals (â‚¹200â€“â‚¹400), auto-rickshaws (â‚¹200â€“â‚¹400), and monument entries. A 3-day Jaipur trip costs approximately <strong>â‚¹5,000â€“â‚¹10,000 total</strong>. Best time to visit is <strong>October to March</strong> for pleasant weather.</p></div><h2 id="introduction">Why Jaipur is India's Most Spectacular Heritage City</h2><p>Jaipur, the capital of Rajasthan, earns its nickname "The Pink City" from the terracotta-pink buildings that line its old city streets â€” painted that colour in 1876 to welcome the Prince of Wales. Today, Jaipur is one of India's most visited cities, and for good reason: it packs an extraordinary density of forts, palaces, temples, and bazaars into a compact, navigable area. It's also the anchor of India's famous Golden Triangle (Delhiâ€“Agraâ€“Jaipur), making it a natural stop on any North India itinerary.</p><h2 id="budget-breakdown">Budget Breakdown: Jaipur Trip Cost</h2><h3>Budget Traveller (â‚¹1,500â€“â‚¹2,500/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹500â€“â‚¹1,000 (heritage guesthouse or hostel)</li><li><strong>Food:</strong> â‚¹200â€“â‚¹400 (thali restaurants, street food)</li><li><strong>Transport:</strong> â‚¹200â€“â‚¹400 (auto-rickshaws, local buses)</li><li><strong>Monument entries:</strong> â‚¹200â€“â‚¹500/day (composite ticket available)</li></ul><h3>Mid-Range Traveller (â‚¹3,500â€“â‚¹7,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹2,000â€“â‚¹4,000 (boutique heritage hotel)</li><li><strong>Food:</strong> â‚¹600â€“â‚¹1,200 (rooftop restaurants with fort views)</li><li><strong>Transport:</strong> â‚¹800â€“â‚¹2,000 (private cab for day trips)</li></ul><h2 id="transport">Getting to Jaipur and Getting Around</h2><ul><li><strong>By Train (Best Option):</strong> Jaipur Junction is well-connected. From Delhi: Shatabdi Express (4.5 hrs, â‚¹700â€“â‚¹1,200), sleeper trains (â‚¹200â€“â‚¹400). From Mumbai: 18â€“20 hrs (â‚¹400â€“â‚¹1,000).</li><li><strong>By Bus:</strong> RSRTC Volvo buses from Delhi (â‚¹400â€“â‚¹600, 5 hrs). Frequent and comfortable.</li><li><strong>By Flight:</strong> Jaipur International Airport â€” flights from Delhi from â‚¹1,500, Mumbai from â‚¹2,000.</li><li><strong>Getting Around:</strong> Auto-rickshaws for short trips (â‚¹50â€“â‚¹200). Negotiate firmly. Cycle rickshaws in old city â‚¹30â€“â‚¹80. App-based autos (Rapido, Ola) are cheaper and metered.</li></ul><h2 id="hotels">Where to Stay in Jaipur on a Budget</h2><ul><li><strong>Old City / Pink City Area:</strong> Best location. Heritage guesthouses like Arya Niwas (â‚¹700â€“â‚¹1,200), Hotel Pearl Palace (â‚¹800â€“â‚¹1,500). Walking distance to Hawa Mahal and bazaars.</li><li><strong>Bani Park Area:</strong> Quieter, residential. Budget guesthouses â‚¹600â€“â‚¹1,000. Good for longer stays.</li><li><strong>Hostels:</strong> Zostel Jaipur (â‚¹400â€“â‚¹600 dorm), Moustache Hostel (â‚¹450â€“â‚¹700 dorm). Great for solo travellers.</li></ul><h2 id="food">Where to Eat in Jaipur: Budget Food Guide</h2><ul><li><strong>Dal Baati Churma:</strong> â‚¹100â€“â‚¹200 â€” Rajasthan's iconic dish. Baked wheat balls with lentil curry and sweet churma.</li><li><strong>Laal Maas:</strong> â‚¹200â€“â‚¹400 â€” fiery red mutton curry, a Rajasthani classic.</li><li><strong>Pyaaz Kachori:</strong> â‚¹20â€“â‚¹40 â€” flaky pastry stuffed with spiced onions. Best at Rawat Mishthan Bhandar.</li><li><strong>Ghewar:</strong> â‚¹50â€“â‚¹150 â€” disc-shaped sweet soaked in sugar syrup, a Jaipur speciality.</li><li><strong>LMB (Laxmi Mishthan Bhandar):</strong> Iconic Jaipur restaurant. Thali â‚¹200â€“â‚¹350.</li><li><strong>Chokhi Dhani:</strong> Rajasthani village experience. Buffet â‚¹700â€“â‚¹900 (worth it for the experience).</li></ul><h2 id="itinerary">3-Day Jaipur Budget Itinerary</h2><h3>Day 1: Amber Fort + City Palace</h3><p>Start early at Amber Fort (â‚¹100 Indian nationals, elephant ride â‚¹900 optional). Jaigarh Fort (â‚¹35, included with Amber ticket). Afternoon: City Palace (â‚¹200) and Jantar Mantar observatory (â‚¹50). Evening: Hawa Mahal exterior (free from street). Dinner: dal baati churma at LMB (â‚¹250).</p><h3>Day 2: Old City Bazaars + Nahargarh Fort</h3><p>Morning: Johari Bazaar for jewellery, Bapu Bazaar for textiles, Nehru Bazaar for juttis (Rajasthani shoes). Afternoon: Nahargarh Fort (â‚¹50) for panoramic city views. Sunset from fort walls. Evening: Chowki Dhani or local thali restaurant.</p><h3>Day 3: Day Trip to Abhaneri + Departure</h3><p>Optional day trip to Chand Baori stepwell at Abhaneri (95 km, â‚¹200 entry). Or visit Albert Hall Museum (â‚¹40) and Sisodia Rani Garden (â‚¹50). Head to station/airport.</p><h2 id="tips">Top Money-Saving Tips for Jaipur</h2><ul><li>Buy the composite ticket (â‚¹300) covering Amber Fort, Nahargarh, Jaigarh, Albert Hall, and more â€” saves â‚¹200+ vs individual tickets.</li><li>Bargain hard in bazaars â€” initial prices are 2â€“3x the fair price for tourists.</li><li>Start sightseeing at 8 AM to beat crowds and heat.</li><li>Use Rapido or Ola autos instead of negotiating with auto-rickshaw drivers.</li><li>Eat at Rawat Mishthan Bhandar for the best kachori breakfast under â‚¹50.</li><li>Visit in Novemberâ€“February for the best weather; avoid Aprilâ€“June (extreme heat).</li></ul><h2 id="faqs">Frequently Asked Questions About Jaipur</h2><h3>How much does a 3-day Jaipur trip cost?</h3><p>A 3-day budget Jaipur trip costs approximately <strong>â‚¹5,000â€“â‚¹10,000</strong> per person, including accommodation (â‚¹1,500â€“â‚¹3,000), food (â‚¹1,500â€“â‚¹2,500), transport (â‚¹1,000â€“â‚¹2,000), and monument entries (â‚¹500â€“â‚¹1,000).</p><h3>What is the composite ticket for Jaipur monuments?</h3><p>The Jaipur composite ticket costs â‚¹300 for Indian nationals and covers Amber Fort, Nahargarh Fort, Jaigarh Fort, Albert Hall Museum, Sisodia Rani Garden, and Vidyadhar Garden. Valid for 2 days â€” excellent value.</p><h3>Is Jaipur safe for solo female travellers?</h3><p>Jaipur is generally safe for solo female travellers, especially in tourist areas. Stick to well-lit areas at night, use app-based cabs, and dress modestly when visiting temples and old city areas.</p><h3>What is the best time to visit Jaipur?</h3><p>October to March is ideal â€” temperatures range from 10â€“25Â°C. The Jaipur Literature Festival (January) and Holi (March) are great times to visit. Avoid Mayâ€“June when temperatures exceed 45Â°C.</p><h3>How far is Jaipur from Delhi?</h3><p>Jaipur is 280 km from Delhi â€” about 4.5 hours by Shatabdi Express train (â‚¹700â€“â‚¹1,200) or 5 hours by Volvo bus (â‚¹400â€“â‚¹600). It's the most popular weekend trip from Delhi.</p><h3>What are the must-buy items in Jaipur?</h3><p>Blue pottery (â‚¹200â€“â‚¹2,000), block-printed textiles (â‚¹300â€“â‚¹2,000), Kundan jewellery (â‚¹500â€“â‚¹5,000), Rajasthani juttis/shoes (â‚¹300â€“â‚¹800), and miniature paintings (â‚¹500â€“â‚¹5,000). Always bargain.</p><h3>Can I see Jaipur in one day?</h3><p>You can cover the highlights in one long day â€” Amber Fort, Hawa Mahal, City Palace, and Jantar Mantar â€” but 2â€“3 days allows a more relaxed experience including bazaars and day trips.</p>`,
     state: "Rajasthan",
     region: "North",
     category: "Heritage",
     images: [
-      { url: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop", alt: "Jaipur", caption: "Pink City" }
+      { url: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop", alt: "Jaipur Hawa Mahal Palace of Winds", caption: "The iconic Hawa Mahal â€” Palace of Winds" }
     ],
     budgetRange: { min: 1500, max: 2500 },
     budgetBreakdown: {
       accommodation: { min: 500, max: 1000 },
-      food: { min: 300, max: 500 },
+      food: { min: 200, max: 400 },
       transport: { min: 200, max: 400 },
-      activities: { min: 500, max: 600 }
+      activities: { min: 200, max: 500 }
     },
-    bestSeasons: ["Winter", "Spring"],
-    attractions: ["Amber Fort", "City Palace", "Hawa Mahal"],
-    travelTips: ["Start early", "Bargain at markets"],
+    bestSeasons: ["Winter", "Autumn", "Spring"],
+    attractions: ["Amber Fort", "City Palace", "Hawa Mahal", "Jantar Mantar", "Nahargarh Fort", "Jaigarh Fort", "Albert Hall Museum", "Johari Bazaar"],
+    travelTips: ["Buy composite ticket for monuments", "Bargain hard in bazaars", "Start sightseeing at 8 AM", "Use Rapido/Ola autos"],
     howToReach: {
-      byAir: "Jaipur International Airport",
-      byTrain: "Jaipur Junction",
-      byRoad: "280 km from Delhi"
+      byAir: "Jaipur International Airport â€” flights from Delhi from â‚¹1,500, Mumbai from â‚¹2,000",
+      byTrain: "Jaipur Junction â€” Shatabdi from Delhi (4.5 hrs, â‚¹700â€“â‚¹1,200), sleeper trains â‚¹200â€“â‚¹400",
+      byRoad: "RSRTC Volvo buses from Delhi (â‚¹400â€“â‚¹600, 5 hrs). 280 km from Delhi via NH48"
     },
-    relatedBlogs: ["jaipur-heritage-walk"],
+    relatedBlogs: ["rajasthan-heritage-budget-tour"],
     seo: {
-      metaTitle: "Jaipur Travel Guide",
-      metaDescription: "Explore the Pink City",
-      keywords: ["jaipur travel"],
+      metaTitle: "Jaipur Travel Guide 2024: Budget Trip, Forts & Complete Itinerary",
+      metaDescription: "Complete Jaipur travel guide with budget breakdown, Amber Fort tips, best food, and a 3-day itinerary. Plan your Pink City trip for â‚¹1,500â€“â‚¹2,500/day.",
+      keywords: ["jaipur travel guide", "jaipur budget trip", "amber fort jaipur", "jaipur itinerary", "pink city jaipur", "jaipur monuments"],
       ogImage: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop"
     },
     featured: true,
     published: true
   },
+
+  {
+    bestSeasons: ["Winter", "Autumn", "Spring"],
+    attractions: ["Amber Fort", "City Palace", "Hawa Mahal", "Jantar Mantar", "Nahargarh Fort", "Jaigarh Fort", "Albert Hall Museum", "Johari Bazaar"],
+    travelTips: ["Buy composite ticket for monuments", "Bargain hard in bazaars", "Start sightseeing at 8 AM", "Use Rapido/Ola autos"],
+    howToReach: {
+      byAir: "Jaipur International Airport â€” flights from Delhi from â‚¹1,500, Mumbai from â‚¹2,000",
+      byTrain: "Jaipur Junction â€” Shatabdi from Delhi (4.5 hrs, â‚¹700â€“â‚¹1,200), sleeper trains â‚¹200â€“â‚¹400",
+      byRoad: "RSRTC Volvo buses from Delhi (â‚¹400â€“â‚¹600, 5 hrs). 280 km from Delhi via NH48"
+    },
+    relatedBlogs: ["rajasthan-heritage-budget-tour"],
+    seo: {
+      metaTitle: "Jaipur Travel Guide 2024: Budget Trip, Forts & Complete Itinerary",
+      metaDescription: "Complete Jaipur travel guide with budget breakdown, Amber Fort tips, best food, and a 3-day itinerary. Plan your Pink City trip for â‚¹1,500â€“â‚¹2,500/day.",
+      keywords: ["jaipur travel guide", "jaipur budget trip", "amber fort jaipur", "jaipur itinerary", "pink city jaipur", "jaipur monuments"],
+      ogImage: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1200&h=800&fit=crop"
+    },
+    featured: true,
+    published: true
+  },
+
   {
     slug: "manali",
     name: "Manali",
-    description: "Himalayan hill station perfect for adventure",
-    longDescription: "Manali is a high-altitude Himalayan resort town.",
+    description: "Himalayan hill station perfect for adventure sports, snow, and scenic mountain landscapes in Himachal Pradesh",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Manali Budget Travel</h2><p class="text-blue-900">A budget trip to Manali costs <strong>â‚¹2,000â€“â‚¹4,000 per person per day</strong>, covering a guesthouse (â‚¹600â€“â‚¹1,200), local meals (â‚¹300â€“â‚¹500), and activities. A 5-day Manali trip costs approximately <strong>â‚¹12,000â€“â‚¹22,000 total</strong>. Best time to visit is <strong>Octoberâ€“November</strong> for snow and <strong>Marchâ€“June</strong> for pleasant weather and adventure sports.</p></div><h2 id="introduction">Why Manali is India's Favourite Mountain Escape</h2><p>Manali sits at 2,050 metres in the Kullu Valley of Himachal Pradesh, flanked by the Beas River and surrounded by snow-capped Himalayan peaks. It's India's most popular hill station for good reason â€” it offers something for everyone: adventure sports like skiing, paragliding, and trekking; spiritual sites like Hadimba Temple; the gateway to Spiti Valley and Leh; and a vibrant backpacker scene in Old Manali. Whether you're chasing snow in winter or wildflowers in summer, Manali delivers.</p><h2 id="budget-breakdown">Budget Breakdown: Manali Trip Cost</h2><h3>Budget Traveller (â‚¹2,000â€“â‚¹3,500/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹600â€“â‚¹1,200 (guesthouse in Old Manali or Vashisht)</li><li><strong>Food:</strong> â‚¹300â€“â‚¹500 (local dhabas, Tibetan restaurants)</li><li><strong>Transport:</strong> â‚¹300â€“â‚¹600 (shared taxis, local buses)</li><li><strong>Activities:</strong> â‚¹500â€“â‚¹1,500 (paragliding, snow activities)</li></ul><h3>Mid-Range Traveller (â‚¹4,000â€“â‚¹8,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹2,000â€“â‚¹4,000 (hotel with mountain views)</li><li><strong>Food:</strong> â‚¹700â€“â‚¹1,200 (restaurants and cafes)</li><li><strong>Transport:</strong> â‚¹1,500â€“â‚¹3,000 (private taxi for Rohtang/Solang)</li></ul><h2 id="transport">Getting to Manali and Getting Around</h2><ul><li><strong>By Bus (Most Popular):</strong> Overnight Volvo buses from Delhi ISBT (â‚¹800â€“â‚¹1,500, 12â€“14 hrs). HRTC and private operators. Book on RedBus or AbhiBus.</li><li><strong>By Train + Bus:</strong> Train to Chandigarh (â‚¹200â€“â‚¹500 from Delhi), then bus to Manali (â‚¹400â€“â‚¹600, 8â€“9 hrs). Or train to Ambala/Kalka then bus.</li><li><strong>By Flight:</strong> Bhuntar Airport (Kullu, 50 km from Manali). Flights from Delhi from â‚¹2,500. Taxi to Manali â‚¹1,000â€“â‚¹1,500.</li><li><strong>Getting Around:</strong> Local buses within Manali â‚¹20â€“â‚¹50. Shared taxis to Solang Valley â‚¹200â€“â‚¹300/person. Private taxis to Rohtang Pass â‚¹2,500â€“â‚¹3,500 (shared among 4â€“5 people).</li></ul><h2 id="hotels">Where to Stay in Manali on a Budget</h2><ul><li><strong>Old Manali:</strong> Best for backpackers. Guesthouses like Dragon Guest House (â‚¹600â€“â‚¹1,000), Drifters Inn (â‚¹500â€“â‚¹900). Cafes and restaurants at doorstep.</li><li><strong>Vashisht Village:</strong> 3 km from Mall Road. Hot spring baths nearby. Guesthouses â‚¹500â€“â‚¹1,000. Quieter than Old Manali.</li><li><strong>Mall Road Area:</strong> Central location. Budget hotels â‚¹800â€“â‚¹1,500. Convenient but noisier.</li><li><strong>Hostels:</strong> Zostel Manali (â‚¹400â€“â‚¹600 dorm), The Hosteller (â‚¹450â€“â‚¹700 dorm).</li></ul><h2 id="food">Where to Eat in Manali: Budget Food Guide</h2><ul><li><strong>Tibetan Thukpa:</strong> â‚¹80â€“â‚¹150 â€” hearty noodle soup, perfect for cold Manali evenings.</li><li><strong>Momos:</strong> â‚¹60â€“â‚¹120 â€” steamed or fried dumplings, everywhere in Old Manali.</li><li><strong>Siddu:</strong> â‚¹60â€“â‚¹100 â€” local Himachali steamed bread stuffed with poppy seeds or walnuts.</li><li><strong>Trout Fish:</strong> â‚¹300â€“â‚¹600 â€” fresh Himalayan trout, a Manali speciality.</li><li><strong>Johnson's Cafe:</strong> Iconic Manali restaurant. Trout and continental meals â‚¹300â€“â‚¹600.</li><li><strong>Cafe 1947:</strong> Old Manali. Israeli and Indian food. Meals â‚¹200â€“â‚¹400.</li><li><strong>Drifters Cafe:</strong> Budget backpacker favourite. Meals â‚¹150â€“â‚¹300.</li></ul><h2 id="itinerary">5-Day Manali Budget Itinerary</h2><h3>Day 1: Arrive + Old Manali Exploration</h3><p>Check into Old Manali guesthouse. Walk through Old Manali village. Visit Hadimba Devi Temple (â‚¹30 entry). Evening at Mall Road. Dinner: momos and thukpa (â‚¹150).</p><h3>Day 2: Solang Valley + Snow Activities</h3><p>Shared taxi to Solang Valley (â‚¹250/person). Skiing (â‚¹500â€“â‚¹1,000 with equipment), snow scooter (â‚¹500), zorbing (â‚¹300). Paragliding from Solang â‚¹1,500â€“â‚¹2,500. Return by evening.</p><h3>Day 3: Rohtang Pass (Summer) or Atal Tunnel (Year-round)</h3><p>Private taxi to Rohtang Pass (â‚¹2,500â€“â‚¹3,500 for 4â€“5 people). Permit required (â‚¹550, book online). Or drive through Atal Tunnel to Sissu in Lahaul Valley (free, stunning). Total: â‚¹800â€“â‚¹1,200/person.</p><h3>Day 4: Vashisht + Naggar Castle</h3><p>Morning: Vashisht hot spring baths (â‚¹20). Vashisht Temple. Afternoon: Naggar Castle (â‚¹50 entry, 20 km from Manali). Nicholas Roerich Art Gallery (â‚¹20). Return by evening.</p><h3>Day 5: Kullu Valley + Departure</h3><p>Morning: Kullu Shawl factories (free to visit, buy direct). Bijli Mahadev Temple trek (optional, 3 km). Evening bus back to Delhi.</p><h2 id="tips">Top Money-Saving Tips for Manali</h2><ul><li>Take overnight Volvo bus from Delhi â€” saves one night's accommodation cost.</li><li>Stay in Old Manali or Vashisht â€” 30â€“40% cheaper than Mall Road hotels.</li><li>Share private taxis to Rohtang and Solang with other travellers â€” split 4â€“5 ways.</li><li>Book Rohtang Pass permit online (â‚¹550) â€” don't pay agents â‚¹800â€“â‚¹1,000.</li><li>Eat at Tibetan dhabas in Old Manali â€” full meals under â‚¹150.</li><li>Visit in Marchâ€“April for snow without peak-season prices (Juneâ€“July is most expensive).</li></ul><h2 id="faqs">Frequently Asked Questions About Manali</h2><h3>How much does a 5-day Manali trip cost?</h3><p>A 5-day budget Manali trip costs approximately <strong>â‚¹12,000â€“â‚¹22,000</strong> per person, including bus from Delhi (â‚¹800â€“â‚¹1,500), accommodation (â‚¹3,000â€“â‚¹6,000), food (â‚¹2,500â€“â‚¹4,000), local transport (â‚¹2,000â€“â‚¹4,000), and activities (â‚¹2,000â€“â‚¹5,000).</p><h3>When is the best time to visit Manali?</h3><p>For snow: December to February (but roads may be blocked). For adventure sports and pleasant weather: March to June. For Rohtang Pass: May to October (closed in winter). Avoid Julyâ€“August (heavy monsoon, landslides).</p><h3>Is Rohtang Pass open year-round?</h3><p>No. Rohtang Pass (3,978 m) is open approximately May to October, depending on snowfall. The Atal Tunnel (opened 2020) provides year-round access to Lahaul Valley, bypassing Rohtang.</p><h3>Do I need a permit for Rohtang Pass?</h3><p>Yes. Indian nationals need an online permit (â‚¹550) from the Himachal Pradesh government website. Only 1,200 vehicles are allowed per day. Book at least 2â€“3 days in advance during peak season.</p><h3>Is Manali safe in winter?</h3><p>Yes, Manali town is safe in winter. However, roads to Rohtang Pass and Spiti Valley are closed. Solang Valley is accessible for skiing. Carry warm clothing â€” temperatures drop to -10Â°C to -15Â°C at night.</p><h3>What adventure activities are available in Manali?</h3><p>Skiing (Solang Valley, â‚¹500â€“â‚¹1,000), paragliding (â‚¹1,500â€“â‚¹2,500), river rafting on Beas (â‚¹600â€“â‚¹1,000), trekking (Hampta Pass, Beas Kund), mountain biking, zorbing, and snow scooter rides.</p><h3>How far is Manali from Delhi?</h3><p>Manali is approximately 540 km from Delhi â€” about 12â€“14 hours by overnight Volvo bus (â‚¹800â€“â‚¹1,500) or 10â€“12 hours by car. There's no direct train to Manali.</p>`,
     state: "Himachal Pradesh",
     region: "North",
     category: "Mountains",
     images: [
-      { url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop", alt: "Manali", caption: "Snow mountains" }
+      { url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop", alt: "Manali snow-capped Himalayan peaks and valley", caption: "Manali's breathtaking Himalayan landscape" }
     ],
-    budgetRange: { min: 3000, max: 5000 },
+    budgetRange: { min: 2000, max: 4000 },
     budgetBreakdown: {
-      accommodation: { min: 1000, max: 1500 },
-      food: { min: 400, max: 600 },
-      transport: { min: 500, max: 1000 },
-      activities: { min: 1000, max: 2000 }
+      accommodation: { min: 600, max: 1200 },
+      food: { min: 300, max: 500 },
+      transport: { min: 300, max: 600 },
+      activities: { min: 500, max: 1500 }
     },
-    bestSeasons: ["Winter"],
-    attractions: ["Solang Valley", "Rohtang Pass", "Hadimba Temple"],
-    travelTips: ["Carry woolens", "Book permits in advance"],
+    bestSeasons: ["Winter", "Spring", "Summer"],
+    attractions: ["Solang Valley", "Rohtang Pass", "Hadimba Temple", "Old Manali", "Vashisht Hot Springs", "Naggar Castle", "Atal Tunnel"],
+    travelTips: ["Take overnight bus from Delhi to save accommodation cost", "Share taxis to Rohtang and Solang", "Book Rohtang permit online", "Stay in Old Manali for budget options"],
     howToReach: {
-      byAir: "Bhuntar Airport",
-      byTrain: "Chandigarh railway station",
-      byRoad: "540 km from Delhi"
+      byAir: "Bhuntar Airport (Kullu, 50 km) â€” flights from Delhi from â‚¹2,500. Taxi to Manali â‚¹1,000â€“â‚¹1,500",
+      byTrain: "Chandigarh (310 km) or Ambala â€” then bus to Manali (â‚¹400â€“â‚¹600, 8â€“9 hrs)",
+      byRoad: "Overnight Volvo buses from Delhi ISBT (â‚¹800â€“â‚¹1,500, 12â€“14 hrs). 540 km from Delhi via NH3"
     },
-    relatedBlogs: ["manali-winter-wonderland"],
+    relatedBlogs: ["manali-budget-adventure-complete-guide"],
     seo: {
-      metaTitle: "Manali Travel Guide",
-      metaDescription: "Visit Manali",
-      keywords: ["manali travel"],
+      metaTitle: "Manali Travel Guide 2024: Budget Trip, Snow & Complete Itinerary",
+      metaDescription: "Complete Manali travel guide with budget breakdown, Rohtang Pass tips, best hotels, and a 5-day itinerary. Plan your Manali trip for â‚¹2,000â€“â‚¹4,000/day.",
+      keywords: ["manali travel guide", "manali budget trip", "rohtang pass manali", "manali itinerary", "manali snow trip", "manali adventure"],
       ogImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop"
     },
     featured: true,
     published: true
   },
+
   {
     slug: "kerala",
     name: "Kerala Backwaters",
-    description: "Serene network of lagoons and canals",
-    longDescription: "Kerala's backwaters are a unique ecosystem.",
+    description: "Serene network of lagoons, canals, and lakes in God's Own Country â€” houseboats, spice gardens, and Ayurveda",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Kerala Backwaters Budget Travel</h2><p class="text-blue-900">A budget trip to Kerala Backwaters costs <strong>â‚¹2,000â€“â‚¹4,000 per person per day</strong>, covering a homestay (â‚¹800â€“â‚¹1,500), local meals (â‚¹300â€“â‚¹500), and a shared houseboat day trip (â‚¹1,500â€“â‚¹2,500/person). A 5-day Kerala trip costs approximately <strong>â‚¹12,000â€“â‚¹22,000 total</strong>. Best time to visit is <strong>October to March</strong> for ideal weather.</p></div><h2 id="introduction">Why Kerala Backwaters is India's Most Unique Natural Experience</h2><p>Kerala's backwaters are a 900 km network of interconnected canals, rivers, lakes, and inlets that run parallel to the Arabian Sea coast. This unique ecosystem â€” home to rice paddies, coconut groves, Chinese fishing nets, and traditional wooden kettuvallam houseboats â€” offers a travel experience found nowhere else in India. Alleppey (Alappuzha), the "Venice of the East," is the backwater capital, while Kumarakom and Kollam offer equally stunning alternatives. Kerala also offers pristine beaches, hill stations (Munnar), wildlife sanctuaries (Periyar), and world-class Ayurvedic treatments.</p><h2 id="budget-breakdown">Budget Breakdown: Kerala Trip Cost</h2><h3>Budget Traveller (â‚¹2,000â€“â‚¹3,500/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹800â€“â‚¹1,500 (homestay or budget guesthouse)</li><li><strong>Food:</strong> â‚¹300â€“â‚¹500 (local Kerala meals, toddy shops)</li><li><strong>Transport:</strong> â‚¹200â€“â‚¹500 (KSRTC buses, local ferries)</li><li><strong>Activities:</strong> â‚¹500â€“â‚¹1,500 (shared houseboat, canoe rides)</li></ul><h3>Mid-Range Traveller (â‚¹4,000â€“â‚¹8,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹2,000â€“â‚¹4,000 (heritage homestay or resort)</li><li><strong>Food:</strong> â‚¹700â€“â‚¹1,200 (restaurants and seafood)</li><li><strong>Activities:</strong> â‚¹2,000â€“â‚¹5,000 (private houseboat, Ayurveda)</li></ul><h2 id="transport">Getting to Kerala and Getting Around</h2><ul><li><strong>By Flight:</strong> Cochin International Airport (Kochi) is the main hub. Flights from Delhi from â‚¹3,000, Mumbai from â‚¹2,000. Trivandrum and Calicut airports also serve Kerala.</li><li><strong>By Train:</strong> Alleppey (Alappuzha) railway station â€” trains from Mumbai (30â€“36 hrs, â‚¹600â€“â‚¹1,500), Chennai (12â€“14 hrs, â‚¹300â€“â‚¹800), Bangalore (10â€“12 hrs, â‚¹250â€“â‚¹700).</li><li><strong>By Bus:</strong> KSRTC buses connect all major Kerala towns. Kochi to Alleppey â‚¹80â€“â‚¹120 (1.5 hrs). Comfortable and frequent.</li><li><strong>Getting Around:</strong> Local ferries (â‚¹10â€“â‚¹50) are the most scenic and cheapest way to navigate backwaters. KSRTC buses for longer distances. Auto-rickshaws in towns â‚¹50â€“â‚¹200.</li></ul><h2 id="hotels">Where to Stay in Kerala on a Budget</h2><ul><li><strong>Alleppey (Alappuzha):</strong> Backwater capital. Homestays from â‚¹800â€“â‚¹1,500 (often includes breakfast and dinner). Johnson's The Nest (â‚¹1,200â€“â‚¹2,000), Palmy Lake Resort (â‚¹1,000â€“â‚¹1,800).</li><li><strong>Kumarakom:</strong> More upscale but budget homestays available â‚¹1,000â€“â‚¹2,000. Stunning lake views.</li><li><strong>Kochi (Cochin):</strong> Fort Kochi area. Heritage guesthouses â‚¹800â€“â‚¹1,500. Zostel Kochi dorm â‚¹400â€“â‚¹600.</li><li><strong>Munnar (Hill Station):</strong> Tea estate homestays â‚¹700â€“â‚¹1,500. Cool climate, stunning scenery.</li></ul><h2 id="food">Where to Eat in Kerala: Budget Food Guide</h2><ul><li><strong>Kerala Sadya:</strong> â‚¹150â€“â‚¹300 â€” traditional feast on banana leaf with 20+ dishes. Best on Onam or at local restaurants.</li><li><strong>Karimeen Pollichathu:</strong> â‚¹250â€“â‚¹500 â€” pearl spot fish marinated in spices and grilled in banana leaf. A Kerala classic.</li><li><strong>Appam with Stew:</strong> â‚¹80â€“â‚¹150 â€” lacy rice pancakes with coconut milk vegetable or chicken stew.</li><li><strong>Puttu and Kadala Curry:</strong> â‚¹60â€“â‚¹100 â€” steamed rice cylinders with black chickpea curry. Classic Kerala breakfast.</li><li><strong>Toddy Shops (Kallu Shaap):</strong> Local palm wine (â‚¹30â€“â‚¹60/glass) with fresh seafood snacks â‚¹100â€“â‚¹200. Authentic Kerala experience.</li></ul><h2 id="itinerary">5-Day Kerala Budget Itinerary</h2><h3>Day 1: Arrive Kochi + Fort Kochi Exploration</h3><p>Check into Fort Kochi guesthouse. Walk through Fort Kochi â€” Chinese fishing nets (free), St. Francis Church (free), Dutch Palace (â‚¹5). Evening Kathakali performance (â‚¹200â€“â‚¹350). Dinner: Kerala fish curry at local restaurant (â‚¹200).</p><h3>Day 2: Kochi to Alleppey â€” Backwater Canoe Ride</h3><p>Bus from Kochi to Alleppey (â‚¹80, 1.5 hrs). Check into homestay. Afternoon: canoe ride through village backwaters (â‚¹300â€“â‚¹500/hr). Evening: sunset at Alleppey Beach (free). Dinner at homestay (included).</p><h3>Day 3: Shared Houseboat Day Trip</h3><p>Book shared houseboat day trip (â‚¹1,500â€“â‚¹2,500/person, includes lunch). Cruise through Vembanad Lake and village canals. See rice paddies, coconut groves, and village life. Return by evening.</p><h3>Day 4: Alleppey to Munnar (Hill Station)</h3><p>Bus from Alleppey to Munnar (â‚¹200â€“â‚¹300, 4â€“5 hrs via Kottayam). Check into tea estate homestay. Evening walk through tea gardens (free). Sunset from Top Station viewpoint.</p><h3>Day 5: Munnar Tea Gardens + Departure</h3><p>Morning: Eravikulam National Park (â‚¹125 entry, Nilgiri Tahr sightings). Tea Museum (â‚¹75). Afternoon: head to Kochi airport/station for departure.</p><h2 id="tips">Top Money-Saving Tips for Kerala</h2><ul><li>Book shared houseboats instead of private â€” save â‚¹5,000â€“â‚¹10,000 per night.</li><li>Stay in homestays â€” cheaper than hotels and includes authentic home-cooked meals.</li><li>Use KSRTC buses for intercity travel â€” much cheaper than private taxis.</li><li>Take local ferries instead of tourist boats â€” fraction of the cost, same scenery.</li><li>Visit during shoulder season (Septemberâ€“October or March) for lower prices.</li><li>Eat at local "meals" restaurants (Kerala thali) â€” full lunch for â‚¹80â€“â‚¹150.</li></ul><h2 id="faqs">Frequently Asked Questions About Kerala Backwaters</h2><h3>How much does a houseboat in Kerala cost?</h3><p>A private houseboat costs â‚¹8,000â€“â‚¹20,000 per night for 2 people, including all meals. Shared houseboats (day trips) cost â‚¹1,500â€“â‚¹2,500 per person. Budget travellers should opt for shared day trips or canoe rides (â‚¹300â€“â‚¹500/hr).</p><h3>What is the best time to visit Kerala Backwaters?</h3><p>October to March is ideal â€” pleasant weather, calm waters, and clear skies. The famous Nehru Trophy Boat Race happens in August (Alleppey). Avoid Juneâ€“August for heavy monsoon rains (though some travellers love the green monsoon Kerala).</p><h3>Is Kerala expensive to travel?</h3><p>Kerala is moderately priced. Budget travellers can manage on â‚¹2,000â€“â‚¹3,500/day. The main expense is houseboats â€” opt for shared day trips to keep costs low. Homestays with meals are excellent value.</p><h3>What is the best base for Kerala Backwaters?</h3><p>Alleppey (Alappuzha) is the best base â€” it's the backwater capital with the most houseboat operators, homestays, and canoe routes. Kumarakom is a quieter, slightly upscale alternative.</p><h3>Can I visit Kerala Backwaters without a houseboat?</h3><p>Yes. Canoe rides (â‚¹300â€“â‚¹500/hr), local ferries (â‚¹10â€“â‚¹50), and village walks give you the backwater experience at a fraction of houseboat costs. The Alleppey to Kollam ferry (â‚¹400, 8 hrs) is one of India's most scenic boat journeys.</p><h3>What else can I see in Kerala besides backwaters?</h3><p>Munnar tea gardens (hill station), Periyar Wildlife Sanctuary (Thekkady), Kovalam and Varkala beaches, Wayanad forests, Thrissur Pooram festival, and Kochi's Fort area with its colonial heritage.</p><h3>Is Kerala safe for solo female travellers?</h3><p>Yes, Kerala is considered one of India's safest states for solo female travellers. It has high literacy rates, a progressive culture, and well-developed tourism infrastructure. Standard precautions apply as anywhere.</p>`,
     state: "Kerala",
     region: "South",
     category: "Nature",
     images: [
-      { url: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&h=800&fit=crop", alt: "Kerala", caption: "Backwaters" }
+      { url: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&h=800&fit=crop", alt: "Kerala backwaters with traditional houseboat and coconut palms", caption: "Kerala's iconic backwater houseboats" }
     ],
-    budgetRange: { min: 2000, max: 4500 },
+    budgetRange: { min: 2000, max: 4000 },
     budgetBreakdown: {
       accommodation: { min: 800, max: 1500 },
-      food: { min: 400, max: 600 },
-      transport: { min: 200, max: 400 },
-      activities: { min: 600, max: 2000 }
+      food: { min: 300, max: 500 },
+      transport: { min: 200, max: 500 },
+      activities: { min: 500, max: 1500 }
     },
-    bestSeasons: ["Winter", "Monsoon"],
-    attractions: ["Alleppey Backwaters", "Kumarakom", "Vembanad Lake"],
-    travelTips: ["Book shared houseboats", "Try homestays"],
+    bestSeasons: ["Winter", "Autumn", "Spring"],
+    attractions: ["Alleppey Backwaters", "Vembanad Lake", "Kumarakom", "Fort Kochi", "Munnar Tea Gardens", "Periyar Wildlife Sanctuary", "Nehru Trophy Boat Race"],
+    travelTips: ["Book shared houseboats to save money", "Stay in homestays with meals included", "Use KSRTC buses for intercity travel", "Take local ferries instead of tourist boats"],
     howToReach: {
-      byAir: "Cochin International Airport",
-      byTrain: "Alleppey railway station",
-      byRoad: "Well-connected by NH66"
+      byAir: "Cochin International Airport (Kochi) â€” flights from Delhi from â‚¹3,000, Mumbai from â‚¹2,000",
+      byTrain: "Alleppey railway station â€” trains from Mumbai (â‚¹600â€“â‚¹1,500), Chennai (â‚¹300â€“â‚¹800), Bangalore (â‚¹250â€“â‚¹700)",
+      byRoad: "KSRTC buses from Kochi to Alleppey â‚¹80â€“â‚¹120 (1.5 hrs). Well-connected by NH66"
     },
-    relatedBlogs: ["kerala-backwaters-experience"],
+    relatedBlogs: ["kerala-backwaters-budget-guide"],
     seo: {
-      metaTitle: "Kerala Backwaters Guide",
-      metaDescription: "Explore Kerala backwaters",
-      keywords: ["kerala backwaters"],
+      metaTitle: "Kerala Backwaters Travel Guide 2024: Budget Trip, Houseboats & Itinerary",
+      metaDescription: "Complete Kerala backwaters guide with houseboat costs, budget homestays, local food, and a 5-day itinerary. Plan your Kerala trip for â‚¹2,000â€“â‚¹4,000/day.",
+      keywords: ["kerala backwaters guide", "kerala budget trip", "alleppey houseboat cost", "kerala itinerary", "kerala travel guide", "kerala homestay"],
       ogImage: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1200&h=800&fit=crop"
     },
     featured: true,
     published: true
   },
+
   {
     slug: "udaipur",
     name: "Udaipur",
-    description: "City of Lakes with romantic palaces",
-    longDescription: "Udaipur is known as the Venice of the East.",
+    description: "City of Lakes â€” romantic palaces, shimmering lakes, and Rajput grandeur in the heart of Rajasthan",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Udaipur Budget Travel</h2><p class="text-blue-900">A budget trip to Udaipur costs <strong>â‚¹1,800â€“â‚¹3,500 per person per day</strong>, covering a heritage guesthouse (â‚¹600â€“â‚¹1,200), local meals (â‚¹300â€“â‚¹500), and sightseeing. A 3-day Udaipur trip costs approximately <strong>â‚¹7,000â€“â‚¹14,000 total</strong>. Best time to visit is <strong>October to March</strong> for pleasant weather and clear lake views.</p></div><h2 id="introduction">Why Udaipur is India's Most Romantic City</h2><p>Udaipur, the "City of Lakes," is arguably the most beautiful city in Rajasthan â€” and many say in all of India. Built around a series of artificial lakes by the Mewar dynasty, the city is a dreamscape of white marble palaces, ornate temples, and shimmering water. The Lake Palace hotel (now a Taj property) appears to float on Lake Pichola, while the City Palace complex dominates the eastern shore. Unlike Jaipur's frenetic energy, Udaipur moves at a gentler pace â€” perfect for wandering through narrow old city lanes, watching sunset from rooftop cafes, and taking boat rides on the lakes.</p><h2 id="budget-breakdown">Budget Breakdown: Udaipur Trip Cost</h2><h3>Budget Traveller (â‚¹1,800â€“â‚¹3,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹600â€“â‚¹1,200 (heritage guesthouse near old city)</li><li><strong>Food:</strong> â‚¹300â€“â‚¹500 (local thali, rooftop cafes)</li><li><strong>Transport:</strong> â‚¹200â€“â‚¹400 (auto-rickshaws, walking)</li><li><strong>Activities:</strong> â‚¹500â€“â‚¹1,000 (City Palace, boat ride)</li></ul><h3>Mid-Range Traveller (â‚¹4,000â€“â‚¹8,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹2,000â€“â‚¹4,000 (lake-view heritage hotel)</li><li><strong>Food:</strong> â‚¹700â€“â‚¹1,500 (rooftop restaurants with lake views)</li><li><strong>Activities:</strong> â‚¹1,500â€“â‚¹3,000 (private boat, cultural shows)</li></ul><h2 id="transport">Getting to Udaipur and Getting Around</h2><ul><li><strong>By Train:</strong> Udaipur City Railway Station. From Delhi: 12â€“14 hrs (â‚¹400â€“â‚¹1,000). From Mumbai: 14â€“16 hrs (â‚¹400â€“â‚¹1,000). From Jaipur: 5â€“6 hrs (â‚¹200â€“â‚¹500).</li><li><strong>By Bus:</strong> RSRTC Volvo buses from Jaipur (â‚¹400â€“â‚¹600, 5â€“6 hrs), Delhi (â‚¹700â€“â‚¹1,000, 12â€“14 hrs).</li><li><strong>By Flight:</strong> Maharana Pratap Airport (25 km). Flights from Delhi from â‚¹2,000, Mumbai from â‚¹2,500.</li><li><strong>Getting Around:</strong> Old city is walkable. Auto-rickshaws â‚¹50â€“â‚¹200. Boat rides on Lake Pichola â‚¹400â€“â‚¹700 (government ferry). Cycle rentals â‚¹100â€“â‚¹200/day.</li></ul><h2 id="hotels">Where to Stay in Udaipur on a Budget</h2><ul><li><strong>Old City / Lal Ghat Area:</strong> Best location. Heritage guesthouses with lake views. Nukkad Guest House (â‚¹700â€“â‚¹1,200), Jagat Niwas Palace (â‚¹1,500â€“â‚¹3,000). Walking distance to City Palace and ghats.</li><li><strong>Hanuman Ghat Area:</strong> Quieter than Lal Ghat. Budget guesthouses â‚¹500â€“â‚¹1,000. Good rooftop cafes.</li><li><strong>Hostels:</strong> Zostel Udaipur (â‚¹400â€“â‚¹600 dorm), Moustache Hostel (â‚¹450â€“â‚¹700 dorm).</li></ul><h2 id="food">Where to Eat in Udaipur: Budget Food Guide</h2><ul><li><strong>Dal Baati Churma:</strong> â‚¹120â€“â‚¹200 â€” Rajasthan's iconic dish. Best at local thali restaurants.</li><li><strong>Laal Maas:</strong> â‚¹250â€“â‚¹450 â€” fiery red mutton curry, a Rajasthani classic.</li><li><strong>Mawa Kachori:</strong> â‚¹30â€“â‚¹60 â€” sweet kachori stuffed with mawa (milk solids). Udaipur speciality.</li><li><strong>Rooftop Cafes:</strong> Cafe Edelweiss (lake views, meals â‚¹200â€“â‚¹400), Ambrai Restaurant (lakeside, meals â‚¹400â€“â‚¹800).</li><li><strong>Natraj Dining Hall:</strong> Best value thali in Udaipur. Full meal â‚¹120â€“â‚¹180.</li></ul><h2 id="itinerary">3-Day Udaipur Budget Itinerary</h2><h3>Day 1: City Palace + Lake Pichola Boat Ride</h3><p>Morning: City Palace (â‚¹300 entry, 2â€“3 hrs). Crystal Gallery inside (â‚¹550 extra, optional). Afternoon: Government boat ride on Lake Pichola (â‚¹400, 1 hr) â€” views of Lake Palace and Jag Mandir. Evening: sunset from Ambrai Ghat (free). Dinner at Natraj Dining Hall (â‚¹150).</p><h3>Day 2: Vintage Car Museum + Saheliyon ki Bari + Fateh Sagar</h3><p>Morning: Vintage Car Museum (â‚¹250) â€” Maharana's collection of Rolls Royces and vintage cars. Saheliyon ki Bari garden (â‚¹50). Afternoon: Fateh Sagar Lake walk (free). Nehru Garden on the lake (â‚¹10 boat). Evening: Bagore ki Haveli cultural show (â‚¹60, 7 PM).</p><h3>Day 3: Kumbhalgarh Day Trip (Optional) + Departure</h3><p>Day trip to Kumbhalgarh Fort (90 km, â‚¹600 entry) â€” the world's second-longest wall after the Great Wall of China. Shared taxi â‚¹400â€“â‚¹600/person. Or spend the morning at Shilpgram crafts village (â‚¹30) and Sajjangarh (Monsoon Palace, â‚¹80).</p><h2 id="tips">Top Money-Saving Tips for Udaipur</h2><ul><li>Stay in Lal Ghat area â€” lake views without the luxury hotel price tag.</li><li>Take the government boat on Lake Pichola (â‚¹400) instead of private boats (â‚¹1,500+).</li><li>Eat at Natraj Dining Hall for the best value thali in the city.</li><li>Walk the old city â€” most ghats, temples, and bazaars are within 1 km of each other.</li><li>Visit Bagore ki Haveli cultural show (â‚¹60) instead of expensive dinner shows.</li><li>Combine Udaipur with Kumbhalgarh and Ranakpur on a day trip â€” share taxi costs.</li></ul><h2 id="faqs">Frequently Asked Questions About Udaipur</h2><h3>How much does a 3-day Udaipur trip cost?</h3><p>A 3-day budget Udaipur trip costs approximately <strong>â‚¹7,000â€“â‚¹14,000</strong> per person, including accommodation (â‚¹2,000â€“â‚¹4,000), food (â‚¹2,000â€“â‚¹3,500), transport (â‚¹1,500â€“â‚¹3,000), and sightseeing (â‚¹1,500â€“â‚¹3,000).</p><h3>What is the best time to visit Udaipur?</h3><p>October to March is ideal â€” temperatures range from 10â€“28Â°C. The Mewar Festival (March) and Shilpgram Crafts Fair (December) are great times to visit. Avoid Aprilâ€“June (extreme heat, 40â€“45Â°C).</p><h3>Is the Lake Palace hotel worth visiting?</h3><p>The Lake Palace (now a Taj hotel) is only accessible to hotel guests. However, you can see it beautifully from the government boat ride on Lake Pichola (â‚¹400) or from rooftop cafes in the old city.</p><h3>How far is Udaipur from Jaipur?</h3><p>Udaipur is approximately 400 km from Jaipur â€” about 5â€“6 hours by train (â‚¹200â€“â‚¹500) or 5â€“6 hours by Volvo bus (â‚¹400â€“â‚¹600). It's a natural extension of a Rajasthan circuit.</p><h3>What are the best day trips from Udaipur?</h3><p>Kumbhalgarh Fort (90 km, world's second-longest wall), Ranakpur Jain Temples (90 km, stunning marble architecture), Chittorgarh Fort (115 km, largest fort in India), and Nathdwara (48 km, famous Shrinathji temple).</p><h3>Is Udaipur good for a honeymoon?</h3><p>Yes, Udaipur is one of India's top honeymoon destinations. The lake views, palace hotels, rooftop restaurants, and romantic boat rides make it perfect for couples. Budget couples can enjoy the same scenery from affordable guesthouses in the old city.</p><h3>What are the must-buy items in Udaipur?</h3><p>Miniature paintings (â‚¹500â€“â‚¹5,000), Mewar-style jewellery, block-printed textiles, wooden handicrafts, and marble inlay work. Best shopping at Hathi Pol Bazaar and Bada Bazaar.</p>`,
     state: "Rajasthan",
     region: "West",
     category: "Heritage",
     images: [
-      { url: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&h=800&fit=crop", alt: "Udaipur", caption: "Lake Palace" }
+      { url: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&h=800&fit=crop", alt: "Udaipur City Palace and Lake Pichola at sunset", caption: "Udaipur's magnificent City Palace on Lake Pichola" }
     ],
-    budgetRange: { min: 2000, max: 3500 },
+    budgetRange: { min: 1800, max: 3500 },
     budgetBreakdown: {
       accommodation: { min: 600, max: 1200 },
-      food: { min: 400, max: 600 },
-      transport: { min: 300, max: 500 },
-      activities: { min: 700, max: 1200 }
+      food: { min: 300, max: 500 },
+      transport: { min: 200, max: 400 },
+      activities: { min: 500, max: 1000 }
     },
-    bestSeasons: ["Winter", "Spring"],
-    attractions: ["City Palace", "Lake Pichola", "Jag Mandir"],
-    travelTips: ["Take boat rides", "Visit rooftop restaurants"],
+    bestSeasons: ["Winter", "Autumn", "Spring"],
+    attractions: ["City Palace", "Lake Pichola", "Jag Mandir", "Fateh Sagar Lake", "Vintage Car Museum", "Saheliyon ki Bari", "Bagore ki Haveli", "Sajjangarh Palace"],
+    travelTips: ["Stay in Lal Ghat area for lake views", "Take government boat on Lake Pichola", "Eat at Natraj Dining Hall for best value", "Walk the old city â€” everything is close"],
     howToReach: {
-      byAir: "Maharana Pratap Airport",
-      byTrain: "Udaipur City Railway Station",
-      byRoad: "400 km from Jaipur"
+      byAir: "Maharana Pratap Airport (25 km) â€” flights from Delhi from â‚¹2,000, Mumbai from â‚¹2,500",
+      byTrain: "Udaipur City Railway Station â€” from Delhi (12â€“14 hrs, â‚¹400â€“â‚¹1,000), Jaipur (5â€“6 hrs, â‚¹200â€“â‚¹500)",
+      byRoad: "RSRTC Volvo buses from Jaipur (â‚¹400â€“â‚¹600, 5â€“6 hrs), Delhi (â‚¹700â€“â‚¹1,000, 12â€“14 hrs)"
     },
-    relatedBlogs: [],
+    relatedBlogs: ["rajasthan-heritage-budget-tour"],
     seo: {
-      metaTitle: "Udaipur Travel Guide",
-      metaDescription: "Discover Udaipur",
-      keywords: ["udaipur travel"],
+      metaTitle: "Udaipur Travel Guide 2024: Budget Trip, Lakes & Complete Itinerary",
+      metaDescription: "Complete Udaipur travel guide with budget breakdown, City Palace tips, best rooftop cafes, and a 3-day itinerary. Plan your City of Lakes trip for â‚¹1,800â€“â‚¹3,500/day.",
+      keywords: ["udaipur travel guide", "udaipur budget trip", "city palace udaipur", "udaipur itinerary", "lake pichola udaipur", "udaipur lakes"],
       ogImage: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&h=800&fit=crop"
     },
-    featured: false,
+    featured: true,
+    published: true
+  },
+
+  {
+    slug: "ladakh",
+    name: "Ladakh",
+    description: "Land of High Passes â€” dramatic Himalayan landscapes, turquoise lakes, ancient monasteries, and Buddhist culture",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Ladakh Budget Travel</h2><p class="text-blue-900">A budget trip to Ladakh costs <strong>â‚¹2,500â€“â‚¹4,000 per person per day</strong>, covering a guesthouse (â‚¹600â€“â‚¹1,200), local meals (â‚¹300â€“â‚¹500), shared jeep transport (â‚¹400â€“â‚¹800), and permits (â‚¹500 one-time). A 7-day Ladakh trip costs approximately <strong>â‚¹18,000â€“â‚¹28,000 total</strong>. Best time to visit is <strong>June to September</strong> when roads are open.</p></div><h2 id="introduction">Why Ladakh is India's Most Dramatic Destination</h2><p>Ladakh â€” the "Land of High Passes" â€” is one of the most dramatic landscapes on Earth. At 3,500 metres above sea level, this high-altitude desert in Jammu & Kashmir offers turquoise lakes, ancient monasteries, snow-capped peaks, and a Tibetan Buddhist culture unlike anywhere else in India. Pangong Tso lake (made famous by 3 Idiots), the sand dunes of Nubra Valley, and the monasteries of Thiksey and Hemis are bucket-list experiences. The best part? It's surprisingly doable on a budget if you plan smart.</p><h2 id="budget-breakdown">Budget Breakdown: Ladakh Trip Cost</h2><h3>Budget Traveller (â‚¹2,500â€“â‚¹4,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹600â€“â‚¹1,200 (homestay or basic guesthouse)</li><li><strong>Food:</strong> â‚¹300â€“â‚¹500 (local dhabas, thukpa, momos)</li><li><strong>Transport:</strong> â‚¹400â€“â‚¹800 (shared jeeps, local buses)</li><li><strong>Permits:</strong> â‚¹500 (one-time, covers most areas)</li></ul><h3>Mid-Range Traveller (â‚¹5,000â€“â‚¹9,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹2,000â€“â‚¹4,000 (comfortable hotel with heating)</li><li><strong>Transport:</strong> â‚¹1,500â€“â‚¹3,000 (private taxi for day trips)</li></ul><h2 id="transport">Getting to Ladakh and Getting Around</h2><ul><li><strong>By Flight (Fastest):</strong> Leh Kushok Bakula Rimpochee Airport. Flights from Delhi (1 hr, â‚¹3,000â€“â‚¹8,000). Book 6â€“8 weeks ahead. Flying helps avoid altitude sickness.</li><li><strong>Manaliâ€“Leh Highway (Most Scenic):</strong> 479 km, open Juneâ€“October. HRTC bus â‚¹700â€“â‚¹900 (2 days). Shared jeep â‚¹1,500â€“â‚¹2,500.</li><li><strong>Srinagarâ€“Leh Highway:</strong> 434 km, open Mayâ€“November. JKSRTC bus â‚¹600â€“â‚¹800.</li><li><strong>Shared Jeeps:</strong> Best budget option within Ladakh. Leh to Nubra â‚¹600â€“â‚¹800/seat. Leh to Pangong â‚¹700â€“â‚¹1,000/seat.</li><li><strong>Rented Royal Enfield:</strong> â‚¹1,000â€“â‚¹1,500/day â€” iconic Ladakh experience.</li></ul><h2 id="hotels">Where to Stay in Ladakh on a Budget</h2><ul><li><strong>Leh Old Town:</strong> Guesthouses like Padma Guest House (â‚¹600â€“â‚¹900), Shanti Guest House (â‚¹700â€“â‚¹1,100). Walking distance to markets and monasteries.</li><li><strong>Changspa Area:</strong> Quieter, slightly upscale. Budget guesthouses â‚¹800â€“â‚¹1,500.</li><li><strong>Nubra Valley:</strong> Homestays in Hunder and Diskit â‚¹700â€“â‚¹1,200 including dinner and breakfast.</li><li><strong>Pangong Lake:</strong> Tent camps at Spangmik â‚¹1,500â€“â‚¹3,000 per night including meals.</li></ul><h2 id="food">Where to Eat in Ladakh: Budget Food Guide</h2><ul><li><strong>Thukpa:</strong> â‚¹80â€“â‚¹150 â€” hearty noodle soup, perfect for cold evenings.</li><li><strong>Momos:</strong> â‚¹60â€“â‚¹120 â€” steamed or fried dumplings, everywhere in Leh.</li><li><strong>Skyu:</strong> â‚¹100â€“â‚¹180 â€” traditional Ladakhi pasta stew with root vegetables.</li><li><strong>Butter Tea (Gur Gur Chai):</strong> â‚¹20â€“â‚¹40 â€” salty, buttery, an acquired taste but essential.</li><li><strong>Lamayuru Restaurant, Main Bazaar:</strong> Thukpa â‚¹100, momos â‚¹80. Local favourite.</li><li><strong>Gesmo Restaurant:</strong> Budget traveller institution, full meals â‚¹150â€“â‚¹300.</li></ul><h2 id="itinerary">7-Day Ladakh Budget Itinerary</h2><h3>Day 1: Arrive Leh â€” Acclimatise</h3><p>Rest completely. No sightseeing. Drink plenty of water. Light walk around Leh market in the evening. Stay at Old Town guesthouse (â‚¹700). Dinner: thukpa (â‚¹100).</p><h3>Day 2: Leh Local Sightseeing</h3><p>Leh Palace (â‚¹25), Shanti Stupa (free, sunrise recommended), Leh Market. Namgyal Tsemo Monastery (free). Total: â‚¹500â€“â‚¹700.</p><h3>Day 3: Monasteries Day Trip</h3><p>Shared taxi to Thiksey Monastery (â‚¹30), Hemis Monastery (â‚¹50), Shey Palace (â‚¹30). Shared taxi â‚¹300â€“â‚¹400/person. Total: â‚¹800â€“â‚¹1,000.</p><h3>Day 4: Nubra Valley via Khardung La</h3><p>Shared jeep from Leh (â‚¹700/seat). Khardung La pass (5,359 m). Hunder sand dunes and Bactrian camels (â‚¹200 camel ride). Overnight homestay in Hunder (â‚¹900 with meals).</p><h3>Day 5: Nubra to Pangong Lake</h3><p>Shared jeep Nubra to Pangong via Shyok Valley (â‚¹800/seat, 5â€“6 hrs). Sunset at Pangong Tso. Overnight tent camp (â‚¹2,000 with meals).</p><h3>Day 6: Pangong to Leh via Chang La</h3><p>Morning at the lake (sunrise is magical). Shared jeep back to Leh (â‚¹700/seat) via Chang La pass (5,360 m).</p><h3>Day 7: Departure</h3><p>Last monastery visit or shopping for pashmina and dried apricots (â‚¹200/kg). Head to airport.</p><h2 id="tips">Top Money-Saving Tips for Ladakh</h2><ul><li>Stay in homestays â€” cheaper than hotels and includes home-cooked meals.</li><li>Use shared jeeps â€” 60â€“70% less than private taxis for the same routes.</li><li>Apply for permits online â€” saves agent fees (â‚¹200â€“â‚¹500 markup).</li><li>Carry cash â€” ATMs are scarce outside Leh.</li><li>Acclimatise properly â€” avoid costly medical evacuation by resting on Day 1.</li><li>Visit in June or September â€” shoulder months with lower prices and fewer crowds.</li></ul><h2 id="faqs">Frequently Asked Questions About Ladakh</h2><h3>How much does a 7-day Ladakh trip cost?</h3><p>A 7-day budget Ladakh trip costs <strong>â‚¹18,000â€“â‚¹28,000 per person</strong>, including flights from Delhi (â‚¹5,000â€“â‚¹8,000), accommodation (â‚¹5,000â€“â‚¹8,000), food (â‚¹3,000â€“â‚¹4,000), transport within Ladakh (â‚¹4,000â€“â‚¹6,000), and permits (â‚¹500).</p><h3>What permits are needed for Ladakh?</h3><p>Indian nationals need an <strong>Inner Line Permit (ILP)</strong> for Nubra Valley, Pangong Lake, and Tso Moriri. Cost is â‚¹400â€“â‚¹500. Apply online at lahdclehpermit.in or at the DC Office in Leh.</p><h3>When is the best time to visit Ladakh?</h3><p>June to September when roads are open. June and September are shoulder months with fewer crowds and better prices than peak Julyâ€“August.</p><h3>Is Ladakh safe for first-time travellers?</h3><p>Yes, very safe. The main risk is altitude sickness â€” rest 24â€“48 hours on arrival, stay hydrated, and carry Diamox after consulting a doctor.</p><h3>Can I do Ladakh without a bike?</h3><p>Absolutely. Shared jeeps, local buses, and private taxis cover all major routes. Shared jeeps are cheaper and safer for solo travellers unfamiliar with high-altitude riding.</p><h3>What should I pack for Ladakh?</h3><p>Warm layers (temperatures drop to 5â€“10Â°C even in summer nights), sunscreen SPF 50+, sunglasses, cash, water bottle, offline maps, and altitude sickness medication.</p><h3>Is mobile network available in Ladakh?</h3><p>BSNL and Airtel work in Leh town. Outside Leh (Nubra, Pangong), connectivity is very limited. Download offline maps before leaving Leh.</p>`,
+    state: "Ladakh (UT)",
+    region: "North",
+    category: "Adventure",
+    images: [
+      { url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop", alt: "Ladakh Pangong Lake with snow-capped mountains", caption: "The stunning Pangong Tso lake in Ladakh" }
+    ],
+    budgetRange: { min: 2500, max: 4000 },
+    budgetBreakdown: {
+      accommodation: { min: 600, max: 1200 },
+      food: { min: 300, max: 500 },
+      transport: { min: 400, max: 800 },
+      activities: { min: 200, max: 500 }
+    },
+    bestSeasons: ["Summer"],
+    attractions: ["Pangong Tso Lake", "Nubra Valley", "Khardung La Pass", "Thiksey Monastery", "Hemis Monastery", "Leh Palace", "Shanti Stupa", "Magnetic Hill"],
+    travelTips: ["Acclimatise for 24â€“48 hours on arrival", "Use shared jeeps to save money", "Apply for permits online", "Carry cash â€” ATMs scarce outside Leh"],
+    howToReach: {
+      byAir: "Leh Kushok Bakula Rimpochee Airport â€” flights from Delhi (1 hr, â‚¹3,000â€“â‚¹8,000). Book 6â€“8 weeks ahead",
+      byTrain: "No direct train. Nearest stations: Jammu (700 km) or Chandigarh (700 km). Then bus/jeep to Leh",
+      byRoad: "Manaliâ€“Leh Highway (479 km, open Juneâ€“Oct): HRTC bus â‚¹700â€“â‚¹900. Srinagarâ€“Leh Highway (434 km, open Mayâ€“Nov): bus â‚¹600â€“â‚¹800"
+    },
+    relatedBlogs: ["ladakh-budget-adventure-guide"],
+    seo: {
+      metaTitle: "Ladakh Travel Guide 2024: Budget Trip, Permits & 7-Day Itinerary",
+      metaDescription: "Complete Ladakh travel guide with permit details, budget breakdown, Pangong Lake tips, and a 7-day itinerary. Plan your Ladakh trip for â‚¹2,500â€“â‚¹4,000/day.",
+      keywords: ["ladakh travel guide", "ladakh budget trip", "ladakh permits", "pangong lake", "ladakh itinerary", "leh ladakh trip"],
+      ogImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop"
+    },
+    featured: true,
+    published: true
+  },
+
+  {
+    slug: "hampi",
+    name: "Hampi",
+    description: "UNESCO World Heritage Site â€” ancient Vijayanagara Empire ruins, boulder-strewn landscapes, and spiritual temples in Karnataka",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Hampi Budget Travel</h2><p class="text-blue-900">A budget trip to Hampi costs <strong>â‚¹1,000â€“â‚¹2,000 per person per day</strong>, covering a guesthouse (â‚¹400â€“â‚¹800), local meals (â‚¹200â€“â‚¹400), bicycle rental (â‚¹100â€“â‚¹150/day), and monument entries. A 3-day Hampi trip costs approximately <strong>â‚¹4,000â€“â‚¹8,000 total</strong>. Best time to visit is <strong>October to February</strong> for pleasant weather.</p></div><h2 id="introduction">Why Hampi is India's Most Spectacular Archaeological Site</h2><p>Hampi is one of India's most extraordinary destinations â€” a UNESCO World Heritage Site spread across 26 sq km of surreal boulder-strewn landscape along the Tungabhadra River in Karnataka. Once the capital of the Vijayanagara Empire (14thâ€“16th century), one of the largest empires in Indian history, Hampi today is a vast open-air museum of over 1,600 monuments. The Virupaksha Temple has been in continuous worship for over 1,000 years. The Vittala Temple's famous Stone Chariot is one of India's most iconic images. And the whole place costs almost nothing to visit â€” making it one of India's best budget destinations.</p><h2 id="budget-breakdown">Budget Breakdown: Hampi Trip Cost</h2><h3>Budget Traveller (â‚¹1,000â€“â‚¹1,800/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹400â€“â‚¹800 (guesthouse in Hampi Bazaar or Virupapur Gaddi)</li><li><strong>Food:</strong> â‚¹200â€“â‚¹400 (local restaurants, banana leaf meals)</li><li><strong>Transport:</strong> â‚¹100â€“â‚¹200 (bicycle rental, coracle boat)</li><li><strong>Monument entries:</strong> â‚¹100â€“â‚¹300/day (Vittala Temple â‚¹600 foreigners, â‚¹40 Indians)</li></ul><h3>Mid-Range Traveller (â‚¹2,500â€“â‚¹5,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹1,500â€“â‚¹3,000 (boutique guesthouse or resort)</li><li><strong>Transport:</strong> â‚¹500â€“â‚¹1,000 (auto-rickshaw for full-day tour)</li></ul><h2 id="transport">Getting to Hampi and Getting Around</h2><ul><li><strong>By Train:</strong> Hospet Junction (13 km from Hampi) is the nearest station. Trains from Bangalore (7â€“8 hrs, â‚¹200â€“â‚¹500), Hyderabad (10â€“12 hrs, â‚¹300â€“â‚¹700), Goa (8â€“10 hrs, â‚¹200â€“â‚¹500). Then auto or bus to Hampi (â‚¹50â€“â‚¹100).</li><li><strong>By Bus:</strong> KSRTC buses from Bangalore to Hospet (â‚¹400â€“â‚¹600, 8â€“9 hrs). Overnight buses available.</li><li><strong>By Flight:</strong> Hubli Airport (160 km) or Bangalore (350 km). Taxi from Hubli â‚¹2,500â€“â‚¹3,500.</li><li><strong>Getting Around Hampi:</strong> Bicycle rental â‚¹100â€“â‚¹150/day â€” the best way to explore. Auto-rickshaws for full-day tours â‚¹600â€“â‚¹1,000. Coracle boat across Tungabhadra River â‚¹30â€“â‚¹50.</li></ul><h2 id="hotels">Where to Stay in Hampi on a Budget</h2><ul><li><strong>Hampi Bazaar (Main Side):</strong> Closest to Virupaksha Temple. Guesthouses like Shanthi Guest House (â‚¹400â€“â‚¹700), Mowgli Guest House (â‚¹500â€“â‚¹900). Lively, convenient.</li><li><strong>Virupapur Gaddi (Hippie Island):</strong> Across the river by coracle. Quieter, more relaxed. Guesthouses â‚¹400â€“â‚¹800. Great for longer stays. Cafes with hammocks and river views.</li><li><strong>Kamalapura:</strong> Near the Archaeological Museum. Budget guesthouses â‚¹500â€“â‚¹900. Less touristy.</li></ul><h2 id="food">Where to Eat in Hampi: Budget Food Guide</h2><ul><li><strong>Banana Leaf Meals:</strong> â‚¹80â€“â‚¹150 â€” traditional South Indian thali on banana leaf. Best value meal in Hampi.</li><li><strong>Masala Dosa:</strong> â‚¹60â€“â‚¹100 â€” crispy rice crepe with spiced potato filling. Breakfast staple.</li><li><strong>Mango Tree Restaurant:</strong> Iconic Hampi restaurant by the river. Meals â‚¹150â€“â‚¹300. Great ambience.</li><li><strong>Laughing Buddha Cafe (Hippie Island):</strong> Israeli and Indian food. Meals â‚¹200â€“â‚¹400. Hammocks and river views.</li><li><strong>Ravi's Rose Restaurant:</strong> Budget favourite. Thali â‚¹100â€“â‚¹150.</li></ul><h2 id="itinerary">3-Day Hampi Budget Itinerary</h2><h3>Day 1: Hampi Bazaar + Virupaksha Temple + Matanga Hill</h3><p>Arrive and check in. Morning: Virupaksha Temple (free entry, one of India's oldest active temples). Climb Matanga Hill for panoramic sunrise/sunset views (free). Evening: walk through Hampi Bazaar ruins. Dinner at Mango Tree (â‚¹200).</p><h3>Day 2: Royal Enclosure + Vittala Temple (Bicycle Day)</h3><p>Rent bicycle (â‚¹100). Ride to Royal Enclosure: Lotus Mahal (â‚¹40), Elephant Stables (â‚¹40), Queen's Bath (â‚¹40). Vittala Temple (â‚¹40 Indians) â€” see the Stone Chariot and Musical Pillars. Achyutaraya Temple (free). Total: â‚¹300â€“â‚¹500.</p><h3>Day 3: Hippie Island + Tungabhadra Dam + Departure</h3><p>Morning: coracle boat to Virupapur Gaddi (â‚¹30). Explore the quieter side. Afternoon: Tungabhadra Dam (15 km, free). Head to Hospet for train/bus back.</p><h2 id="tips">Top Money-Saving Tips for Hampi</h2><ul><li>Rent a bicycle â€” covers all major sites for â‚¹100/day vs â‚¹600â€“â‚¹1,000 for auto tours.</li><li>Stay on Hippie Island (Virupapur Gaddi) â€” cheaper and more relaxed than Hampi Bazaar.</li><li>Eat banana leaf meals at local restaurants â€” full lunch for â‚¹80â€“â‚¹120.</li><li>Visit Virupaksha Temple at sunrise â€” free entry and magical light.</li><li>Climb Matanga Hill for the best views â€” completely free.</li><li>Visit in Novemberâ€“January for the best weather; avoid Marchâ€“May (extreme heat, 40Â°C+).</li></ul><h2 id="faqs">Frequently Asked Questions About Hampi</h2><h3>How much does a 3-day Hampi trip cost?</h3><p>A 3-day budget Hampi trip costs approximately <strong>â‚¹4,000â€“â‚¹8,000</strong> per person, including accommodation (â‚¹1,500â€“â‚¹2,500), food (â‚¹1,500â€“â‚¹2,500), transport (â‚¹500â€“â‚¹1,000), and monument entries (â‚¹300â€“â‚¹600).</p><h3>How do I get from Bangalore to Hampi?</h3><p>Take an overnight KSRTC bus from Bangalore to Hospet (â‚¹400â€“â‚¹600, 8â€“9 hrs), then an auto-rickshaw or local bus to Hampi (â‚¹50â€“â‚¹100, 13 km). Alternatively, take a train to Hospet Junction.</p><h3>Is Hampi safe?</h3><p>Yes, Hampi is very safe for tourists. It's a small, well-touristed town. The main precaution is to be careful when climbing boulders and ruins â€” some areas are uneven and slippery.</p><h3>What is the best time to visit Hampi?</h3><p>October to February is ideal â€” temperatures range from 15â€“28Â°C. The Hampi Utsav festival (November) is a great time to visit with cultural performances. Avoid Marchâ€“May (extreme heat, 40â€“45Â°C).</p><h3>Can I see Hampi in one day?</h3><p>You can cover the main highlights in one long day, but 2â€“3 days allows a more relaxed exploration of all 1,600+ monuments. Many travellers end up staying longer than planned.</p><h3>What is the Vittala Temple famous for?</h3><p>The Vittala Temple (16th century) is famous for its Stone Chariot â€” one of India's most iconic monuments â€” and its Musical Pillars that produce musical notes when tapped. Entry is â‚¹40 for Indian nationals.</p><h3>Is there an ATM in Hampi?</h3><p>There are a few ATMs in Hampi Bazaar, but they frequently run out of cash. Carry sufficient cash from Hospet or Bangalore. Most guesthouses and restaurants accept cash only.</p>`,
+    state: "Karnataka",
+    region: "South",
+    category: "Heritage",
+    images: [
+      { url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&h=800&fit=crop", alt: "Hampi Vittala Temple Stone Chariot ruins", caption: "The iconic Stone Chariot at Vittala Temple, Hampi" }
+    ],
+    budgetRange: { min: 1000, max: 2000 },
+    budgetBreakdown: {
+      accommodation: { min: 400, max: 800 },
+      food: { min: 200, max: 400 },
+      transport: { min: 100, max: 200 },
+      activities: { min: 100, max: 300 }
+    },
+    bestSeasons: ["Winter", "Autumn"],
+    attractions: ["Virupaksha Temple", "Vittala Temple", "Stone Chariot", "Matanga Hill", "Royal Enclosure", "Lotus Mahal", "Elephant Stables", "Tungabhadra River"],
+    travelTips: ["Rent a bicycle for the best exploration", "Stay on Hippie Island for budget and relaxed vibe", "Climb Matanga Hill for free panoramic views", "Carry cash â€” ATMs unreliable"],
+    howToReach: {
+      byAir: "Hubli Airport (160 km) or Bangalore (350 km). Taxi from Hubli â‚¹2,500â€“â‚¹3,500",
+      byTrain: "Hospet Junction (13 km) â€” trains from Bangalore (â‚¹200â€“â‚¹500), Hyderabad (â‚¹300â€“â‚¹700). Then auto to Hampi â‚¹50â€“â‚¹100",
+      byRoad: "KSRTC overnight buses from Bangalore to Hospet (â‚¹400â€“â‚¹600, 8â€“9 hrs)"
+    },
+    relatedBlogs: ["hampi-budget-heritage-guide"],
+    seo: {
+      metaTitle: "Hampi Travel Guide 2024: Budget Trip, Ruins & Complete Itinerary",
+      metaDescription: "Complete Hampi travel guide with budget breakdown, Vittala Temple tips, best guesthouses, and a 3-day itinerary. Plan your Hampi trip for â‚¹1,000â€“â‚¹2,000/day.",
+      keywords: ["hampi travel guide", "hampi budget trip", "vittala temple hampi", "hampi itinerary", "hampi ruins", "hampi karnataka"],
+      ogImage: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&h=800&fit=crop"
+    },
+    featured: true,
+    published: true
+  },
+
+  {
+    slug: "rajasthan",
+    name: "Rajasthan",
+    description: "Land of Kings â€” golden forts, blue cities, desert safaris, and royal heritage across Jaipur, Jodhpur, Jaisalmer, and Udaipur",
+    longDescription: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Rajasthan Budget Travel</h2><p class="text-blue-900">A budget trip to Rajasthan costs <strong>â‚¹1,800â€“â‚¹3,500 per person per day</strong>, covering a heritage guesthouse (â‚¹600â€“â‚¹1,500), local meals (â‚¹200â€“â‚¹400), train/bus transport (â‚¹200â€“â‚¹600), and monument entries. A 7-day Rajasthan circuit costs approximately <strong>â‚¹15,000â€“â‚¹25,000 total</strong>. Best time to visit is <strong>October to March</strong>.</p></div><h2 id="introduction">Why Rajasthan is India's Most Theatrical State</h2><p>Rajasthan is India's most theatrical state â€” a land of golden forts, blue cities, pink palaces, and vast Thar Desert. It's also one of the most tourist-friendly states in India, with an excellent network of trains, budget guesthouses in heritage havelis, and street food that costs almost nothing. The key to budget Rajasthan travel is knowing which cities to prioritise, which monuments offer the best value, and how to navigate the state's excellent rail network. A classic Rajasthan circuit covers Jaipur (Pink City), Jodhpur (Blue City), Jaisalmer (Golden City), and Udaipur (City of Lakes).</p><h2 id="budget-breakdown">Budget Breakdown: Rajasthan Trip Cost</h2><h3>Budget Traveller (â‚¹1,800â€“â‚¹3,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹600â€“â‚¹1,200 (heritage guesthouse or hostel)</li><li><strong>Food:</strong> â‚¹200â€“â‚¹400 (thali restaurants, street food)</li><li><strong>Transport:</strong> â‚¹200â€“â‚¹600 (trains, local buses, auto-rickshaws)</li><li><strong>Monument entries:</strong> â‚¹100â€“â‚¹300/day (composite tickets available)</li></ul><h3>Mid-Range Traveller (â‚¹4,000â€“â‚¹8,000/day)</h3><ul><li><strong>Accommodation:</strong> â‚¹2,000â€“â‚¹4,000 (boutique heritage hotel)</li><li><strong>Food:</strong> â‚¹600â€“â‚¹1,200 (rooftop restaurants with fort views)</li><li><strong>Transport:</strong> â‚¹800â€“â‚¹2,000 (private cab for day trips)</li></ul><h2 id="transport">Getting to Rajasthan and Getting Around</h2><ul><li><strong>By Train (Best Option):</strong> Jaipur is 5 hrs from Delhi (Shatabdi â‚¹700, sleeper â‚¹200). Jodhpur 10â€“12 hrs from Delhi (â‚¹300â€“â‚¹800). Jaisalmer 18â€“20 hrs from Delhi (â‚¹400â€“â‚¹1,000). Udaipur 12â€“14 hrs from Mumbai (â‚¹400â€“â‚¹1,000).</li><li><strong>By Bus:</strong> RSRTC Volvo buses from Delhi to Jaipur â‚¹400â€“â‚¹600 (5 hrs). Comfortable and frequent.</li><li><strong>By Flight:</strong> Jaipur, Jodhpur, Udaipur, and Jaisalmer have airports. Flights from Delhi from â‚¹1,500.</li><li><strong>Getting Around:</strong> Trains between Rajasthan cities are cheap and comfortable. Jaipur to Jodhpur â‚¹200â€“â‚¹400 (5â€“6 hrs). Jodhpur to Jaisalmer â‚¹150â€“â‚¹300 (5â€“6 hrs). Auto-rickshaws within cities â‚¹50â€“â‚¹200.</li></ul><h2 id="hotels">Where to Stay in Rajasthan on a Budget</h2><ul><li><strong>Jaipur:</strong> Heritage guesthouses near old city. Arya Niwas (â‚¹700â€“â‚¹1,200), Hotel Pearl Palace (â‚¹800â€“â‚¹1,500). Zostel Jaipur dorm â‚¹400â€“â‚¹600.</li><li><strong>Jodhpur:</strong> Guesthouses near Mehrangarh Fort. Cosy Guest House (â‚¹500â€“â‚¹900), Haveli Inn Pal (â‚¹800â€“â‚¹1,500). Blue City views from rooftop.</li><li><strong>Jaisalmer:</strong> Guesthouses inside or near the fort. Hotel Shahi Palace (â‚¹600â€“â‚¹1,000), Desert Boy's Dhani (â‚¹500â€“â‚¹900). Fort views included.</li><li><strong>Udaipur:</strong> Lal Ghat area. Nukkad Guest House (â‚¹700â€“â‚¹1,200). Lake views without luxury prices.</li></ul><h2 id="food">Where to Eat in Rajasthan: Budget Food Guide</h2><ul><li><strong>Dal Baati Churma:</strong> â‚¹100â€“â‚¹200 â€” Rajasthan's iconic dish. Baked wheat balls with lentil curry and sweet churma.</li><li><strong>Laal Maas:</strong> â‚¹200â€“â‚¹400 â€” fiery red mutton curry, a Rajasthani classic.</li><li><strong>Pyaaz Kachori (Jaipur):</strong> â‚¹20â€“â‚¹40 â€” flaky pastry stuffed with spiced onions. Best at Rawat Mishthan Bhandar.</li><li><strong>Mirchi Bada (Jodhpur):</strong> â‚¹20â€“â‚¹40 â€” large chilli fritter stuffed with potato. Jodhpur street food staple.</li><li><strong>Ker Sangri:</strong> â‚¹100â€“â‚¹200 â€” desert beans and berries cooked with spices. Authentic Rajasthani vegetable.</li></ul><h2 id="itinerary">7-Day Rajasthan Budget Circuit</h2><h3>Day 1â€“2: Jaipur â€” Pink City</h3><p>Amber Fort (â‚¹100), City Palace (â‚¹200), Hawa Mahal (â‚¹50), Jantar Mantar (â‚¹50). Buy composite ticket (â‚¹300) for best value. Evening: Johari Bazaar shopping. Dinner: dal baati churma at LMB (â‚¹250).</p><h3>Day 3â€“4: Jodhpur â€” Blue City</h3><p>Train from Jaipur (â‚¹200â€“â‚¹400, 5â€“6 hrs). Mehrangarh Fort (â‚¹100 Indians) â€” one of India's most impressive forts. Jaswant Thada (â‚¹30). Walk through blue-painted old city lanes. Rooftop dinner with fort views (â‚¹300â€“â‚¹500).</p><h3>Day 5â€“6: Jaisalmer â€” Golden City</h3><p>Train from Jodhpur (â‚¹150â€“â‚¹300, 5â€“6 hrs). Jaisalmer Fort (free to enter, living fort). Patwon ki Haveli (â‚¹100). Desert safari at Sam Sand Dunes (â‚¹800â€“â‚¹1,500 including camel ride and cultural show). Overnight camp in desert (â‚¹1,500â€“â‚¹3,000).</p><h3>Day 7: Return Journey</h3><p>Train from Jaisalmer to Delhi (18â€“20 hrs, â‚¹400â€“â‚¹1,000) or fly from Jaisalmer Airport.</p><h2 id="tips">Top Money-Saving Tips for Rajasthan</h2><ul><li>Buy composite tickets for monuments â€” saves â‚¹200â€“â‚¹400 vs individual entries.</li><li>Travel between cities by train â€” much cheaper than private taxis or buses.</li><li>Bargain hard in bazaars â€” initial prices are 2â€“3x the fair price for tourists.</li><li>Stay in heritage guesthouses â€” same atmosphere as palace hotels at 10% of the price.</li><li>Eat at local thali restaurants â€” full Rajasthani meal for â‚¹100â€“â‚¹200.</li><li>Book desert safari directly with operators in Jaisalmer â€” avoid hotel markups.</li></ul><h2 id="faqs">Frequently Asked Questions About Rajasthan</h2><h3>How much does a 7-day Rajasthan trip cost?</h3><p>A 7-day budget Rajasthan circuit costs approximately <strong>â‚¹15,000â€“â‚¹25,000</strong> per person, including trains between cities (â‚¹2,000â€“â‚¹4,000), accommodation (â‚¹5,000â€“â‚¹9,000), food (â‚¹3,000â€“â‚¹5,000), and monument entries (â‚¹1,500â€“â‚¹3,000).</p><h3>What is the best Rajasthan circuit for first-time visitors?</h3><p>The classic circuit is Jaipur â†’ Jodhpur â†’ Jaisalmer â†’ Udaipur (or reverse). This covers the Pink City, Blue City, Golden City, and City of Lakes â€” the four most iconic Rajasthan destinations.</p><h3>When is the best time to visit Rajasthan?</h3><p>October to March is ideal â€” temperatures range from 10â€“28Â°C. The Pushkar Camel Fair (November) and Jaipur Literature Festival (January) are highlights. Avoid Aprilâ€“June (extreme heat, 45Â°C+).</p><h3>Is Rajasthan safe for solo female travellers?</h3><p>Rajasthan is generally safe for tourists. Solo female travellers should exercise standard precautions â€” dress modestly, use app-based cabs at night, and stick to well-touristed areas. Jaipur and Udaipur are considered the safest cities.</p><h3>How do I get between Rajasthan cities cheaply?</h3><p>Trains are the cheapest and most comfortable option. Jaipur to Jodhpur â‚¹200â€“â‚¹400 (5â€“6 hrs), Jodhpur to Jaisalmer â‚¹150â€“â‚¹300 (5â€“6 hrs), Jaisalmer to Jodhpur â‚¹150â€“â‚¹300. Book on IRCTC 30â€“60 days ahead.</p><h3>What is a desert safari in Jaisalmer?</h3><p>A desert safari involves a camel ride to Sam Sand Dunes (45 km from Jaisalmer), sunset over the dunes, a cultural show with folk music and dance, dinner, and optional overnight camping under the stars. Cost: â‚¹800â€“â‚¹1,500 for a day trip, â‚¹1,500â€“â‚¹3,000 for overnight camping.</p><h3>What are the must-buy items in Rajasthan?</h3><p>Blue pottery (Jaipur), block-printed textiles, Kundan jewellery, Rajasthani juttis/shoes (â‚¹300â€“â‚¹800), miniature paintings, camel leather goods (Jaisalmer), and Bandhani tie-dye fabrics.</p>`,
+    state: "Rajasthan",
+    region: "North",
+    category: "Heritage",
+    images: [
+      { url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop", alt: "Rajasthan Mehrangarh Fort Jodhpur Blue City", caption: "Mehrangarh Fort overlooking the Blue City of Jodhpur" }
+    ],
+    budgetRange: { min: 1800, max: 3500 },
+    budgetBreakdown: {
+      accommodation: { min: 600, max: 1200 },
+      food: { min: 200, max: 400 },
+      transport: { min: 200, max: 600 },
+      activities: { min: 100, max: 300 }
+    },
+    bestSeasons: ["Winter", "Autumn", "Spring"],
+    attractions: ["Amber Fort (Jaipur)", "Mehrangarh Fort (Jodhpur)", "Jaisalmer Fort", "Sam Sand Dunes", "City Palace (Udaipur)", "Hawa Mahal", "Pushkar Camel Fair", "Thar Desert Safari"],
+    travelTips: ["Buy composite tickets for monuments", "Travel between cities by train", "Bargain hard in bazaars", "Book desert safari directly in Jaisalmer"],
+    howToReach: {
+      byAir: "Jaipur, Jodhpur, Udaipur, and Jaisalmer airports â€” flights from Delhi from â‚¹1,500",
+      byTrain: "Jaipur Junction (5 hrs from Delhi, â‚¹200â€“â‚¹700). Excellent rail network between all Rajasthan cities",
+      byRoad: "RSRTC Volvo buses from Delhi to Jaipur (â‚¹400â€“â‚¹600, 5 hrs). 280 km from Delhi via NH48"
+    },
+    relatedBlogs: ["rajasthan-heritage-budget-tour"],
+    seo: {
+      metaTitle: "Rajasthan Travel Guide 2024: Budget Circuit, Forts & Complete Itinerary",
+      metaDescription: "Complete Rajasthan travel guide covering Jaipur, Jodhpur, Jaisalmer, and Udaipur with budget breakdown and 7-day itinerary. Plan your Rajasthan trip for â‚¹1,800â€“â‚¹3,500/day.",
+      keywords: ["rajasthan travel guide", "rajasthan budget trip", "rajasthan circuit", "jaisalmer desert safari", "rajasthan itinerary", "rajasthan forts"],
+      ogImage: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop"
+    },
+    featured: true,
     published: true
   }
 ];
@@ -232,7 +368,7 @@ export function getFeaturedDestinations(limit = 6) {
 }
 
 export function getDestinationsByBudget(min, max) {
-  return destinations.filter(dest => 
+  return destinations.filter(dest =>
     dest.published && dest.budgetRange.min <= max && dest.budgetRange.max >= min
   );
 }
@@ -245,7 +381,7 @@ export function getDestinationsBySeason(season) {
 
 export function searchDestinations(query, filters = {}) {
   let results = destinations.filter(dest => dest.published);
-  
+
   if (query) {
     const lowerQuery = query.toLowerCase();
     results = results.filter(dest =>
@@ -255,19 +391,19 @@ export function searchDestinations(query, filters = {}) {
       dest.attractions.some(attr => attr.toLowerCase().includes(lowerQuery))
     );
   }
-  
+
   if (filters.budgetMin !== undefined && filters.budgetMax !== undefined) {
     results = results.filter(dest =>
       dest.budgetRange.min <= filters.budgetMax &&
       dest.budgetRange.max >= filters.budgetMin
     );
   }
-  
+
   if (filters.season) {
     results = results.filter(dest =>
       dest.bestSeasons.some(s => s.toLowerCase() === filters.season.toLowerCase())
     );
   }
-  
+
   return results;
 }
