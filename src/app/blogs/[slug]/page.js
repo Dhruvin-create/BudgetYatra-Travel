@@ -186,7 +186,7 @@ export default async function BlogPage({ params }) {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8">
             <div className="max-w-4xl mx-auto">
               <span className="inline-block px-3 py-1 bg-primary-600 text-white text-sm font-medium rounded-full mb-4">
@@ -219,7 +219,7 @@ export default async function BlogPage({ params }) {
               <TableOfContents toc={blog.tableOfContents} />
 
               {/* Budget Info Card */}
-              <div className="bg-gradient-to-br from-accent-50 to-primary-50 border-2 border-accent-200 p-8 mb-8 rounded-2xl shadow-lg">
+              <div className="bg-linear-to-br from-accent-50 to-primary-50 border-2 border-accent-200 p-8 mb-8 rounded-2xl shadow-lg">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <div className="flex items-center gap-2 mb-3">
@@ -328,7 +328,7 @@ export default async function BlogPage({ params }) {
                 </div>
 
                 {/* Budget Breakdown Card */}
-                <div className="bg-gradient-to-br from-primary-600 to-secondary-600 rounded-2xl shadow-lg p-6 text-white">
+                <div className="bg-linear-to-br from-primary-600 to-secondary-600 rounded-2xl shadow-lg p-6 text-white">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <span>💵</span>
                     Estimated Daily Costs
@@ -404,9 +404,25 @@ export default async function BlogPage({ params }) {
                   <p className="text-sm text-gray-300 mb-4">Subscribe for weekly travel tips and destination guides</p>
                   <Link
                     href="/contact"
-                    className="inline-block w-full py-3 bg-primary-600 hover:bg-primary-700 font-semibold rounded-xl transition-colors"
+                    className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl px-4 py-3 font-semibold
+                      bg-linear-to-r from-primary-600 to-primary-700
+                      ring-1 ring-inset ring-white/10
+                      shadow-md shadow-black/30
+                      transition duration-200 ease-out
+                      hover:shadow-lg hover:shadow-black/40
+                      active:shadow-md
+                      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
                   >
-                    Subscribe Now
+                    <span
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                    >
+                      <span className="absolute -left-1/3 top-0 h-full w-1/2 -skew-x-12 bg-white/20 blur-md"></span>
+                    </span>
+                    <span className="relative">Subscribe Now</span>
+                    <svg className="relative w-4 h-4 opacity-90 transition-transform duration-200 ease-out group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
                   </Link>
                 </div>
               </div>
