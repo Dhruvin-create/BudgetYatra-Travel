@@ -63,9 +63,10 @@ export default async function DestinationPage({ params }) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              {destination.longDescription}
-            </p>
+            <div 
+              className="text-lg text-gray-700 mb-8 leading-relaxed prose prose-lg max-w-none"
+              dangerouslySetInnerHTML={{ __html: destination.longDescription }}
+            />
 
             {/* Attractions */}
             <section className="mb-12">
