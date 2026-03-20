@@ -185,9 +185,10 @@ export default async function BlogPage({ params }) {
             fill
             className="object-cover"
             priority
-            quality={60}
+            quality={45}
             sizes="100vw"
             loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -404,7 +405,7 @@ export default async function BlogPage({ params }) {
                 <div className="bg-gray-900 rounded-2xl p-6 text-white text-center">
                   <div className="text-4xl mb-3">📧</div>
                   <h3 className="text-lg font-bold mb-2">Get Travel Updates</h3>
-                  <p className="text-sm text-gray-300 mb-4">Subscribe for weekly travel tips and destination guides</p>
+                  <p className="text-sm text-gray-200 mb-4">Subscribe for weekly travel tips and destination guides</p>
                   <Link
                     href="/contact"
                     className="group relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl px-4 py-3 font-semibold

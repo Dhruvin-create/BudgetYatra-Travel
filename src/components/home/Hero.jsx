@@ -144,8 +144,9 @@ export default function Hero() {
           fill
           className="object-cover"
           priority
-          quality={60}
+          quality={45}
           sizes="(max-width: 768px) 100vw, 1200px"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black/70"></div>
       </div>

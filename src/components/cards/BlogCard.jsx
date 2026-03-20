@@ -12,7 +12,7 @@ export default function BlogCard({ blog, showBudget = false }) {
             alt={blog.featuredImage.alt}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            quality={60}
+            quality={45}
             sizes="(max-width: 768px) 92vw, (max-width: 1024px) 46vw, 33vw"
             loading="lazy"
           />

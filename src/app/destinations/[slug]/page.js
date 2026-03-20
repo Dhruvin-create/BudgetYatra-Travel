@@ -43,9 +43,10 @@ export default async function DestinationPage({ params }) {
           fill
           className="object-cover"
           priority
-          quality={60}
+            quality={45}
           sizes="100vw"
           loading="eager"
+            fetchPriority="high"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 p-8">

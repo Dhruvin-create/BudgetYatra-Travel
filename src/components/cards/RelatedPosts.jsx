@@ -80,7 +80,7 @@ export default function RelatedPosts({
                     alt={blog.featuredImage.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    quality={60}
+                    quality={45}
                     sizes="(max-width: 768px) 92vw, (max-width: 1024px) 50vw, 25vw"
                     loading="lazy"
                   />

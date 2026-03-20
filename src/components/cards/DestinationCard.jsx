@@ -12,7 +12,7 @@ export default function DestinationCard({ destination }) {
             alt={destination.images[0].alt}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            quality={60}
+            quality={45}
             sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
             loading="lazy"
           />
