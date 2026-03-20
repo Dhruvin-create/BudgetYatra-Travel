@@ -139,13 +139,13 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=675&fit=crop"
+          src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920&h=1080&fit=crop&q=60"
           alt="Beautiful India landscape"
           fill
           className="object-cover"
           priority
-          quality={45}
-          sizes="(max-width: 768px) 100vw, 1200px"
+          quality={60}
+          sizes="100vw"
           fetchPriority="high"
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black/70"></div>

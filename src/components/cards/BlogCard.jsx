@@ -8,11 +8,11 @@ export default function BlogCard({ blog, showBudget = false }) {
         {/* Featured Image */}
         <div className="relative h-48 overflow-hidden">
           <Image
-            src={blog.featuredImage.url}
+            src={blog.featuredImage.url.replace(/w=\d+&h=\d+/, 'w=800&h=450')}
             alt={blog.featuredImage.alt}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            quality={45}
+            quality={60}
             sizes="(max-width: 768px) 92vw, (max-width: 1024px) 46vw, 33vw"
             loading="lazy"
           />
