@@ -1,6 +1,6 @@
 // SEO utility functions for BudgetYatra
 
-const SITE_URL = 'https://budgetyatra.com';
+const SITE_URL = 'https://budgetyatra.online';
 const DEFAULT_OG_IMAGE = '/images/og-default.jpg';
 
 /**
@@ -27,7 +27,6 @@ export function generateMetadata({
     description: description || 'Discover budget-friendly travel destinations across India. Complete guides, tips, and itineraries for affordable adventures.',
     keywords: keywordArray,
     authors: [{ name: author }],
-    canonical: fullUrl,
     robots: {
       index: true,
       follow: true,

@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://budgetyatra.com'),
+  metadataBase: new URL('https://budgetyatra.online'),
   title: {
     default: 'BudgetYatra - Budget Travel in India',
     template: '%s | BudgetYatra',
@@ -43,7 +43,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://budgetyatra.com',
+    url: 'https://budgetyatra.online',
     siteName: 'BudgetYatra',
     title: 'BudgetYatra - Budget Travel in India',
     description: 'Discover budget-friendly travel destinations across India. Complete guides, tips, and itineraries for affordable adventures.',
@@ -66,7 +66,7 @@ export const metadata = {
     site: '@budgetyatra',
   },
   alternates: {
-    canonical: 'https://budgetyatra.com',
+    canonical: 'https://budgetyatra.online',
   },
   verification: {
     google: 'google-site-verification-code', // Add your actual verification code
@@ -85,9 +85,6 @@ export default function RootLayout({ children }) {
         
         {/* DNS Prefetch for performance */}
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        
-        {/* Canonical tag */}
-        <link rel="canonical" href="https://budgetyatra.com" />
         
         {/* Organization Schema */}
         <script

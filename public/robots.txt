@@ -12,7 +12,7 @@ Disallow: /*?*filter=
 # Specific rules for Google
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
+Crawl-delay: 1
 
 # Specific rules for Bing
 User-agent: Bingbot
