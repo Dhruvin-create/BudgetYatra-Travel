@@ -1,22 +1,31 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import HeroSearch from './HeroSearch';
+import dynamic from 'next/dynamic';
 
-// Server component — image renders on server, no hydration delay for LCP
+// Lazy load search — defers its JS bundle until after LCP
+const HeroSearch = dynamic(() => import('./HeroSearch'), {
+  ssr: false,
+  loading: () => (
+    <div className="max-w-2xl mx-auto mb-8">
+      <div className="w-full h-14 rounded-full bg-white/10 border-2 border-white/50 backdrop-blur-md" />
+    </div>
+  ),
+});
+
+// Server component — plain <img> so preload URL matches exactly (no /_next/image wrapper)
 export default function Hero() {
   return (
     <section className="relative h-[520px] md:h-[650px] flex items-center justify-center overflow-hidden">
-      {/* LCP Image — server-rendered, no JS needed */}
+      {/* LCP Image — plain img tag, preload in layout.js matches this exact URL */}
       <div className="absolute inset-0">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp"
-          alt="Beautiful India landscape"
-          fill
-          className="object-cover"
-          priority
-          quality={55}
+          srcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop&q=55&fm=webp 1200w"
           sizes="(max-width: 768px) 100vw, 1200px"
+          alt="Beautiful India landscape"
           fetchPriority="high"
+          decoding="async"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/35 to-black/65"></div>
       </div>
@@ -40,7 +49,7 @@ export default function Hero() {
           Explore breathtaking destinations across India without breaking the bank.
         </p>
 
-        {/* Search — client component, loads after LCP */}
+        {/* Search — dynamically loaded after LCP, doesn't block render */}
         <HeroSearch />
 
         {/* CTA Buttons — server rendered links, no JS needed */}

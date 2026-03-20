@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -6,13 +6,6 @@ import { generateOrganizationSchema } from "@/lib/utils/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: 'swap',
-  preload: true,
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
   display: 'swap',
   preload: true,
@@ -79,17 +72,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Preconnect + preload for LCP hero image */}
-        <link rel="preconnect" href="https://images.unsplash.com" />
+        {/* Preconnect to Unsplash — reduces connection time for LCP image */}
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        {/* Preload mobile hero image — tells browser to fetch before render */}
+        {/* Preload LCP hero image — URL matches <img> src exactly, no /_next/image wrapper */}
         <link
           rel="preload"
           as="image"
           href="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp"
           imageSrcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop&q=55&fm=webp 1200w"
           imageSizes="(max-width: 768px) 100vw, 1200px"
-          fetchPriority="high"
+          crossOrigin="anonymous"
         />
         
         {/* Organization Schema */}
@@ -99,7 +92,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
         <Navbar />
         <main className="min-h-screen">
