@@ -1,15 +1,5 @@
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
-
-// Lazy load search — defers its JS bundle until after LCP
-const HeroSearch = dynamic(() => import('./HeroSearch'), {
-  ssr: false,
-  loading: () => (
-    <div className="max-w-2xl mx-auto mb-8">
-      <div className="w-full h-14 rounded-full bg-white/10 border-2 border-white/50 backdrop-blur-md" />
-    </div>
-  ),
-});
+import HeroSearchLoader from './HeroSearchLoader';
 
 // Server component — plain <img> so preload URL matches exactly (no /_next/image wrapper)
 export default function Hero() {
@@ -50,7 +40,7 @@ export default function Hero() {
         </p>
 
         {/* Search — dynamically loaded after LCP, doesn't block render */}
-        <HeroSearch />
+        <HeroSearchLoader />
 
         {/* CTA Buttons — server rendered links, no JS needed */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
