@@ -12,12 +12,10 @@ Disallow: /*?*filter=
 # Specific rules for Google
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 # Specific rules for Bing
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 # Block bad bots
 User-agent: AhrefsBot
@@ -34,4 +32,4 @@ Sitemap: https://budgetyatra.com/sitemap.xml
 Sitemap: https://budgetyatra.com/api/sitemap
 
 # Cache control
-Cache-control: max-age=86400
+# (Robots.txt does not support Cache-Control directives.)
