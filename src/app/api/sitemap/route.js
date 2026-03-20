@@ -1,7 +1,7 @@
 import { getAllBlogs } from '@/lib/data/blogs';
 import { getAllDestinations } from '@/lib/data/destinations';
 
-const SITE_URL = 'https://budgetyatra.com';
+const SITE_URL = 'https://budgetyatra.online';
 
 /**
  * Generate XML sitemap for search engines

@@ -28,8 +28,8 @@ User-agent: DotBot
 Disallow: /
 
 # Sitemap location
-Sitemap: https://budgetyatra.com/sitemap.xml
-Sitemap: https://budgetyatra.com/api/sitemap
+Sitemap: https://budgetyatra.online/sitemap.xml
+Sitemap: https://budgetyatra.online/api/sitemap
 
 # Cache control
 # (Robots.txt does not support Cache-Control directives.)

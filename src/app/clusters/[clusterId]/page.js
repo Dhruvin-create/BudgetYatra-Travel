@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
     title: pillarMetadata.title,
     description: pillarMetadata.description,
     keywords: pillarMetadata.keywords,
-    url: `https://budgetyatra.com/clusters/${clusterId}`,
+    url: `https://budgetyatra.onlineclusters/${clusterId}`,
     type: 'website',
   });
 }

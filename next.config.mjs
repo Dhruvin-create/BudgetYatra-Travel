@@ -126,7 +126,7 @@ const nextConfig = {
 
   // Environment variables
   env: {
-    NEXT_PUBLIC_SITE_URL: 'https://budgetyatra.com',
+    NEXT_PUBLIC_SITE_URL: 'https://budgetyatra.online',
   },
 
   // Logging

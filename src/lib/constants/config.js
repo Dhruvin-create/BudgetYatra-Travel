@@ -3,7 +3,7 @@
 export const SITE_CONFIG = {
   name: 'BudgetYatra',
   description: 'Budget-friendly travel destinations across India',
-  url: 'https://budgetyatra.com',
+  url: 'https://budgetyatra.online',
   author: 'BudgetYatra Team',
   social: {
     facebook: 'https://facebook.com/budgetyatra',
