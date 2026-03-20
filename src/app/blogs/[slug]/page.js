@@ -185,6 +185,9 @@ export default async function BlogPage({ params }) {
             fill
             className="object-cover"
             priority
+            quality={60}
+            sizes="100vw"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8">

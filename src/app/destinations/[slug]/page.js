@@ -43,8 +43,11 @@ export default async function DestinationPage({ params }) {
           fill
           className="object-cover"
           priority
+          quality={60}
+          sizes="100vw"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 p-8">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-2">
@@ -74,7 +77,7 @@ export default async function DestinationPage({ params }) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {destination.attractions.map((attraction) => (
                   <div key={attraction} className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
-                    <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-primary-600 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
@@ -90,7 +93,7 @@ export default async function DestinationPage({ params }) {
               <ul className="space-y-3">
                 {destination.travelTips.map((tip, index) => (
                   <li key={index} className="flex items-start space-x-3">
-                    <svg className="w-6 h-6 text-success-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-success-600 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">{tip}</span>
@@ -137,7 +140,7 @@ export default async function DestinationPage({ params }) {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             {/* Budget Breakdown */}
-            <div className="bg-gradient-to-br from-accent-50 to-accent-100 rounded-xl p-6 mb-8 sticky top-24">
+            <div className="bg-linear-to-br from-accent-50 to-accent-100 rounded-xl p-6 mb-8 sticky top-24">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Budget Breakdown</h3>
               
               <div className="mb-6">

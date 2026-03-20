@@ -12,8 +12,11 @@ export default function DestinationCard({ destination }) {
             alt={destination.images[0].alt}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            quality={60}
+            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 33vw"
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
           <div className="absolute bottom-4 left-4 right-4">
             <h3 className="text-2xl font-bold text-white mb-1">
               {destination.name}

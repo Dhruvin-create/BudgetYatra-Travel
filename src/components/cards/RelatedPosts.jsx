@@ -80,6 +80,9 @@ export default function RelatedPosts({
                     alt={blog.featuredImage.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    quality={60}
+                    sizes="(max-width: 768px) 92vw, (max-width: 1024px) 50vw, 25vw"
+                    loading="lazy"
                   />
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 bg-primary-600 text-white text-xs font-semibold rounded-full">
