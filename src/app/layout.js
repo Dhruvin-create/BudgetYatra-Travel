@@ -79,9 +79,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* DNS Prefetch for Unsplash images */}
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        {/* Preconnect + preload for LCP hero image */}
         <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        {/* Preload mobile hero image — tells browser to fetch before render */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp"
+          imageSrcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop&q=55&fm=webp 1200w"
+          imageSizes="(max-width: 768px) 100vw, 1200px"
+          fetchPriority="high"
+        />
         
         {/* Organization Schema */}
         <script

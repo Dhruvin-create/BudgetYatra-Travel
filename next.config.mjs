@@ -23,6 +23,8 @@ const nextConfig = {
   // CSS optimization
   experimental: {
     optimizeCss: true,
+    // Optimize package imports to reduce JS bundle
+    optimizePackageImports: ['next/image'],
   },
 
   // Compression
