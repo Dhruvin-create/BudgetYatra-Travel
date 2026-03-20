@@ -22,7 +22,7 @@ export default function CalculatorPage() {
           <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
             Budget Calculator
           </h1>
-          <p className="text-xl text-white/95 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-2xl mx-auto leading-relaxed">
             Get accurate budget estimates for your dream destination in just 3 simple steps
           </p>
         </div>

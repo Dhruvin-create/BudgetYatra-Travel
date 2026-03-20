@@ -40,7 +40,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent mb-4">
               BudgetYatra
             </h3>
-            <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+            <p className="text-gray-300 mb-6 text-sm leading-relaxed">
               Discover budget-friendly travel destinations across India. Your guide to affordable adventures.
             </p>
             {/* Social Media */}
@@ -49,7 +49,7 @@ export default function Footer() {
                 href={SITE_CONFIG.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-primary-300 transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@ export default function Footer() {
                 href={SITE_CONFIG.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-primary-300 transition-colors"
                 aria-label="Twitter"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ export default function Footer() {
                 href={SITE_CONFIG.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-primary-300 transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@ export default function Footer() {
                 href={SITE_CONFIG.social.pinterest}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary-400 transition-colors"
+                className="text-gray-300 hover:text-primary-300 transition-colors"
                 aria-label="Pinterest"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ export default function Footer() {
                 <li key={dest.slug}>
                   <Link
                     href={`/destinations/${dest.slug}`}
-                    className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-primary-300 transition-colors text-sm"
                   >
                     {dest.name}
                   </Link>
@@ -117,7 +117,7 @@ export default function Footer() {
                 <li key={guide.href}>
                   <Link
                     href={guide.href}
-                    className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-primary-300 transition-colors text-sm"
                   >
                     {guide.name}
                   </Link>
@@ -134,7 +134,7 @@ export default function Footer() {
                 <li key={tip.id}>
                   <Link
                     href={tip.href}
-                    className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-primary-300 transition-colors text-sm"
                   >
                     {tip.name}
                   </Link>
@@ -151,7 +151,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-primary-400 transition-colors text-sm"
+                    className="text-gray-300 hover:text-primary-300 transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -164,17 +164,17 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-sm">
               &copy; {new Date().getFullYear()} BudgetYatra. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm">
-              <Link href="/privacy" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="/privacy" className="text-gray-300 hover:text-primary-300 transition-colors">
                 Privacy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="/terms" className="text-gray-300 hover:text-primary-300 transition-colors">
                 Terms
               </Link>
-              <Link href="/affiliate-disclosure" className="text-gray-400 hover:text-primary-400 transition-colors">
+              <Link href="/affiliate-disclosure" className="text-gray-300 hover:text-primary-300 transition-colors">
                 Affiliate Disclosure
               </Link>
             </div>

@@ -166,7 +166,7 @@ export default function Hero() {
           Discover India on a Budget
         </h1>
         
-        <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto leading-relaxed">
           Explore breathtaking destinations across India without breaking the bank. Your adventure starts here.
         </p>
 
@@ -180,7 +180,7 @@ export default function Hero() {
               onKeyDown={handleKeyDown}
               onFocus={() => searchQuery.length >= 2 && suggestions.length > 0 && setShowSuggestions(true)}
               placeholder="Search destinations, beaches, mountains, heritage sites..."
-              className="w-full px-6 py-5 pr-32 rounded-full bg-white/10 backdrop-blur-md border-2 border-white text-white placeholder-white/70 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 focus:bg-white/20 shadow-2xl"
+              className="w-full px-6 py-5 pr-32 rounded-full bg-white/10 backdrop-blur-md border-2 border-white text-white placeholder-white/90 text-lg focus:outline-none focus:ring-4 focus:ring-white/30 focus:bg-white/20 shadow-2xl"
             />
             <button
               type="submit"
@@ -244,15 +244,15 @@ export default function Hero() {
         <div className="mt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-white mb-1">50+</div>
-            <div className="text-white/80 text-sm">Destinations</div>
+            <div className="text-white text-sm">Destinations</div>
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-white mb-1">100+</div>
-            <div className="text-white/80 text-sm">Travel Guides</div>
+            <div className="text-white text-sm">Travel Guides</div>
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-white mb-1">₹2K+</div>
-            <div className="text-white/80 text-sm">Budget Trips</div>
+            <div className="text-white text-sm">Budget Trips</div>
           </div>
         </div>
       </div>

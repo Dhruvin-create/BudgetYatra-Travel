@@ -14,7 +14,7 @@ export default function AboutPage() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             About BudgetYatra
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto">
             Making budget travel accessible to everyone across India
           </p>
         </div>

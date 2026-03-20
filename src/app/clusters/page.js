@@ -28,7 +28,7 @@ export default function ClustersPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Content Clusters
             </h1>
-            <p className="text-xl text-white/90 max-w-2xl">
+            <p className="text-xl text-white max-w-2xl">
               Explore our organized collection of travel guides, destination information, and budget travel tips.
             </p>
           </div>

@@ -126,7 +126,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight">
             Calculate Your Trip Budget
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
+          <p className="text-sm sm:text-base md:text-lg text-white mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
             Use our smart budget calculator to get accurate cost estimates for your dream destination
           </p>
           <Link
