@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent mb-4">
+            <h3 className="text-2xl font-bold bg-linear-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent mb-4">
               BudgetYatra
             </h3>
             <p className="text-gray-300 mb-6 text-sm leading-relaxed">
