@@ -43,11 +43,31 @@ export default function DestinationsContent() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Explore Destinations
+            Budget Travel Destinations India
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover amazing budget-friendly destinations across India
+            Discover affordable places to visit in India — from cheap coastal destinations to budget hill stations, all with real per-day cost breakdowns
           </p>
+        </div>
+
+        {/* SEO Category Subheadings */}
+        <div className="mb-10 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900 mb-1">Affordable Places to Visit in India</h2>
+            <p className="text-sm text-gray-600">Budget-friendly destinations under ₹1,500/day — explore <a href="/destinations?category=Heritage" className="text-primary-600 hover:underline">heritage cities</a>, <a href="/destinations?category=Nature" className="text-primary-600 hover:underline">nature escapes</a>, and more.</p>
+          </div>
+          <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900 mb-1">Cheap Coastal Destinations India</h2>
+            <p className="text-sm text-gray-600">From Goa to Kerala — find the best <a href="/destinations?category=Beach" className="text-primary-600 hover:underline">cheap beach destinations</a> with seasonal budget tips.</p>
+          </div>
+          <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900 mb-1">Cheap Hill Stations Near Mumbai</h2>
+            <p className="text-sm text-gray-600">Weekend getaways and <a href="/destinations?category=Mountains" className="text-primary-600 hover:underline">budget mountain destinations</a> within reach of major cities.</p>
+          </div>
+          <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+            <h2 className="text-lg font-bold text-gray-900 mb-1">Budget Adventure Destinations</h2>
+            <p className="text-sm text-gray-600">Rishikesh, Ladakh, Manali — <a href="/destinations?category=Adventure" className="text-primary-600 hover:underline">adventure travel on a budget</a> with real cost guides.</p>
+          </div>
         </div>
 
         {/* Category Filter */}

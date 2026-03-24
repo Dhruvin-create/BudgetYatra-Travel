@@ -2,6 +2,17 @@ import { Suspense } from 'react';
 import BlogsContent from './BlogsContent';
 import Breadcrumbs from '@/components/links/Breadcrumbs';
 
+export const metadata = {
+  title: 'India Budget Travel Blog — Tips for Students & Couples | BudgetYatra',
+  description: 'Explore India budget travel tips, guides for students, couples, and solo travelers. Real itineraries, money-saving hacks, and destination-wise budget breakdowns.',
+  keywords: 'India budget travel tips, India budget travel blog, India budget travel for students, India budget travel for couples',
+  openGraph: {
+    title: 'India Budget Travel Blog — Tips for Students & Couples | BudgetYatra',
+    description: 'Real budget travel guides for India — from Kerala backwaters to Ladakh road trips. Practical tips for every type of traveler.',
+    type: 'website',
+  },
+};
+
 export default function BlogsPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },

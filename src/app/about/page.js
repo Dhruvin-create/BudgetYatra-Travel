@@ -1,8 +1,14 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'About Us - BudgetYatra',
-  description: 'Learn about BudgetYatra and our mission to make travel accessible to everyone',
+  title: 'About BudgetYatra — India Budget Travel Blog & Guide',
+  description: 'BudgetYatra is India\'s trusted budget travel guide. Learn about our mission to make budget travel in India accessible to every student, couple, and solo traveler.',
+  keywords: 'budget travel in India, budget travel guide India, India budget travel blog',
+  openGraph: {
+    title: 'About BudgetYatra — India Budget Travel Blog & Guide',
+    description: 'Our mission: make budget travel in India accessible to everyone. Real guides, honest tips, and a community of smart travelers.',
+    type: 'website',
+  },
 };
 
 export default function AboutPage() {
@@ -39,12 +45,12 @@ export default function AboutPage() {
 
         <div className="max-w-4xl mx-auto">
           <section className="mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Budget Travel Philosophy</h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              At BudgetYatra, we believe that travel should be accessible to everyone, regardless of their budget. 
-              Our mission is to inspire and empower travelers to explore the incredible diversity of India without 
-              breaking the bank. We provide comprehensive guides, practical tips, and honest recommendations to help 
-              you plan affordable yet unforgettable adventures.
+              At BudgetYatra, we believe that budget travel in India is not about compromise — it's about traveling smarter. 
+              Our mission is to be India's most trusted budget travel guide, helping students, couples, solo travelers, and families 
+              explore the incredible diversity of India without breaking the bank. We provide comprehensive guides, practical tips, 
+              and honest recommendations so you can plan affordable yet unforgettable adventures across every corner of India.
             </p>
           </section>
 

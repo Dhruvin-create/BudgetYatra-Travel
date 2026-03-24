@@ -40,10 +40,20 @@ export default function BlogsContent() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Travel Blogs & Guides
+            India Budget Travel Blog
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover budget-friendly travel tips, destination guides, and adventure stories from across India
+            India budget travel tips for students, couples, and solo explorers — real itineraries, money-saving hacks, and destination guides from across India
+          </p>
+        </div>
+
+        {/* SEO Subheadings */}
+        <div className="mb-10 max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">India Budget Travel Tips You Must Know</h2>
+          <p className="text-gray-600">
+            From cheap hill stations to coastal escapes — our guides cover every type of budget traveler. 
+            Whether you're planning an <a href="/blogs?category=Mountains" className="text-primary-600 hover:underline">India budget road trip</a> through the mountains or a 
+            <a href="/blogs?category=Beach" className="text-primary-600 hover:underline"> budget beach trip India</a>, we've got you covered.
           </p>
         </div>
 

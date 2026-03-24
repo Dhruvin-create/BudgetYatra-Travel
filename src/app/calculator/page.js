@@ -1,8 +1,14 @@
 import BudgetCalculator from '@/components/calculator/BudgetCalculator';
 
 export const metadata = {
-  title: 'Budget Calculator - BudgetYatra',
-  description: 'Calculate your trip budget with our interactive travel budget calculator',
+  title: 'Budget Travel Calculator India — Plan Trip Budget India | BudgetYatra',
+  description: 'Use our free budget travel calculator India to estimate your trip cost. Plan trip budget India with per-day breakdowns for accommodation, food, transport & activities.',
+  keywords: 'budget travel calculator India, plan trip budget India, India budget travel tips, what to pack for India budget trip',
+  openGraph: {
+    title: 'Budget Travel Calculator India — Plan Trip Budget India | BudgetYatra',
+    description: 'Calculate your India trip budget in 3 steps. Get per-day cost estimates for any destination with our free travel budget planner.',
+    type: 'website',
+  },
 };
 
 export default function CalculatorPage() {
@@ -20,10 +26,10 @@ export default function CalculatorPage() {
             SMART TRAVEL PLANNING
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-            Budget Calculator
+            Budget Travel Calculator India
           </h1>
           <p className="text-xl text-white max-w-2xl mx-auto leading-relaxed">
-            Get accurate budget estimates for your dream destination in just 3 simple steps
+            Plan trip budget India in just 3 steps — get accurate per-day cost estimates for any destination
           </p>
         </div>
       </div>
@@ -107,6 +113,79 @@ export default function CalculatorPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Get Your Budget</h3>
               <p className="text-gray-600 leading-relaxed">Receive detailed breakdown with money-saving tips and recommendations</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="bg-white py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">How to Plan Trip Budget India — FAQ</h2>
+            <p className="text-lg text-gray-600">Common questions about budget travel planning in India</p>
+          </div>
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  { "@type": "Question", "name": "How to plan trip budget India?", "acceptedAnswer": { "@type": "Answer", "text": "Choose your destination, estimate per-day costs (accommodation ₹800–₹1,500, food ₹300–₹600, transport ₹200–₹500), add activities and a 10–15% buffer. Use our Budget Travel Calculator India above for an instant estimate." } },
+                  { "@type": "Question", "name": "What is the minimum budget for a trip in India?", "acceptedAnswer": { "@type": "Answer", "text": "A minimum budget trip in India costs ₹800–₹1,200 per day per person — covering a dorm bed or budget guesthouse, local meals, and basic transport. Varanasi, Hampi, and Rishikesh are among the cheapest destinations." } },
+                  { "@type": "Question", "name": "What to pack for India budget trip?", "acceptedAnswer": { "@type": "Answer", "text": "Pack lightweight clothes, a reusable water bottle, basic first-aid kit, power bank, universal adapter, and a rain jacket for June–September travel. Laundry services are cheap (₹50–₹100/kg) so avoid overpacking." } },
+                  { "@type": "Question", "name": "Which is the cheapest destination in India for budget travel?", "acceptedAnswer": { "@type": "Answer", "text": "Cheapest destinations: Hampi (₹700–₹1,000/day), Varanasi (₹800–₹1,200/day), Rishikesh (₹900–₹1,400/day), Pushkar (₹700–₹1,100/day). Gokarna is cheaper than Goa at ₹1,000–₹1,500/day." } },
+                  { "@type": "Question", "name": "How many days is enough for a budget India trip?", "acceptedAnswer": { "@type": "Answer", "text": "7 days is ideal for one region (e.g., Golden Triangle or Kerala). For multi-region trips, plan 14–21 days. Budget ₹15,000–₹25,000 for a 7-day trip including intercity travel." } },
+                  { "@type": "Question", "name": "What are India budget travel tips to save money?", "acceptedAnswer": { "@type": "Answer", "text": "Travel by sleeper-class trains, eat at local dhabas (₹60–₹120/meal), book hostels (save 50–70% vs hotels), travel in shoulder season (March–April, September–October), and use our budget calculator to plan ahead." } }
+                ]
+              })
+            }}
+          />
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "How to plan trip budget India?",
+                a: "Choose your destination, estimate per-day costs — accommodation ₹800–₹1,500, food ₹300–₹600, local transport ₹200–₹500 — then add activities and a 10–15% buffer. Use our Budget Travel Calculator India above to get an instant breakdown."
+              },
+              {
+                q: "What is the minimum budget for a trip in India?",
+                a: "A minimum budget trip in India costs around ₹800–₹1,200 per day per person. This covers a dorm bed or budget guesthouse (₹300–₹600), local meals (₹200–₹400), and basic transport. Destinations like Varanasi, Hampi, and Rishikesh are among the cheapest in India."
+              },
+              {
+                q: "What to pack for India budget trip?",
+                a: "Pack lightweight clothes (cotton for summer, layers for mountains), a reusable water bottle, basic first-aid kit, power bank, universal adapter, and a rain jacket for June–September travel. Laundry services are cheap (₹50–₹100/kg) across India, so avoid overpacking."
+              },
+              {
+                q: "Which is the cheapest destination in India for budget travel?",
+                a: "Cheapest destinations: Hampi (₹700–₹1,000/day), Varanasi (₹800–₹1,200/day), Rishikesh (₹900–₹1,400/day), and Pushkar (₹700–₹1,100/day). Beach-wise, Gokarna is cheaper than Goa at ₹1,000–₹1,500/day. See our destinations page for full breakdowns."
+              },
+              {
+                q: "How many days is enough for a budget India trip?",
+                a: "A 7-day budget India itinerary works well for one region — e.g., Delhi–Agra–Jaipur (Golden Triangle) or Kerala backwaters. For multi-region trips covering North + South India, plan 14–21 days. Budget roughly ₹15,000–₹25,000 for 7 days including intercity travel."
+              },
+              {
+                q: "Is India budget travel safe for solo travelers?",
+                a: "Yes, India is generally safe for budget solo travelers. Stick to well-reviewed hostels, use app-based cabs (Ola/Uber) in cities, and keep digital copies of your documents. Rishikesh, Goa, and Manali have large solo traveler communities with good infrastructure."
+              },
+              {
+                q: "What are India budget travel tips to save money?",
+                a: "Top tips: (1) Travel by sleeper-class trains — cheapest long-distance option. (2) Eat at local dhabas — full meal for ₹60–₹120. (3) Book hostels instead of hotels — save 50–70%. (4) Travel in shoulder season (March–April, September–October) for lower prices. (5) Use our budget calculator to plan ahead."
+              }
+            ].map((item, i) => (
+              <details key={i} className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+                <summary className="flex items-center justify-between px-6 py-4 cursor-pointer font-semibold text-gray-900 hover:bg-gray-100 transition-colors list-none">
+                  <span>{item.q}</span>
+                  <svg className="w-5 h-5 text-primary-600 flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-5 text-gray-700 leading-relaxed border-t border-gray-200 pt-4">
+                  {item.a}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </div>

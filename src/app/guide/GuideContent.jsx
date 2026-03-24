@@ -61,10 +61,10 @@ export default function GuideContent() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Find Your Perfect Destination
+            India Budget Road Trip Planner
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Search destinations based on your budget and preferred travel season
+            Plan your 7-day budget India itinerary — search destinations by budget and season, and get a personalized travel plan
           </p>
         </div>
 
@@ -174,6 +174,58 @@ export default function GuideContent() {
             )}
           </div>
         )}
+
+        {/* FAQ Section */}
+        <div className="mt-20 max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">Budget Travel India Itineraries — FAQ</h2>
+            <p className="text-gray-600">Everything you need to know about planning a budget road trip in India</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              {
+                q: "How to plan India road trip on budget?",
+                a: "Plan your India road trip on budget by: (1) Choosing a route with good road connectivity — NH44 (Manali–Leh), NH66 (coastal Karnataka–Kerala), or the Golden Quadrilateral. (2) Renting a bike (₹500–₹800/day) or sharing a car with co-travelers. (3) Staying at dhabas and budget guesthouses (₹400–₹800/night). (4) Carrying a tent for remote stretches like Spiti or Ladakh. Total road trip budget: ₹1,500–₹2,500/day per person."
+              },
+              {
+                q: "What is the best 7-day budget India itinerary?",
+                a: "Top 7-day budget India itineraries: (1) Golden Triangle — Delhi → Agra → Jaipur → Delhi (₹12,000–₹18,000 total). (2) Kerala Backwaters — Kochi → Alleppey → Munnar → Kochi (₹10,000–₹15,000). (3) Rajasthan Heritage — Jaipur → Jodhpur → Jaisalmer (₹14,000–₹20,000). (4) Himachal Mountains — Delhi → Manali → Kasol → Delhi (₹13,000–₹19,000). All estimates include transport, accommodation, and food."
+              },
+              {
+                q: "Which regions are best for India budget road trip planner?",
+                a: "Best regions for India budget road trips: (1) Himachal Pradesh — Manali–Spiti–Kinnaur circuit (May–October). (2) Rajasthan — Jaipur–Jodhpur–Jaisalmer (October–March). (3) Kerala — coastal NH66 route (November–February). (4) Northeast India — Meghalaya–Assam circuit (October–April). Budget: ₹1,500–₹2,500/day including fuel, food, and accommodation."
+              },
+              {
+                q: "How many days for a complete India budget travel itinerary?",
+                a: "For a complete India budget travel itinerary covering major regions: North India (7–10 days), South India (7–10 days), Rajasthan (5–7 days), Northeast (7–10 days). A full India circuit takes 30–45 days. Budget travelers typically spend ₹1,000–₹1,800/day on average across all regions."
+              },
+              {
+                q: "What is the best season for budget travel India itineraries?",
+                a: "Best seasons for budget travel India: (1) October–March — ideal for Rajasthan, South India, and coastal destinations. Prices are higher in peak season (December–January). (2) April–June — best for Himachal Pradesh and Ladakh; lower prices before peak summer. (3) July–September — monsoon season; cheapest prices but limited access to mountain roads. Shoulder season (March–April, September–October) offers the best balance of weather and budget."
+              },
+              {
+                q: "How to plan India road trip on budget for first-timers?",
+                a: "First-timer India road trip tips: (1) Start with a well-connected route like Delhi–Agra–Jaipur or Bangalore–Mysore–Coorg. (2) Book accommodation in advance for peak season. (3) Use Google Maps offline for remote areas. (4) Carry cash — many toll booths and small towns don't accept cards. (5) Join travel groups on Facebook/Reddit to find co-travelers and split costs. Use our destination guide above to find routes matching your budget."
+              },
+              {
+                q: "What is the per-day budget for India road trip?",
+                a: "Per-day budget for India road trip: Budget traveler ₹1,200–₹1,800 (bike rental/shared car + dhaba food + budget guesthouse). Mid-range ₹2,500–₹4,000 (own car + restaurant meals + decent hotel). Luxury ₹6,000+ (resort stays + fine dining). Fuel costs average ₹3–₹5/km for bikes and ₹6–₹10/km for cars depending on the vehicle."
+              }
+            ].map((item, i) => (
+              <details key={i} className="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                <summary className="flex items-center justify-between px-6 py-4 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50 transition-colors list-none">
+                  <span>{item.q}</span>
+                  <svg className="w-5 h-5 text-primary-600 flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-5 text-gray-700 leading-relaxed border-t border-gray-200 pt-4">
+                  {item.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

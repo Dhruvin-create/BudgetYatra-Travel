@@ -64,7 +64,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-lg text-gray-600">
-            Have questions or feedback? We'd love to hear from you!
+            Need help planning budget travel India itineraries? Have questions or feedback? We'd love to hear from you.
           </p>
         </div>
 

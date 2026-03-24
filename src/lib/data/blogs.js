@@ -56,10 +56,10 @@ const blogs = [
   },
   {
     slug: 'rishikesh-budget-adventure-guide',
-    title: 'Rishikesh on a Budget: Adventure + Ashrams (2024)',
-    excerpt: 'A practical budget guide to Rishikesh covering rafting costs, cheap stays, food, and free experiences—perfect for adventure travellers.',
+    title: 'Cheap Rishikesh Travel Guide: Rishikesh Haridwar Budget Itinerary (2026)',
+    excerpt: 'Complete cheap Rishikesh travel guide — rafting costs, Rishikesh Haridwar budget itinerary, Uttarakhand budget trip tips, and free experiences for every traveler.',
     published: true,
-    content: `<div class="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-emerald-800 mb-2">Quick Answer: Rishikesh Budget</h2><p class="text-emerald-900">Expect <strong>₹1,200–₹2,800/day</strong> depending on rafting, cafes, and stay type. Most temples, ghats, and sunrise points are free.</p></div><h2>Why Rishikesh is great for budget adventure</h2><p>Rishikesh mixes river rafting, treks, yoga, and ashram stays—so you can spend little and still have a full itinerary.</p>`,
+    content: `<div class="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-emerald-800 mb-2">Quick Answer: Cheap Rishikesh Travel Guide</h2><p class="text-emerald-900">Expect <strong>₹1,200–₹2,800/day</strong> for a complete Rishikesh budget trip. A Rishikesh Haridwar budget itinerary of 4 days costs ₹6,000–₹12,000 total. Rafting ₹600–₹1,500, ashram stays ₹300–₹600/night, and most temples and ghats are free.</p></div><h2>Cheap Rishikesh Travel Guide: Why It's India's Best Budget Adventure Destination</h2><p>Rishikesh is the adventure capital of India — and one of the cheapest. River rafting, bungee jumping, yoga retreats, and Himalayan treks are all available at budget prices. Combined with a Haridwar day trip, this is the perfect Uttarakhand budget trip for students and solo travelers.</p><h2>Rishikesh Haridwar Budget Itinerary (4 Days)</h2><ol><li><strong>Day 1 — Arrive Rishikesh:</strong> Check into ashram or hostel (₹300–₹600). Evening Ganga Aarti at Triveni Ghat (free).</li><li><strong>Day 2 — Rafting Day:</strong> 16 km rafting stretch (₹600–₹900). Lakshman Jhula walk. Cafe hopping in Tapovan.</li><li><strong>Day 3 — Haridwar Day Trip:</strong> Har Ki Pauri Ganga Aarti (free). Mansa Devi temple (₹100 ropeway). Return to Rishikesh.</li><li><strong>Day 4 — Trek or Yoga:</strong> Kunjapuri sunrise trek (₹0–₹200 guide). Yoga class (₹200–₹500). Depart.</li></ol><h2>Uttarakhand Budget Trip: Cost Breakdown</h2><ul><li><strong>Accommodation:</strong> Ashram ₹300–₹600/night, Hostel ₹400–₹800/night</li><li><strong>Food:</strong> ₹200–₹500/day (local dhabas, cafe meals)</li><li><strong>Rafting:</strong> ₹600–₹1,500 depending on stretch</li><li><strong>Bungee/Zipline:</strong> ₹3,500–₹4,500 (Jumpin Heights)</li><li><strong>Transport Rishikesh to Haridwar:</strong> ₹50–₹80 by shared auto/bus</li></ul>`,
     featuredImage: {
       url: 'https://images.unsplash.com/photo-1678788166239-b28733f56956?w=1200&h=600&fit=crop&auto=format',
       alt: 'Lakshman Jhula bridge in Rishikesh',
@@ -67,7 +67,7 @@ const blogs = [
       height: 600
     },
     category: 'Adventure',
-    tags: ['rishikesh', 'adventure', 'rafting', 'budget travel', 'yoga', 'uttarakhand'],
+    tags: ['rishikesh', 'adventure', 'rafting', 'budget travel', 'yoga', 'uttarakhand', 'haridwar'],
     author: {
       name: 'Priya Sharma',
       bio: 'Travel blogger and budget travel expert with 5+ years of exploring India on a shoestring.',
@@ -81,20 +81,24 @@ const blogs = [
     season: ['September', 'October', 'November', 'February', 'March'],
     destination: 'rishikesh',
     seo: {
-      metaTitle: 'Rishikesh Budget Adventure Guide 2024 (Rafting + Stay Costs)',
-      metaDescription: 'Plan a budget trip to Rishikesh with rafting prices, cheap stays, food, and free things to do. Updated for 2024.',
-      keywords: ['rishikesh budget travel', 'rishikesh rafting cost', 'cheap stay rishikesh', 'rishikesh itinerary'],
+      metaTitle: 'Cheap Rishikesh Travel Guide 2026 — Rishikesh Haridwar Budget Itinerary',
+      metaDescription: 'Complete cheap Rishikesh travel guide with Rishikesh Haridwar budget itinerary, Uttarakhand budget trip costs, and rafting prices. Updated 2026.',
+      keywords: ['cheap rishikesh travel guide', 'rishikesh haridwar budget itinerary', 'uttarakhand budget trip', 'rishikesh rafting cost'],
       ogImage: 'https://images.unsplash.com/photo-1678788166239-b28733f56956?w=1200&h=600&fit=crop&auto=format'
     },
     tableOfContents: [{ id: 'quick-answer', title: 'Quick Answer', level: 2 }],
-    faq: [{ question: 'How much does rafting cost in Rishikesh?', answer: 'Most stretches start around ₹600–₹1,500 depending on season and route.' }]
+    faq: [
+      { question: 'How much does rafting cost in Rishikesh?', answer: 'Rafting costs ₹600–₹900 for the 16 km stretch and ₹1,200–₹1,500 for the 26 km stretch. Book directly with operators at the ghat to avoid agent markups.' },
+      { question: 'What is the best time for Uttarakhand budget trip?', answer: 'September–November and February–April are ideal — weather is pleasant, rafting season is active, and prices are lower than peak summer.' },
+      { question: 'Is Rishikesh Haridwar budget itinerary possible in 3 days?', answer: 'Yes — Day 1 Rishikesh arrival + Ganga Aarti, Day 2 rafting + Lakshman Jhula, Day 3 Haridwar day trip + Har Ki Pauri. Total budget: ₹4,000–₹7,000 per person.' }
+    ]
   },
   {
     slug: 'jaipur-budget-heritage-walk',
-    title: 'Jaipur Budget Trip: Forts, Food, and Heritage Walks (2024)',
-    excerpt: 'Explore Jaipur on a budget with smart transport, entry fees, cheap eats, and a simple 2–3 day itinerary.',
+    title: 'Budget Jaipur Itinerary 3 Days — Family Trip & Heritage Walk Guide (2026)',
+    excerpt: 'Complete budget Jaipur itinerary 3 days — forts, food, heritage walks, and tips for budget family trip India and affordable family vacation India.',
     published: true,
-    content: `<div class="bg-rose-50 border-l-4 border-rose-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-rose-800 mb-2">Quick Answer: Jaipur Budget</h2><p class="text-rose-900">A comfortable budget for Jaipur is <strong>₹1,400–₹3,200/day</strong> including local transport and monument tickets.</p></div><h2>What to prioritize</h2><p>Plan mornings for forts, afternoons for markets, and evenings for local food—this keeps costs and crowds low.</p>`,
+    content: `<div class="bg-rose-50 border-l-4 border-rose-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-rose-800 mb-2">Quick Answer: Budget Jaipur Itinerary 3 Days</h2><p class="text-rose-900">A budget Jaipur itinerary 3 days costs <strong>₹1,400–₹3,200/day per person</strong>. Total 3-day trip: ₹5,000–₹12,000 including accommodation, food, transport, and monument tickets. Jaipur is one of the best affordable family vacation India and romantic destinations on a budget India choices.</p></div><h2>Budget Jaipur Itinerary 3 Days: Day-by-Day Plan</h2><ol><li><strong>Day 1 — Amber Fort + Old City:</strong> Amber Fort (₹100 Indian entry), Jaigarh Fort (₹70), Nahargarh sunset (₹50). Dinner at Lassiwala or local dhaba (₹150–₹250).</li><li><strong>Day 2 — City Palace + Hawa Mahal:</strong> City Palace (₹200), Hawa Mahal (₹50), Jantar Mantar (₹50). Afternoon: Johari Bazaar shopping. Evening: Chokhi Dhani optional (₹700–₹900).</li><li><strong>Day 3 — Albert Hall + Departure:</strong> Albert Hall Museum (₹40), Birla Mandir (free). Lunch at Rawat Mishthan Bhandar (₹100–₹200). Depart.</li></ol><h2>Budget Family Trip India: Why Jaipur is Perfect</h2><p>Jaipur is one of the top affordable family vacation India destinations. Kids love the elephant rides at Amber (₹900/elephant, shared), the puppet shows at Chokhi Dhani, and the colorful bazaars. Family guesthouses in the old city start at ₹1,200–₹2,500/night for a double room.</p><h2>Romantic Destinations on a Budget India: Jaipur for Couples</h2><p>Jaipur is also a top romantic destination on a budget India — sunset at Nahargarh Fort, rooftop dinners with fort views (₹400–₹800/meal), and heritage havelis converted to boutique stays (₹1,500–₹3,000/night).</p>`,
     featuredImage: {
       url: 'https://images.unsplash.com/photo-1772533254933-ee692487aba2?w=1200&h=600&fit=crop&auto=format',
       alt: 'Hawa Mahal facade in Jaipur',
@@ -102,7 +106,7 @@ const blogs = [
       height: 600
     },
     category: 'Heritage',
-    tags: ['jaipur', 'heritage', 'forts', 'budget travel', 'rajasthan', 'food'],
+    tags: ['jaipur', 'heritage', 'forts', 'budget travel', 'rajasthan', 'food', 'family trip'],
     author: {
       name: 'Priya Sharma',
       bio: 'Travel blogger and budget travel expert with 5+ years of exploring India on a shoestring.',
@@ -116,18 +120,22 @@ const blogs = [
     season: ['October', 'November', 'December', 'January', 'February'],
     destination: 'jaipur',
     seo: {
-      metaTitle: 'Jaipur Budget Trip Guide 2024 (Costs + 2–3 Day Plan)',
-      metaDescription: 'A simple Jaipur budget guide with entry fees, transport costs, cheap eats, and a 2–3 day itinerary. Updated for 2024.',
-      keywords: ['jaipur budget trip', 'jaipur trip cost', 'jaipur itinerary', 'jaipur cheap food'],
+      metaTitle: 'Budget Jaipur Itinerary 3 Days 2026 — Family Trip & Romantic Destinations India',
+      metaDescription: 'Complete budget Jaipur itinerary 3 days with costs, forts, food, and tips for budget family trip India and affordable family vacation India.',
+      keywords: ['budget jaipur itinerary 3 days', 'budget family trip india', 'affordable family vacation india', 'romantic destinations on a budget india'],
       ogImage: 'https://images.unsplash.com/photo-1772533254933-ee692487aba2?w=1200&h=600&fit=crop&auto=format'
     },
     tableOfContents: [{ id: 'quick-answer', title: 'Quick Answer', level: 2 }],
-    faq: [{ question: 'Is Jaipur expensive for budget travellers?', answer: 'No—local food is cheap, and you can keep total spend around ₹1,400–₹3,200/day with planning.' }]
+    faq: [
+      { question: 'Is 3 days enough for Jaipur?', answer: 'Yes — 3 days covers Amber Fort, City Palace, Hawa Mahal, Jantar Mantar, and the main bazaars comfortably. Add a 4th day for Abhaneri stepwell or Pushkar day trip.' },
+      { question: 'What is the total cost for a budget family trip India to Jaipur?', answer: 'A family of 4 can do Jaipur in 3 days for ₹20,000–₹35,000 total — family room (₹1,500–₹2,500/night), meals (₹600–₹1,200/day), transport (₹500–₹800/day), and monument tickets (₹500–₹800 total).' },
+      { question: 'What is the best time for affordable family vacation India in Jaipur?', answer: 'October–February is ideal — pleasant weather, all forts accessible. Prices are 20–30% lower in October–November vs peak December.' }
+    ]
   },
   {
     slug: 'manali-budget-trip-guide',
-    title: 'Manali on a Budget: 4-Day Itinerary + Costs (2024)',
-    excerpt: 'A short, practical Manali budget guide with daily costs, where to stay, what to do, and a simple 4-day plan.',
+    title: 'Budget Manali Tour 2026 — Manali Shimla Budget Tour & Himachal Pradesh Budget Trip',
+    excerpt: 'Complete budget Manali tour 2026 guide — Manali Shimla budget tour options, Himachal Pradesh budget trip costs, and a simple 4-day itinerary.',
     published: true,
     content: `<div id="quick-answer" class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-blue-800 mb-2">Quick Answer: Manali Budget</h2><p class="text-blue-900">A Manali budget trip costs <strong>₹1,400–₹3,000 per person per day</strong>. A 4-day Manali trip can be done for <strong>₹7,000–₹15,000 total</strong> (excluding flights). Best time for value: March–June and September–November.</p></div><h2 id="what-to-book">What to book first</h2><ul><li><strong>Stay:</strong> Old Manali hostels (₹450–₹800)</li><li><strong>Transport:</strong> Delhi–Manali Volvo (₹900–₹1,800 one way)</li><li><strong>Day trips:</strong> Solang/Atal Tunnel via shared cabs</li></ul><h2 id="itinerary">Simple 4-day itinerary</h2><ol><li><strong>Day 1:</strong> Arrive, Old Manali walk + café</li><li><strong>Day 2:</strong> Hadimba + Vashisht hot springs</li><li><strong>Day 3:</strong> Solang Valley day trip</li><li><strong>Day 4:</strong> Local market + depart</li></ol>`,
     featuredImage: {
@@ -151,9 +159,9 @@ const blogs = [
     season: ['March', 'April', 'May', 'September', 'October', 'November'],
     destination: 'manali',
     seo: {
-      metaTitle: 'Manali Budget Trip 2024: 4-Day Itinerary + Costs',
-      metaDescription: 'Plan a Manali trip on a budget with daily costs, stay options, transport tips, and a simple 4-day itinerary.',
-      keywords: ['manali budget trip', 'manali itinerary 4 days', 'manali trip cost', 'old manali hostel'],
+      metaTitle: 'Budget Manali Tour 2026 — Manali Shimla Budget Tour & Himachal Pradesh Trip',
+      metaDescription: 'Complete budget Manali tour 2026 with Manali Shimla budget tour itinerary, Himachal Pradesh budget trip costs, and 4-day plan.',
+      keywords: ['budget manali tour 2026', 'manali shimla budget tour', 'himachal pradesh budget trip', 'manali trip cost'],
       ogImage: 'https://images.unsplash.com/photo-1677821243506-0fa5cd8abdcb?w=1200&h=600&fit=crop&auto=format'
     },
     tableOfContents: [
@@ -162,16 +170,17 @@ const blogs = [
       { id: 'itinerary', title: '4-day itinerary', level: 2 }
     ],
     faq: [
-      { question: 'Is Manali expensive?', answer: 'Not necessarily—staying in Old Manali hostels and using shared cabs keeps daily spend around ₹1,400–₹3,000.' },
-      { question: 'When is Manali cheapest?', answer: 'Shoulder months like March, April, September, and October usually offer better rates than peak snow season.' }
+      { question: 'Is Manali expensive in 2026?', answer: 'Not if you plan smart — Old Manali hostels and shared cabs keep daily spend at ₹1,400–₹3,000. Peak season (June–July) prices are 30–50% higher than shoulder months.' },
+      { question: 'How much does a Manali Shimla budget tour cost?', answer: 'A 7-day Manali Shimla budget tour costs ₹15,000–₹28,000 per person including intercity buses, budget accommodation, food, and day trips.' },
+      { question: 'What is the best time for Himachal Pradesh budget trip?', answer: 'March–April and September–November offer the best value — good weather and prices 30–50% lower than peak June–July season.' }
     ]
   },
   {
     slug: 'kerala-budget-backwaters-guide',
-    title: 'Kerala on a Budget: Backwaters + Beach Route (5 Days)',
-    excerpt: 'A minimal Kerala plan: Kochi, Alleppey, and Varkala with clear budgets, transfers, and a 5-day route.',
+    title: 'Cheap Kerala Backwater Trip — Best Time to Visit Kerala on Budget (2026)',
+    excerpt: 'Complete cheap Kerala backwater trip guide — best time to visit Kerala on budget, Kerala trip in low season tips, and a 5-day Kochi–Alleppey–Varkala route with real costs.',
     published: true,
-    content: `<div id="quick-answer" class="bg-teal-50 border-l-4 border-teal-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-teal-800 mb-2">Quick Answer: Kerala Budget</h2><p class="text-teal-900">Budget Kerala costs <strong>₹1,500–₹3,500/day</strong>. A simple 5-day route (Kochi → Alleppey → Varkala) typically costs <strong>₹9,000–₹20,000 total</strong>. Best time: October–March.</p></div><h2 id="route">Best 5-day route (easy transfers)</h2><ol><li><strong>Kochi (2 days):</strong> Fort Kochi + cafés</li><li><strong>Alleppey (1 day):</strong> Backwater day cruise</li><li><strong>Varkala (2 days):</strong> Cliff beach + sunsets</li></ol><h2 id="money-savers">Money savers</h2><ul><li>Use trains between Kochi–Varkala</li><li>Choose a backwater day cruise vs overnight houseboat</li><li>Stay 2 nights per base to avoid frequent transfers</li></ul>`,
+    content: `<div id="quick-answer" class="bg-teal-50 border-l-4 border-teal-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-teal-800 mb-2">Quick Answer: Cheap Kerala Backwater Trip</h2><p class="text-teal-900">A cheap Kerala backwater trip costs <strong>₹1,500–₹3,500/day</strong>. A 5-day route (Kochi to Alleppey to Varkala) costs <strong>₹9,000–₹20,000 total</strong>. Best time to visit Kerala on budget: October–November (shoulder season, 30–40% cheaper than peak December–January).</p></div><h2>Best Time to Visit Kerala on Budget</h2><p>October–November is the best time to visit Kerala on budget — post-monsoon greenery, pleasant weather, and hotel prices 30–40% lower than peak season. A Kerala trip in low season (June–September) is even cheaper but backwaters can be flooded and some beaches close.</p><ul><li><strong>Peak season (Dec–Jan):</strong> ₹2,500–₹5,000/day — highest prices, best weather</li><li><strong>Shoulder season (Oct–Nov, Feb–Mar):</strong> ₹1,500–₹3,000/day — best value</li><li><strong>Low season (Jun–Sep):</strong> ₹1,000–₹2,000/day — cheapest, but monsoon limitations</li></ul><h2 id="route">Cheap Kerala Backwater Trip: Best 5-day route (easy transfers)</h2><ol><li><strong>Kochi (2 days):</strong> Fort Kochi walk (free), Chinese fishing nets, Mattancherry Palace (₹10). Homestay ₹800–₹1,500/night.</li><li><strong>Alleppey (1 day):</strong> Backwater day cruise (₹400–₹700) instead of overnight houseboat (₹4,000–₹8,000). Huge saving.</li><li><strong>Varkala (2 days):</strong> Cliff beach, Papanasam Beach, sunset views. Guesthouse ₹700–₹1,500/night.</li></ol><h2 id="money-savers">Money savers</h2><ul><li>Use trains between Kochi and Varkala (₹80–₹200)</li><li>Choose a backwater day cruise vs overnight houseboat — saves ₹3,000–₹6,000</li><li>Stay 2 nights per base to avoid frequent transfers</li><li>Travel October–November for best balance of weather and budget</li></ul>`,
     featuredImage: {
       url: 'https://images.unsplash.com/photo-1720250581812-b6bbf0c05cd2?w=1200&h=600&fit=crop&auto=format',
       alt: 'Alleppey houseboat in Kerala backwaters',
@@ -179,7 +188,7 @@ const blogs = [
       height: 600
     },
     category: 'Nature',
-    tags: ['kerala', 'backwaters', 'varkala', 'kochi', 'budget travel', 'itinerary'],
+    tags: ['kerala', 'backwaters', 'varkala', 'kochi', 'budget travel', 'itinerary', 'low season'],
     author: {
       name: 'Priya Sharma',
       bio: 'Travel blogger and budget travel expert with 5+ years of exploring India on a shoestring.',
@@ -193,9 +202,9 @@ const blogs = [
     season: ['October', 'November', 'December', 'January', 'February', 'March'],
     destination: 'kerala',
     seo: {
-      metaTitle: 'Kerala Budget Trip: 5-Day Route (Backwaters + Beach)',
-      metaDescription: 'A simple Kerala budget route with costs, transfers, and a 5-day plan for Kochi, Alleppey, and Varkala.',
-      keywords: ['kerala budget trip', 'kerala itinerary 5 days', 'alleppey backwaters budget', 'varkala itinerary'],
+      metaTitle: 'Cheap Kerala Backwater Trip 2026 — Best Time to Visit Kerala on Budget',
+      metaDescription: 'Complete cheap Kerala backwater trip guide with best time to visit Kerala on budget, low season tips, and 5-day Kochi–Alleppey–Varkala route.',
+      keywords: ['cheap kerala backwater trip', 'kerala trip in low season', 'best time to visit kerala on budget', 'kerala budget itinerary'],
       ogImage: 'https://images.unsplash.com/photo-1720250581812-b6bbf0c05cd2?w=1200&h=600&fit=crop&auto=format'
     },
     tableOfContents: [
@@ -204,15 +213,17 @@ const blogs = [
       { id: 'money-savers', title: 'Money savers', level: 2 }
     ],
     faq: [
-      { question: 'Is Kerala expensive?', answer: 'Kerala can be done on a budget if you use trains and pick day cruises for backwaters instead of overnight houseboats.' }
+      { question: 'What is the best time to visit Kerala on budget?', answer: 'October–November is the best time — post-monsoon greenery, pleasant weather, and prices 30–40% lower than peak December–January season.' },
+      { question: 'How much does a cheap Kerala backwater trip cost?', answer: 'A 5-day trip costs ₹9,000–₹20,000 per person. Choose a day cruise (₹400–₹700) over overnight houseboat to save ₹3,000–₹6,000.' },
+      { question: 'Is a Kerala trip in low season worth it?', answer: 'Yes — a Kerala trip in low season (June–September) is 40–50% cheaper. However, some beaches close and backwaters can be rough. October–November is the sweet spot: low prices + good weather.' }
     ]
   },
   {
     slug: 'varanasi-3-day-budget-itinerary',
-    title: 'Varanasi Budget Trip: 3-Day Itinerary + Ghat Tips (2024)',
-    excerpt: 'A short Varanasi plan with costs, best ghats, sunrise boat ride price range, and what to do in 3 days.',
+    title: 'Varanasi Budget Trip: 3-Day Itinerary + India Budget Travel Tips (2026)',
+    excerpt: 'Varanasi 3-day budget itinerary with ghat tips, boat ride costs, and India budget travel tips for students — one of the cheapest spiritual destinations in India.',
     published: true,
-    content: `<div id="quick-answer" class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-amber-800 mb-2">Quick Answer: Varanasi Budget</h2><p class="text-amber-900">A budget Varanasi trip costs <strong>₹1,200–₹2,600/day</strong>. A 3-day trip is usually <strong>₹4,500–₹9,000 total</strong>. Best time: October–March.</p></div><h2 id="must-do">Must-do experiences</h2><ul><li><strong>Sunrise boat ride:</strong> ₹150–₹400 (shared)</li><li><strong>Evening Ganga Aarti:</strong> Free to watch from the ghat</li><li><strong>Sarnath day trip:</strong> Half-day plan</li></ul><h2 id="3-day-plan">Simple 3-day plan</h2><ol><li><strong>Day 1:</strong> Ghats walk + evening Aarti</li><li><strong>Day 2:</strong> Sunrise boat + temples + food walk</li><li><strong>Day 3:</strong> Sarnath + shopping + depart</li></ol>`,
+    content: `<div id="quick-answer" class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-amber-800 mb-2">Quick Answer: Varanasi Budget Trip</h2><p class="text-amber-900">A budget Varanasi trip costs <strong>₹1,200–₹2,600/day</strong>. A 3-day trip is usually <strong>₹4,500–₹9,000 total</strong>. Varanasi is one of the best India budget travel for students destinations — most experiences (ghats, Aarti, temples) are completely free. Best time: October–March.</p></div><h2>India Budget Travel Tips: Why Varanasi is Perfect for Students</h2><p>Varanasi is the ultimate India budget travel for students destination. The city's spiritual experiences — Ganga Aarti, sunrise boat rides, ghat walks — cost almost nothing. A student can comfortably explore Varanasi for ₹1,200–₹1,800/day including accommodation, food, and activities.</p><h2 id="must-do">Must-do experiences</h2><ul><li><strong>Sunrise boat ride:</strong> ₹150–₹400 (shared)</li><li><strong>Evening Ganga Aarti:</strong> Free to watch from the ghat</li><li><strong>Sarnath day trip:</strong> ₹30 bus + ₹40 museum entry</li></ul><h2 id="3-day-plan">Varanasi 3-Day Budget Itinerary</h2><ol><li><strong>Day 1:</strong> Ghats walk + Evening Ganga Aarti (free). Guesthouse near Assi Ghat (₹400–₹800).</li><li><strong>Day 2:</strong> Sunrise boat ride (₹150–₹400 shared) + Kashi Vishwanath Temple + Sarnath day trip.</li><li><strong>Day 3:</strong> Vishwanath Gali shopping + Blue Lassi breakfast (₹60–₹100) + depart.</li></ol><h2>India Budget Travel Tips for Varanasi</h2><ul><li>Stay near Assi Ghat — quieter and cheaper than Dashashwamedh area</li><li>Eat at local dhabas on the ghats — thali ₹80–₹150</li><li>Take shared autos instead of tuk-tuks — save ₹50–₹100 per trip</li><li>Book trains out of Varanasi Junction 2–3 weeks ahead</li></ul>`,
     featuredImage: {
       url: 'https://images.unsplash.com/photo-1752733904669-8a2af6d349f3?w=1200&h=600&fit=crop&auto=format',
       alt: 'Varanasi ghats along the Ganga',
@@ -220,7 +231,7 @@ const blogs = [
       height: 600
     },
     category: 'Heritage',
-    tags: ['varanasi', 'ghats', 'ganga aarti', 'budget travel', 'itinerary', 'sarnath'],
+    tags: ['varanasi', 'ghats', 'ganga aarti', 'budget travel', 'itinerary', 'sarnath', 'students'],
     author: {
       name: 'Priya Sharma',
       bio: 'Travel blogger and budget travel expert with 5+ years of exploring India on a shoestring.',
@@ -234,9 +245,9 @@ const blogs = [
     season: ['October', 'November', 'December', 'January', 'February', 'March'],
     destination: 'varanasi',
     seo: {
-      metaTitle: 'Varanasi Budget Trip 2024: 3-Day Itinerary + Costs',
-      metaDescription: 'Varanasi budget guide with boat ride costs, best ghats, Ganga Aarti tips, and a simple 3-day itinerary.',
-      keywords: ['varanasi itinerary 3 days', 'varanasi budget trip', 'ganga aarti timing', 'varanasi boat ride cost'],
+      metaTitle: 'Varanasi Budget Trip 2026: 3-Day Itinerary + India Budget Travel Tips',
+      metaDescription: 'Varanasi 3-day budget itinerary with boat ride costs, ghat tips, and India budget travel tips for students. One of India\'s cheapest spiritual destinations.',
+      keywords: ['varanasi 3 day budget itinerary', 'india budget travel tips', 'india budget travel for students', '7-day budget india itinerary'],
       ogImage: 'https://images.unsplash.com/photo-1752733904669-8a2af6d349f3?w=1200&h=600&fit=crop&auto=format'
     },
     tableOfContents: [
@@ -245,13 +256,17 @@ const blogs = [
       { id: '3-day-plan', title: '3-day plan', level: 2 }
     ],
     faq: [
-      { question: 'What is the cost of a boat ride in Varanasi?', answer: 'Shared sunrise boats often range from ₹150–₹400 per person depending on season and starting ghat.' }
+      { question: 'What is the cost of a boat ride in Varanasi?', answer: 'A shared sunrise boat ride in Varanasi costs ₹150–₹400 per person depending on the season and starting ghat. Private boats cost ₹600–₹1,200 for 1 hour. Assi Ghat and Dashashwamedh Ghat are the most popular starting points. Book directly with boatmen at the ghat — avoid hotel-arranged boats which charge 2–3x more.' },
+      { question: 'Is Varanasi good for India budget travel for students?', answer: 'Yes — Varanasi is one of the best India budget travel for students destinations. Most experiences are free: Ganga Aarti, ghat walks, temple visits. A student can manage on ₹1,200–₹1,800/day including a dorm or cheap guesthouse (₹400–₹700), local thali meals (₹80–₹150), and shared autos. The Sarnath day trip costs just ₹70 (bus + museum entry).' },
+      { question: 'What is the best time for a Varanasi 3-day budget itinerary?', answer: 'October–March is ideal for a Varanasi 3-day budget itinerary — pleasant weather, clear skies for sunrise boat rides, and comfortable ghat walks. Avoid May–June (extreme heat, 45°C+) and July–August (monsoon, ghats can flood). November–February is peak season but prices remain reasonable compared to Goa or Rajasthan.' },
+      { question: 'How much does a 3-day Varanasi trip cost in total?', answer: 'A 3-day Varanasi budget trip costs ₹4,500–₹9,000 per person total. Breakdown: accommodation ₹1,200–₹2,400 (3 nights), food ₹600–₹1,350 (local dhabas), transport ₹450–₹1,200 (autos + Sarnath bus), activities ₹600–₹1,800 (boat ride + Sarnath entry + misc). Students and solo travellers can do it for under ₹5,000.' },
+      { question: 'Which ghats should I visit in Varanasi?', answer: 'The top ghats for a budget Varanasi trip: Dashashwamedh Ghat (main Ganga Aarti, free), Assi Ghat (quieter, great for sunrise boats), Manikarnika Ghat (cremation ghat, deeply spiritual), Harishchandra Ghat, and Scindia Ghat. Walk the entire 5 km ghat stretch from Assi to Raj Ghat — it is completely free and takes 2–3 hours.' }
     ]
   },
   {
     slug: 'ladakh-budget-roadtrip-guide',
-    title: 'Leh-Ladakh Budget Trip: 7-Day Plan + Costs (2024)',
-    excerpt: 'A minimal Ladakh budget guide with a safe acclimatization-first itinerary and realistic daily costs.',
+    title: 'Ladakh Budget Trip 2026 — Ladakh Bike Trip Budget & India Road Trip Planner',
+    excerpt: 'Complete Ladakh budget trip 2026 guide — Ladakh bike trip budget breakdown, India budget road trip planner tips, 7-day Leh–Nubra–Pangong itinerary with real costs.',
     published: true,
     content: `<div id="quick-answer" class="bg-slate-50 border-l-4 border-slate-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-slate-800 mb-2">Quick Answer: Ladakh Budget</h2><p class="text-slate-900">Ladakh costs <strong>₹2,800–₹6,500/day</strong> mainly due to transport. A 7-day Ladakh trip typically costs <strong>₹20,000–₹45,000 total</strong>. Best time: June–September.</p></div><h2 id="rule">Budget rule that saves money</h2><p><strong>Don’t rush.</strong> Keep 1–2 acclimatization days in Leh so you don’t lose money to illness or last-minute changes.</p><h2 id="7-day-plan">Simple 7-day plan</h2><ol><li><strong>Day 1–2:</strong> Leh acclimatization</li><li><strong>Day 3:</strong> Nubra Valley</li><li><strong>Day 4:</strong> Nubra → Pangong</li><li><strong>Day 5:</strong> Pangong → Leh</li><li><strong>Day 6:</strong> Monasteries / local sightseeing</li><li><strong>Day 7:</strong> Buffer + depart</li></ol>`,
     featuredImage: {
@@ -275,9 +290,9 @@ const blogs = [
     season: ['June', 'July', 'August', 'September'],
     destination: 'ladakh',
     seo: {
-      metaTitle: 'Leh Ladakh Budget Trip 2024: 7-Day Itinerary + Costs',
-      metaDescription: 'Ladakh budget guide with daily costs, a safe 7-day itinerary, and transport tips for Leh, Nubra, and Pangong.',
-      keywords: ['ladakh budget trip', 'leh ladakh itinerary 7 days', 'pangong nubra costs', 'ladakh shared taxi'],
+      metaTitle: 'Ladakh Budget Trip 2026 — Ladakh Bike Trip Budget & India Road Trip Planner',
+      metaDescription: 'Complete Ladakh budget trip 2026 with Ladakh bike trip budget, India budget road trip planner 7-day itinerary, Leh–Nubra–Pangong costs and tips.',
+      keywords: ['ladakh budget trip', 'ladakh bike trip budget', 'india budget road trip planner', 'how to plan india road trip on budget'],
       ogImage: 'https://images.unsplash.com/photo-1606857090627-27ca46667290?w=1200&h=600&fit=crop&auto=format'
     },
     tableOfContents: [
@@ -291,10 +306,10 @@ const blogs = [
   },
   {
     slug: 'hampi-2-day-budget-guide',
-    title: 'Hampi Budget Travel: 2-Day Itinerary + Costs (2024)',
-    excerpt: 'Cover Hampi’s top ruins with a simple 2-day plan, budget stays, and scooter/bicycle tips.',
+    title: 'Hampi Budget Travel Itineraries — India Budget Travel Tips & Cheap Cultural Destinations India (2026)',
+    excerpt: 'Hampi budget travel itineraries with India budget travel tips, cheap cultural destinations India guide, and a 2-day Virupaksha–Vittala plan with real costs.',
     published: true,
-    content: `<div id="quick-answer" class="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-indigo-800 mb-2">Quick Answer: Hampi Budget</h2><p class="text-indigo-900">Hampi costs <strong>₹1,100–₹2,400/day</strong>. A 2-day Hampi trip can be done for <strong>₹2,800–₹6,000 total</strong>. Best time: October–February.</p></div><h2 id="plan">Simple 2-day plan</h2><ol><li><strong>Day 1:</strong> Virupaksha area + Hemakuta sunset</li><li><strong>Day 2:</strong> Vittala Temple + Stone Chariot + river crossing</li></ol><h2 id="tips">Budget tips</h2><ul><li>Rent a scooter or bicycle</li><li>Start early to avoid heat and crowds</li><li>Stay near the main bazaar for walkability</li></ul>`,
+    content: `<div id="quick-answer" class="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg mb-8"><h2 class="text-xl font-bold text-indigo-800 mb-2">Quick Answer: Hampi Budget Travel</h2><p class="text-indigo-900">Hampi costs <strong>₹1,100–₹2,400/day</strong>. A 2-day Hampi trip can be done for <strong>₹2,800–₹6,000 total</strong>. Hampi is one of the best cheap cultural destinations India has — UNESCO World Heritage ruins, boulder landscapes, and sunrise viewpoints all for under ₹200 in entry fees. Best time: October–February.</p></div><h2>Cheap Cultural Destinations India: Why Hampi Tops the List</h2><p>Hampi is arguably the best cheap cultural destination in India. The entire UNESCO World Heritage site costs just ₹40–₹100 to enter. Compare this to Agra (₹1,100 for Taj Mahal) or Jaipur (₹200+ per fort) — Hampi gives you more ruins per rupee than anywhere else in India. A 2-day Hampi trip covers 3 major temple zones, 2 viewpoints, and a river crossing for under ₹6,000 total.</p><h2>Budget Travel India Itineraries: Hampi 2-Day Plan</h2><ol><li><strong>Day 1 — Virupaksha Zone:</strong> Virupaksha Temple (free entry, ₹10 camera fee), Hemakuta Hill temples (free), Matanga Hill sunrise (₹0). Lunch at local dhaba near bazaar (₹80–₹150). Evening: Hemakuta sunset. Guesthouse near bazaar ₹400–₹900/night.</li><li><strong>Day 2 — Vittala Zone:</strong> Vittala Temple + Stone Chariot (₹40 Indian entry). Hazara Rama Temple (free). River crossing by coracle (₹30–₹50). Anjaneya Hill for sunset views. Depart evening or next morning.</li></ol><h2 id="tips">India Budget Travel Tips for Hampi</h2><ul><li>Rent a scooter (₹300–₹400/day) or bicycle (₹100–₹150/day) — sites are spread over 26 sq km</li><li>Start by 7 AM to beat the heat and get best light for photos</li><li>Stay near Virupaksha Bazaar (main side) or Virupapur Gadde (hippie island, quieter)</li><li>Carry water and snacks — food stalls near Vittala are limited and overpriced</li></ul>`,
     featuredImage: {
       url: 'https://images.unsplash.com/photo-1651569213711-b29d1fc3f995?w=1200&h=600&fit=crop&auto=format',
       alt: 'Stone Chariot and pillars in Hampi',
@@ -316,9 +331,9 @@ const blogs = [
     season: ['October', 'November', 'December', 'January', 'February'],
     destination: 'hampi',
     seo: {
-      metaTitle: 'Hampi Budget Trip 2024: 2-Day Itinerary + Costs',
-      metaDescription: 'Hampi budget guide with a simple 2-day itinerary, must-see ruins, and daily cost breakdown.',
-      keywords: ['hampi itinerary 2 days', 'hampi budget trip', 'hampi ruins guide', 'hospet to hampi'],
+      metaTitle: 'Hampi Budget Travel 2026 — Cheap Cultural Destinations India & Budget Travel Itineraries',
+      metaDescription: 'Hampi budget travel guide 2026 — cheap cultural destinations India, budget travel India itineraries, 2-day Virupaksha–Vittala plan with real costs.',
+      keywords: ['cheap cultural destinations india', 'budget travel india itineraries', 'india budget travel tips', 'hampi budget trip'],
       ogImage: 'https://images.unsplash.com/photo-1651569213711-b29d1fc3f995?w=1200&h=600&fit=crop&auto=format'
     },
     tableOfContents: [

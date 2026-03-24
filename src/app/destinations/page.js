@@ -2,6 +2,17 @@ import { Suspense } from 'react';
 import DestinationsContent from './DestinationsContent';
 import Breadcrumbs from '@/components/links/Breadcrumbs';
 
+export const metadata = {
+  title: 'Budget Travel Destinations India — Affordable Places to Visit | BudgetYatra',
+  description: 'Discover the best budget travel destinations in India. From cheap hill stations near Mumbai to affordable coastal destinations — find your perfect trip under ₹2000/day.',
+  keywords: 'budget travel destinations India, affordable places to visit in India, cheap hill stations near Mumbai, cheap coastal destinations India',
+  openGraph: {
+    title: 'Budget Travel Destinations India — Affordable Places to Visit | BudgetYatra',
+    description: 'Explore affordable places to visit in India. Cheap coastal destinations, hill stations, heritage cities — all with real budget breakdowns.',
+    type: 'website',
+  },
+};
+
 export default function DestinationsPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
