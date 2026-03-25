@@ -11,6 +11,6 @@ const HeroSearch = dynamic(() => import('./HeroSearch'), {
   ),
 });
 
-export default function HeroSearchLoader() {
-  return <HeroSearch />;
+export default function HeroSearchLoader({ destinations, blogs }) {
+  return <HeroSearch destinations={destinations} blogs={blogs} />;
 }

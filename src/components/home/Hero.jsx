@@ -1,17 +1,27 @@
 import Link from 'next/link';
 import HeroSearchLoader from './HeroSearchLoader';
+import { getAllDestinations } from '@/lib/data/destinations';
+import { getAllBlogs } from '@/lib/data/blogs';
 
 // Server component — plain <img> so preload URL matches exactly (no /_next/image wrapper)
 export default function Hero() {
+  // Pre-compute search data on server — avoids client-side data import in HeroSearch bundle
+  const destinations = getAllDestinations().map(d => ({
+    slug: d.slug, name: d.name, state: d.state, category: d.category,
+    attractions: d.attractions,
+  }));
+  const blogs = getAllBlogs().map(b => ({
+    slug: b.slug, title: b.title, category: b.category, tags: b.tags,
+  }));
   return (
     <section className="relative h-[520px] md:h-[650px] flex items-center justify-center overflow-hidden">
       {/* LCP Image — plain img tag, preload in layout.js matches this exact URL */}
       <div className="absolute inset-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp"
-          srcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=55&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop&q=55&fm=webp 1200w"
-          sizes="(max-width: 768px) 100vw, 1200px"
+          src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=40&fm=webp"
+          srcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=640&h=460&fit=crop&q=40&fm=webp 640w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=40&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop&q=35&fm=avif 1200w"
+          sizes="(max-width: 640px) 640px, (max-width: 828px) 828px, 1200px"
           alt="Beautiful India landscape"
           fetchPriority="high"
           decoding="async"
@@ -40,7 +50,7 @@ export default function Hero() {
         </p>
 
         {/* Search — dynamically loaded after LCP, doesn't block render */}
-        <HeroSearchLoader />
+        <HeroSearchLoader destinations={destinations} blogs={blogs} />
 
         {/* CTA Buttons — server rendered links, no JS needed */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

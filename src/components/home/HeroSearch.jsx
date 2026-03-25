@@ -2,10 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import { getAllDestinations } from '@/lib/data/destinations';
-import { getAllBlogs } from '@/lib/data/blogs';
 
-export default function HeroSearch() {
+export default function HeroSearch({ destinations = [], blogs = [] }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -30,8 +28,6 @@ export default function HeroSearch() {
       return;
     }
     const query = searchQuery.toLowerCase();
-    const destinations = getAllDestinations();
-    const blogs = getAllBlogs();
 
     const destMatches = destinations
       .filter(d =>
@@ -63,7 +59,7 @@ export default function HeroSearch() {
     const all = [...destMatches, ...blogMatches, ...popularTerms].slice(0, 6);
     setSuggestions(all);
     setShowSuggestions(all.length > 0);
-  }, [searchQuery]);
+  }, [searchQuery, destinations, blogs]);
 
   const handleSearch = (e) => {
     e.preventDefault();

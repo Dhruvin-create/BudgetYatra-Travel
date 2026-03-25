@@ -1,9 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import Link from 'next/link';
-import SearchBar from '@/components/search/SearchBar';
 import { NAVIGATION_LINKS } from '@/lib/constants/config';
+
+// Lazy load SearchBar — only needed when user clicks search icon
+const SearchBar = lazy(() => import('@/components/search/SearchBar'));
 
 const CATEGORIES = [
   { name: 'Beach', icon: '🏖️', href: '/blogs?category=Beach' },
@@ -84,7 +86,9 @@ export default function Navbar() {
               <div className={`overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? 'w-64' : 'w-0'}`}>
                 {mounted && searchOpen && (
                   <div className="w-64">
-                    <SearchBar variant="navbar" />
+                    <Suspense fallback={<div className="w-64 h-9 bg-gray-100 rounded-full animate-pulse" />}>
+                      <SearchBar variant="navbar" />
+                    </Suspense>
                   </div>
                 )}
               </div>
@@ -137,7 +141,9 @@ export default function Navbar() {
           <div className="px-4 py-3 space-y-3">
             {/* Mobile Search */}
             <div className="pb-3">
-              <SearchBar variant="navbar" />
+              <Suspense fallback={<div className="w-full h-9 bg-gray-100 rounded-full animate-pulse" />}>
+                <SearchBar variant="navbar" />
+              </Suspense>
             </div>
 
             {NAVIGATION_LINKS.map((link) => (
