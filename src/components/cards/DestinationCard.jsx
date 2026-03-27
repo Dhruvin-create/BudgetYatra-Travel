@@ -8,11 +8,11 @@ export default function DestinationCard({ destination }) {
         {/* Image */}
         <div className="relative h-56 overflow-hidden">
           <Image
-            src={destination.images[0].url.replace(/w=\d+&h=\d+/, 'w=600&h=340')}
+            src={destination.images[0].url.replace(/w=\d+&h=\d+/, 'w=480&h=270')}
             alt={destination.images[0].alt}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            quality={45}
+            quality={35}
             sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw"
             loading="lazy"
           />

@@ -20,11 +20,11 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=40&fm=webp"
-          srcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=640&h=460&fit=crop&q=40&fm=webp 640w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=40&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop&q=35&fm=avif 1200w"
-          sizes="(max-width: 640px) 640px, (max-width: 828px) 828px, 1200px"
+          srcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=640&h=460&fit=crop&q=40&fm=webp 640w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=35&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1080&h=720&fit=crop&q=30&fm=webp 1080w"
+          sizes="(max-width: 640px) 640px, (max-width: 828px) 828px, 1080px"
           alt="Beautiful India landscape"
           fetchPriority="high"
-          decoding="async"
+          decoding="sync"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/35 to-black/65"></div>

@@ -80,8 +80,8 @@ export default function RootLayout({ children }) {
           rel="preload"
           as="image"
           href="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=40&fm=webp"
-          imageSrcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=640&h=460&fit=crop&q=40&fm=webp 640w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=40&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=800&fit=crop&q=35&fm=avif 1200w"
-          imageSizes="(max-width: 640px) 640px, (max-width: 828px) 828px, 1200px"
+          imageSrcSet="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=640&h=460&fit=crop&q=40&fm=webp 640w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=828&h=600&fit=crop&q=35&fm=webp 828w, https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1080&h=720&fit=crop&q=30&fm=webp 1080w"
+          imageSizes="(max-width: 640px) 640px, (max-width: 828px) 828px, 1080px"
           crossOrigin="anonymous"
         />
         
