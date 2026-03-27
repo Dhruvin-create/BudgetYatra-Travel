@@ -1,0 +1,27 @@
+{
+  "jsc": {
+    "target": "es2022",
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": true,
+      "dynamicImport": true
+    },
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    },
+    "loose": false
+  },
+  "env": {
+    "targets": {
+      "chrome": "105",
+      "firefox": "105",
+      "safari": "15.6",
+      "edge": "105"
+    }
+  },
+  "module": {
+    "type": "es6"
+  }
+}

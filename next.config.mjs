@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Target modern browsers — eliminates legacy polyfills (saves ~14 KiB)
-  // Baseline 2022: covers 95%+ of users, no need for Array.at, Object.hasOwn polyfills
   transpilePackages: [],
+
+  // SWC compiler config — target modern browsers, strip console in prod
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error', 'warn'] } : false,
+  },
 
   // Image optimization
   images: {
@@ -25,8 +28,14 @@ const nextConfig = {
   // CSS optimization
   experimental: {
     optimizeCss: true,
-    // Optimize package imports to reduce JS bundle
-    optimizePackageImports: ['next/image'],
+    // Tree-shake common heavy packages
+    optimizePackageImports: [
+      'next/image',
+      'next/link',
+      'next/navigation',
+      'react',
+      'react-dom',
+    ],
   },
 
   // Compression
