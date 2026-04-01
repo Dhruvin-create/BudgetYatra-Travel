@@ -23,6 +23,7 @@ const nextConfig = {
     // Tighter device sizes — avoids generating 960px images for 388px slots
     deviceSizes: [390, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    qualities: [35, 45, 75],
   },
 
   // CSS optimization

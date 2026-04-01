@@ -1,11 +1,11 @@
 import BudgetCalculator from '@/components/calculator/BudgetCalculator';
 
 export const metadata = {
-  title: 'Budget Travel Calculator India — Plan Trip Budget India | BudgetYatra',
+  title: 'Budget Calculator India — Plan Your Trip Cost | BudgetYatra',
   description: 'Use our free budget travel calculator India to estimate your trip cost. Plan trip budget India with per-day breakdowns for accommodation, food, transport & activities.',
   keywords: 'budget travel calculator India, plan trip budget India, India budget travel tips, what to pack for India budget trip',
   openGraph: {
-    title: 'Budget Travel Calculator India — Plan Trip Budget India | BudgetYatra',
+    title: 'Budget Calculator India — Plan Your Trip Cost | BudgetYatra',
     description: 'Calculate your India trip budget in 3 steps. Get per-day cost estimates for any destination with our free travel budget planner.',
     type: 'website',
   },
