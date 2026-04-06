@@ -2,16 +2,29 @@ import { Suspense } from 'react';
 import DestinationsContent from './DestinationsContent';
 import Breadcrumbs from '@/components/links/Breadcrumbs';
 
-export const metadata = {
+const BASE_META = {
   title: 'Budget Destinations India — Affordable Places to Visit | BudgetYatra',
   description: 'Discover the best budget travel destinations in India. From cheap hill stations near Mumbai to affordable coastal destinations — find your perfect trip under ₹2000/day.',
   keywords: 'budget travel destinations India, affordable places to visit in India, cheap hill stations near Mumbai, cheap coastal destinations India',
+  alternates: { canonical: 'https://budgetyatra.online/destinations' },
   openGraph: {
     title: 'Budget Destinations India — Affordable Places to Visit | BudgetYatra',
     description: 'Explore affordable places to visit in India. Cheap coastal destinations, hill stations, heritage cities — all with real budget breakdowns.',
     type: 'website',
   },
 };
+
+export async function generateMetadata({ searchParams }) {
+  const params = await searchParams;
+  // Filter URLs (?category=) — noindex to prevent duplicate content
+  if (params?.category) {
+    return {
+      ...BASE_META,
+      robots: { index: false, follow: true },
+    };
+  }
+  return BASE_META;
+}
 
 export default function DestinationsPage() {
   const breadcrumbs = [

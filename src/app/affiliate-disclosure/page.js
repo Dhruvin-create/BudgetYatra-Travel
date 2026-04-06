@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Affiliate Disclosure - BudgetYatra',
   description: 'Affiliate Disclosure for BudgetYatra',
+  alternates: { canonical: 'https://budgetyatra.online/affiliate-disclosure' },
 };
 
 export default function AffiliateDisclosurePage() {

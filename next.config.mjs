@@ -130,7 +130,7 @@ const nextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        // Rewrite sitemap
+        // /sitemap.xml → /api/sitemap (XML for search engines)
         {
           source: '/sitemap.xml',
           destination: '/api/sitemap',

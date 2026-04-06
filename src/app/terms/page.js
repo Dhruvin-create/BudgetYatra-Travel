@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Terms of Service - BudgetYatra',
   description: 'Terms of Service for BudgetYatra',
+  alternates: { canonical: 'https://budgetyatra.online/terms' },
 };
 
 export default function TermsPage() {

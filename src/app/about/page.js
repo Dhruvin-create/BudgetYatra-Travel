@@ -4,6 +4,7 @@ export const metadata = {
   title: 'About BudgetYatra — India Budget Travel Blog & Guide',
   description: 'BudgetYatra is India\'s trusted budget travel guide. Learn about our mission to make budget travel in India accessible to every student, couple, and solo traveler.',
   keywords: 'budget travel in India, budget travel guide India, India budget travel blog',
+  alternates: { canonical: 'https://budgetyatra.online/about' },
   openGraph: {
     title: 'About BudgetYatra — India Budget Travel Blog & Guide',
     description: 'Our mission: make budget travel in India accessible to everyone. Real guides, honest tips, and a community of smart travelers.',

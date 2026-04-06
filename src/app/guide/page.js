@@ -2,16 +2,29 @@ import { Suspense } from 'react';
 import GuideContent from './GuideContent';
 import Breadcrumbs from '@/components/links/Breadcrumbs';
 
-export const metadata = {
+const BASE_META = {
   title: 'India Budget Travel Itineraries & Road Trip Planner | BudgetYatra',
   description: 'Plan your India budget road trip with our destination finder. 7-day budget India itineraries, region-wise guides, and how to plan India road trip on budget under ₹15,000.',
   keywords: 'budget travel India itineraries, 7-day budget India itinerary, India budget road trip planner, how to plan India road trip on budget',
+  alternates: { canonical: 'https://budgetyatra.online/guide' },
   openGraph: {
     title: 'India Budget Travel Itineraries & Road Trip Planner | BudgetYatra',
     description: 'Find destinations by budget and season. Plan 7-day India itineraries, road trips, and more with our interactive guide tool.',
     type: 'website',
   },
 };
+
+export async function generateMetadata({ searchParams }) {
+  const params = await searchParams;
+  // Filter/search URLs (?q= or ?season=) — noindex to prevent duplicate content
+  if (params?.q || params?.season || params?.budget) {
+    return {
+      ...BASE_META,
+      robots: { index: false, follow: true },
+    };
+  }
+  return BASE_META;
+}
 
 const faqSchema = {
   "@context": "https://schema.org",

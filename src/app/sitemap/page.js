@@ -5,6 +5,7 @@ import { getAllDestinations } from '@/lib/data/destinations';
 export const metadata = {
   title: 'Sitemap - BudgetYatra',
   description: 'Complete sitemap of BudgetYatra website',
+  alternates: { canonical: 'https://budgetyatra.online/sitemap' },
 };
 
 export default function SitemapPage() {

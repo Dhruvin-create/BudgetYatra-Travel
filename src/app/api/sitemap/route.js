@@ -3,94 +3,61 @@ import { getAllDestinations } from '@/lib/data/destinations';
 
 const SITE_URL = 'https://budgetyatra.online';
 
-/**
- * Generate XML sitemap for search engines
- * Includes all blogs, destinations, and main pages
- */
 export async function GET() {
   const blogs = getAllBlogs();
   const destinations = getAllDestinations();
 
-  // Main pages
-  const mainPages = [
-    { url: '/', changefreq: 'weekly', priority: 1.0 },
-    { url: '/about', changefreq: 'monthly', priority: 0.8 },
-    { url: '/contact', changefreq: 'monthly', priority: 0.7 },
-    { url: '/calculator', changefreq: 'monthly', priority: 0.8 },
-    { url: '/guide', changefreq: 'weekly', priority: 0.9 },
-    { url: '/blogs', changefreq: 'daily', priority: 0.9 },
-    { url: '/destinations', changefreq: 'daily', priority: 0.9 },
-    { url: '/privacy', changefreq: 'yearly', priority: 0.5 },
-    { url: '/terms', changefreq: 'yearly', priority: 0.5 },
-    { url: '/affiliate-disclosure', changefreq: 'yearly', priority: 0.5 },
-    { url: '/sitemap', changefreq: 'monthly', priority: 0.7 },
+  const staticPages = [
+    { url: '/', changefreq: 'weekly', priority: '1.0' },
+    { url: '/blogs', changefreq: 'daily', priority: '0.9' },
+    { url: '/destinations', changefreq: 'daily', priority: '0.9' },
+    { url: '/guide', changefreq: 'weekly', priority: '0.9' },
+    { url: '/calculator', changefreq: 'monthly', priority: '0.8' },
+    { url: '/about', changefreq: 'monthly', priority: '0.7' },
+    { url: '/contact', changefreq: 'monthly', priority: '0.6' },
+    { url: '/privacy', changefreq: 'yearly', priority: '0.4' },
+    { url: '/terms', changefreq: 'yearly', priority: '0.4' },
+    { url: '/affiliate-disclosure', changefreq: 'yearly', priority: '0.4' },
   ];
 
-  // Blog pages
   const blogPages = blogs.map(blog => ({
     url: `/blogs/${blog.slug}`,
-    lastmod: blog.updatedDate || blog.publishDate,
+    lastmod: formatDate(blog.updatedDate || blog.publishDate),
     changefreq: 'monthly',
-    priority: 0.8,
+    priority: '0.8',
   }));
 
-  // Destination pages
   const destinationPages = destinations.map(dest => ({
     url: `/destinations/${dest.slug}`,
-    lastmod: dest.updatedDate || new Date().toISOString(),
+    lastmod: formatDate(new Date()),
     changefreq: 'weekly',
-    priority: 0.8,
+    priority: '0.8',
   }));
 
-  // Combine all pages
-  const allPages = [
-    ...mainPages,
-    ...blogPages,
-    ...destinationPages,
-  ];
+  const allPages = [...staticPages, ...blogPages, ...destinationPages];
 
-  // Generate XML
-  const xml = generateSitemapXML(allPages);
+  const urlEntries = allPages.map(page => {
+    const loc = `${SITE_URL}${page.url}`;
+    const lastmod = page.lastmod ? `\n    <lastmod>${page.lastmod}</lastmod>` : '';
+    return `  <url>\n    <loc>${loc}</loc>${lastmod}\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>`;
+  }).join('\n');
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>`;
 
   return new Response(xml, {
+    status: 200,
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
       'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      'X-Robots-Tag': 'noindex',
     },
   });
 }
 
-/**
- * Generate XML sitemap content
- */
-function generateSitemapXML(pages) {
-  const urlEntries = pages
-    .map(page => {
-      const lastmod = page.lastmod ? `<lastmod>${formatDate(page.lastmod)}</lastmod>` : '';
-      return `
-  <url>
-    <loc>${SITE_URL}${page.url}</loc>
-    ${lastmod}
-    <changefreq>${page.changefreq}</changefreq>
-    <priority>${page.priority}</priority>
-  </url>`;
-    })
-    .join('');
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
-${urlEntries}
-</urlset>`;
-}
-
-/**
- * Format date to ISO 8601 format
- */
 function formatDate(date) {
-  if (typeof date === 'string') {
+  try {
     return new Date(date).toISOString().split('T')[0];
+  } catch {
+    return new Date().toISOString().split('T')[0];
   }
-  return date.toISOString().split('T')[0];
 }

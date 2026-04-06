@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Privacy Policy - BudgetYatra',
   description: 'Privacy Policy for BudgetYatra',
+  alternates: { canonical: 'https://budgetyatra.online/privacy' },
 };
 
 export default function PrivacyPage() {
