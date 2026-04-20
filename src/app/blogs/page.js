@@ -16,11 +16,12 @@ const BASE_META = {
 
 export async function generateMetadata({ searchParams }) {
   const params = await searchParams;
-  // Filter URLs (?category=) — noindex to prevent duplicate content
+  // Filter URLs (?category=) — canonical points to base page, no noindex
   if (params?.category) {
     return {
       ...BASE_META,
-      robots: { index: false, follow: true },
+      alternates: { canonical: 'https://budgetyatra.online/blogs' },
+      robots: { index: true, follow: true },
     };
   }
   return BASE_META;

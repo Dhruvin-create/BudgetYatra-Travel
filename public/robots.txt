@@ -4,13 +4,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Disallow: /*?category=
-Disallow: /*?q=
-Disallow: /*?season=
-Disallow: /*?budget=
-Disallow: /*?sort=
-Disallow: /*?filter=
-Disallow: /*.json$
 
 # Sitemap
 Sitemap: https://budgetyatra.online/sitemap.xml

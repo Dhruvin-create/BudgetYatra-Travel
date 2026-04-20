@@ -17,7 +17,7 @@ const destinations = [
     travelTips: ["Rent a scooter for freedom", "Visit during shoulder season", "Eat at local thali joints"],
     howToReach: { byAir: "Dabolim Airport", byTrain: "Madgaon railway station", byRoad: "Overnight Volvo buses" },
     relatedBlogs: ["goa-budget-travel-guide"],
-    seo: { metaTitle: "Goa Travel Guide 2024", metaDescription: "Complete Goa travel guide", keywords: ["goa travel"], ogImage: "https://images.unsplash.com/photo-1646748019039-e908f7e41282?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Goa Trip Under 5000 Per Day 2026 — Best Time to Visit Goa on Budget", metaDescription: "Complete Goa budget travel guide — Goa trip under 5000 per day, cheapest month to visit Goa, best time to visit Goa on budget, and 5-day itinerary.", keywords: ["goa trip under 5000 per day", "best time to visit goa on budget", "cheapest month to visit goa", "goa budget travel 2026"], ogImage: "https://images.unsplash.com/photo-1646748019039-e908f7e41282?w=1200&h=800&fit=crop&auto=format" },
     featured: true,
     published: true
   },
@@ -37,7 +37,7 @@ const destinations = [
     travelTips: ["Stay at an ashram", "Book rafting directly", "Attend free Ganga Aarti"],
     howToReach: { byAir: "Jolly Grant Airport", byTrain: "Haridwar Junction", byRoad: "Direct buses from Delhi" },
     relatedBlogs: ["rishikesh-budget-adventure-guide"],
-    seo: { metaTitle: "Rishikesh Travel Guide 2024", metaDescription: "Complete Rishikesh budget guide", keywords: ["rishikesh travel"], ogImage: "https://images.unsplash.com/photo-1678788166239-b28733f56956?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Cheap Rishikesh Travel Guide 2026 — Rishikesh Haridwar Budget Itinerary", metaDescription: "Complete cheap Rishikesh travel guide with Rishikesh Haridwar budget itinerary, Uttarakhand budget trip costs, and rafting prices. Updated 2026.", keywords: ["cheap rishikesh travel guide", "rishikesh haridwar budget itinerary", "uttarakhand budget trip", "rishikesh rafting cost"], ogImage: "https://images.unsplash.com/photo-1678788166239-b28733f56956?w=1200&h=800&fit=crop&auto=format" },
     featured: true,
     published: true
   },
@@ -57,7 +57,7 @@ const destinations = [
     travelTips: ["Buy composite ticket", "Bargain in bazaars", "Start early", "Use app-based autos"],
     howToReach: { byAir: "Jaipur International Airport", byTrain: "Jaipur Junction", byRoad: "RSRTC Volvo buses from Delhi" },
     relatedBlogs: ["jaipur-budget-heritage-walk"],
-    seo: { metaTitle: "Jaipur Travel Guide 2024", metaDescription: "Complete Jaipur budget guide", keywords: ["jaipur travel"], ogImage: "https://images.unsplash.com/photo-1772533254933-ee692487aba2?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Budget Jaipur Itinerary 3 Days 2026 — Family Trip & Romantic Destinations India", metaDescription: "Complete budget Jaipur itinerary 3 days with costs, forts, food, and tips for budget family trip India and affordable family vacation India.", keywords: ["budget jaipur itinerary 3 days", "budget family trip india", "romantic destinations on a budget india", "affordable family vacation india"], ogImage: "https://images.unsplash.com/photo-1772533254933-ee692487aba2?w=1200&h=800&fit=crop&auto=format" },
     featured: true,
     published: true
   },
@@ -77,7 +77,7 @@ const destinations = [
     travelTips: ["Stay in Old Manali for budget hostels", "Share cabs for Solang/Atal Tunnel", "Carry layers—nights are cold"],
     howToReach: { byAir: "Bhuntar Airport (Kullu) + taxi/bus to Manali", byTrain: "Nearest major rail: Chandigarh (connect by bus)", byRoad: "Overnight Volvo buses from Delhi/Chandigarh" },
     relatedBlogs: ["manali-budget-trip-guide"],
-    seo: { metaTitle: "Manali Budget Travel Guide 2024", metaDescription: "Manali budget guide with daily costs, best time, stays, food, and itinerary.", keywords: ["manali budget trip", "manali trip cost", "manali itinerary"], ogImage: "https://images.unsplash.com/photo-1677821243506-0fa5cd8abdcb?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Budget Manali Tour 2026 — Manali Shimla Budget Tour & Himachal Pradesh Trip", metaDescription: "Complete budget Manali tour 2026 with Manali Shimla budget tour itinerary, Himachal Pradesh budget trip costs, and 4-day plan.", keywords: ["budget manali tour 2026", "manali shimla budget tour", "himachal pradesh budget trip", "manali trip cost"], ogImage: "https://images.unsplash.com/photo-1677821243506-0fa5cd8abdcb?w=1200&h=800&fit=crop&auto=format" },
     featured: false,
     published: true
   },
@@ -97,7 +97,7 @@ const destinations = [
     travelTips: ["Use trains for intercity travel", "Book backwater day cruise for budget option", "Stay 2 nights per base to reduce transfers"],
     howToReach: { byAir: "Kochi (COK) or Trivandrum (TRV) airports", byTrain: "Well-connected rail network across Kerala", byRoad: "Intercity buses + cabs for hill areas" },
     relatedBlogs: ["kerala-budget-backwaters-guide"],
-    seo: { metaTitle: "Kerala Budget Travel Guide 2024 (Backwaters + Beaches)", metaDescription: "Kerala budget guide with daily costs, best time, routes, and a simple 5-day plan.", keywords: ["kerala budget trip", "kerala trip cost", "kerala itinerary 5 days"], ogImage: "https://images.unsplash.com/photo-1720250581812-b6bbf0c05cd2?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Cheap Kerala Backwater Trip 2026 — Best Time to Visit Kerala on Budget", metaDescription: "Complete cheap Kerala backwater trip guide with best time to visit Kerala on budget, low season tips, and 5-day Kochi–Alleppey–Varkala route.", keywords: ["cheap kerala backwater trip", "kerala trip in low season", "best time to visit kerala on budget", "kerala budget itinerary"], ogImage: "https://images.unsplash.com/photo-1720250581812-b6bbf0c05cd2?w=1200&h=800&fit=crop&auto=format" },
     featured: false,
     published: true
   },
@@ -117,7 +117,7 @@ const destinations = [
     travelTips: ["Book a shared boat at Assi for sunrise", "Walk the ghats early morning", "Stay near Assi for easy access"],
     howToReach: { byAir: "Lal Bahadur Shastri Airport (VNS)", byTrain: "Varanasi Junction / Manduadih", byRoad: "Buses and cabs from major UP cities" },
     relatedBlogs: ["varanasi-3-day-budget-itinerary"],
-    seo: { metaTitle: "Varanasi Budget Travel Guide 2024 (2–3 Day Plan)", metaDescription: "Varanasi budget guide with costs, best ghats, boat rides, and a simple 3-day itinerary.", keywords: ["varanasi budget trip", "varanasi itinerary 3 days", "ganga aarti timing"], ogImage: "https://images.unsplash.com/photo-1752733904669-8a2af6d349f3?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Varanasi Budget Trip 2026 — 3-Day Itinerary & India Budget Travel Tips", metaDescription: "Varanasi 3-day budget itinerary with boat ride costs, ghat tips, and India budget travel tips for students. One of India’s cheapest spiritual destinations.", keywords: ["varanasi 3 day budget itinerary", "india budget travel tips", "india budget travel for students", "varanasi budget trip"], ogImage: "https://images.unsplash.com/photo-1752733904669-8a2af6d349f3?w=1200&h=800&fit=crop&auto=format" },
     featured: false,
     published: true
   },
@@ -137,7 +137,7 @@ const destinations = [
     travelTips: ["Acclimatize 24–48 hours in Leh", "Prefer shared taxis for budget", "Carry basic medicines and layers"],
     howToReach: { byAir: "Leh Kushok Bakula Rimpochee Airport", byTrain: "Nearest railheads: Jammu/Chandigarh (then road)", byRoad: "Manali–Leh or Srinagar–Leh highways (seasonal)" },
     relatedBlogs: ["ladakh-budget-roadtrip-guide"],
-    seo: { metaTitle: "Ladakh Budget Travel Guide 2024 (Leh, Nubra, Pangong)", metaDescription: "Ladakh budget guide with costs, itinerary, permits, and money-saving transport tips.", keywords: ["ladakh budget trip", "leh ladakh itinerary", "pangong nubra costs"], ogImage: "https://images.unsplash.com/photo-1606857090627-27ca46667290?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Ladakh Budget Trip 2026 — Ladakh Bike Trip Budget & India Road Trip Planner", metaDescription: "Complete Ladakh budget trip 2026 with Ladakh bike trip budget, India budget road trip planner 7-day itinerary, Leh–Nubra–Pangong costs and tips.", keywords: ["ladakh budget trip", "ladakh bike trip budget", "india budget road trip planner", "how to plan india road trip on budget"], ogImage: "https://images.unsplash.com/photo-1606857090627-27ca46667290?w=1200&h=800&fit=crop&auto=format" },
     featured: false,
     published: true
   },
@@ -157,7 +157,7 @@ const destinations = [
     travelTips: ["Rent a scooter/bicycle locally", "Start early for temples", "Carry water—midday heat is strong"],
     howToReach: { byAir: "Nearest major airport: Hubli / Bengaluru (then train/bus)", byTrain: "Hospet Junction (closest)", byRoad: "Buses from Bengaluru/Goa/Hyderabad" },
     relatedBlogs: ["hampi-2-day-budget-guide"],
-    seo: { metaTitle: "Hampi Budget Travel Guide 2024 (2-Day Itinerary)", metaDescription: "Hampi budget guide with costs, must-see ruins, and an easy 2-day plan.", keywords: ["hampi budget trip", "hampi itinerary 2 days", "hampi ruins guide"], ogImage: "https://images.unsplash.com/photo-1651569213711-b29d1fc3f995?w=1200&h=800&fit=crop&auto=format" },
+    seo: { metaTitle: "Hampi Budget Travel 2026 — Cheap Cultural Destinations India & Budget Itineraries", metaDescription: "Hampi budget travel guide 2026 — cheap cultural destinations India, budget travel India itineraries, 2-day Virupaksha–Vittala plan with real costs.", keywords: ["cheap cultural destinations india", "budget travel india itineraries", "india budget travel tips", "hampi budget trip"], ogImage: "https://images.unsplash.com/photo-1651569213711-b29d1fc3f995?w=1200&h=800&fit=crop&auto=format" },
     featured: false,
     published: true
   }

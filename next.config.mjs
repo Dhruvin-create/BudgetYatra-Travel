@@ -119,10 +119,22 @@ const nextConfig = {
     ]
   },
 
-  // Redirects for SEO
+  // Redirects for SEO — www → non-www, trailing slash
   async redirects() {
     return [
-      // Redirect old URLs if needed
+      // www → non-www (301 permanent)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.budgetyatra.online' }],
+        destination: 'https://budgetyatra.online/:path*',
+        permanent: true,
+      },
+      // trailing slash → no trailing slash (except homepage)
+      {
+        source: '/:path+/',
+        destination: '/:path+',
+        permanent: true,
+      },
     ]
   },
 
