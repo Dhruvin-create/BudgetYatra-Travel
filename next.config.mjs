@@ -138,17 +138,9 @@ const nextConfig = {
     ]
   },
 
-  // Rewrites for clean URLs
+  // Rewrites
   async rewrites() {
-    return {
-      beforeFiles: [
-        // /sitemap.xml → /api/sitemap (XML for search engines)
-        {
-          source: '/sitemap.xml',
-          destination: '/api/sitemap',
-        },
-      ],
-    }
+    return { beforeFiles: [] };
   },
 
   // Environment variables
