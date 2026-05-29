@@ -1,7 +1,52 @@
-# BudgetYatra robots.txt
+﻿# BudgetYatra robots.txt
 
 User-agent: *
 Allow: /
+Allow: /blogs?category=
+Allow: /destinations?category=
+Allow: /guide?season=
+Allow: /guide?q=goa
+Allow: /guide?q=rishikesh
+Allow: /guide?q=jaipur
+Allow: /guide?q=manali
+Allow: /guide?q=kerala
+Allow: /guide?q=varanasi
+Allow: /guide?q=ladakh
+Allow: /guide?q=hampi
+Allow: /guide?q=karnataka
+Allow: /guide?q=haridwar
+Allow: /guide?q=uttarakhand
+Allow: /guide?q=himachal
+Allow: /guide?q=rajasthan
+Allow: /guide?q=mountains
+Allow: /guide?q=beach
+Allow: /guide?q=heritage
+Allow: /guide?q=adventure
+Allow: /guide?q=rafting
+Allow: /guide?q=backpacking
+
+# Block thin/low-intent query pages
+Disallow: /guide?q=packing
+Disallow: /guide?q=safety
+Disallow: /guide?q=students
+Disallow: /guide?q=food
+Disallow: /guide?q=scooter
+Disallow: /guide?q=yoga
+Disallow: /guide?q=forts
+Disallow: /guide?q=snow
+Disallow: /guide?q=ruins
+Disallow: /guide?q=ghats
+Disallow: /guide?q=sarnath
+Disallow: /guide?q=seafood
+Disallow: /guide?q=varkala
+Disallow: /guide?q=low%20season
+Disallow: /blogs?q=packing
+Disallow: /blogs?q=safety
+
+# Block budget filter combinations
+Disallow: /guide?budgetMin=
+
+# Block API routes
 Disallow: /api/
 Disallow: /admin/
 

@@ -1,0 +1,1 @@
+﻿const fs=require("fs"); let c=fs.readFileSync("next.config.mjs","utf8"); const idx=c.indexOf("async redirects"); const end=c.indexOf("async rewrites"); console.log("Section:", JSON.stringify(c.substring(idx,end)));
